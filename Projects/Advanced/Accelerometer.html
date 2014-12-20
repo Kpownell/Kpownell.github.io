@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Accelerometer</title>
+
+    <!-- Bootstrap -->
+    <link href="../../bootstrap/css/bootstrap.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <!--NAV BAR-->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Arduino World</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li><a href="../../FrontPage/FrontPage.html">Home</a></li>
+
+             <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Learn<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="../../Learn/WhatIsArduino.html">What is Arduino?</a></li>
+                <li class="divider"></li>
+                <li><a href="../../Learn/ElectricityBasics.html">Electricity Basics</a></li>
+                <li class="divider"></li>
+                <li><a href="../../Learn/Hardware.html">Hardware</a></li>
+                <li class="divider"></li>
+                <li><a href="../../Learn/Software.html">Software</a></li>
+              </ul>
+            </li>
+
+             <li class="dropdown active">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="../Beginner/Beginner.html">Beginner</a></li>
+                <li class="divider"></li>
+                <li><a href="../Intermediate/Intermediate.html">Intermediate</a></li>
+                <li class="divider"></li>
+                <li class="active"><a href="Advanced.html">Advanced</a></li>
+                <li class="divider"></li>
+                <li><a href="../Shields/Shields.html">Shields</a></li>
+              </ul>
+            </li>
+
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">More<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="../More/BeyondArduino.html">Beyond Arduino</a></li>
+                <li class="divider"></li>
+                <li><a href="../More/Links.html">Links</a></li>
+                <li class="divider"></li>
+                <li><a href="../More/Contact.html">Contact</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-2 col-md-2">
+          </br></br></br><img class="img-circle" src="Images/accel-0.png" alt="Beginner" style="width: 140px; height: 140px;">
+        </div>
+        <div class="col-xs-10 col-md-10">
+          <div class="page-header">
+            </br></br><h1>Accelerometer</br><small>Use this handy motion sensor in multiple projects!</small></h1>
+          </div><!--/.page-header-->
+        </div>
+      </div>
+
+      <div class="row"><!--Overview-->
+        <div class="col-xs-12 col-med-12">
+          <h3>Overview</h3>
+          <p>A accelerometer measures forces of acceleration, whether from gravity or from the user shaking the device. This means it can tell direction of tilt, rotation, or motion. It's what allows you to control your direction in Doodle Jump when you're playing on your iPhone or what automatically rotates your pictures when you take them horizontally instead of vertically. There are lots of applications for this handy little device. Read on to find out!</p>
+        </div><!--Overview row-->
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row"><!--Parts-->
+        <div class="col-xs-8 col-med-8">
+          <h3>Things to Know</h3>
+          <ul>
+            <li><strong>Accelerometer vs. gyroscope: </strong>An accelerometer measures acceleration, whereas a gyroscope measures rotation. An accelerometer will tell you the direction of motion, whereas a gyroscope will tell you an angle along the x and y axis that won't change if you tilt it up and down. For more information on the benefits and drawbacks of each tool, you can check out <a href="http://www.livescience.com/40103-accelerometer-vs-gyroscope.html">this article.</a></li>
+            <li><strong>Choosing a number of axes: </strong>A two-axis accelerometer will only measure acceleration in two directions, usually x and y, so it won't help you with up and down. For more functionality, go for a three-axis accelerometer. That will allow you to measure back and forth as well as up and down.</li>
+            <li><strong>Sensitivity: </strong>As you can imagine, a more sensitive accelerometer is best. More sensitive accelerometers will give you a wider swing for smaller changes. You'll also want to keep in mind the maximum swing that your accelerometer can measure. You won't need much more than 1 G (the amount of force caused by gravity).</li>
+            <li><strong>Software: </strong>The software interface for your accelerometer will depend upon the package you choose. You can find an example of an accelerometer board and corresponding software instructions <a href="http://www.instructables.com/id/Use-an-Accelerometer-and-Gyroscope-with-Arduino/">here.</a></li>
+          </ul>
+        </div>
+        <div class="col-xs-4 col-med-4">
+            <img src="Images/accel-1.jpeg" alt="..." style="width:95%;margin-top:15px;" class="img-thumbnail">
+        </div>
+      </div><!--Parts row-->
+
+    <hr class="featurette-divider">
+
+    <div class="row"><!--Project-->
+      <div class="col-xs-12 col-med-12">
+        <h3>Project Ideas</h3>
+      </div>
+    </div>
+    <div class="row"><!--1st robotics row-->
+      <div class="col-xs-3 col-med-3">
+        </br><img src="Images/accel-2a.jpg" alt="..." style="width:95%;" class="img-thumbnail">
+      </div>
+      <div class="col-xs-3 col-med-3">
+        </br><h4><a href="http://arduinobasics.blogspot.com/2012/08/arduino-basics-3-axis-accelerometer.html">Motion Detector: </a></h4>
+        <p>This handy security system will go off whenever it's moved. Put it inside a drawer or under your piggy bank to determine who's been messing with your stuff. You can add a custom code to turn off the alarm if you'd like to extend the project.</p></br>
+      </div>
+      <div class="col-xs-3 col-med-3">
+        </br></br><img src="Images/accel-2b.jpg" alt="..." style="width:95%;" class="img-thumbnail">
+      </div>
+      <div class="col-xs-3 col-med-3">
+        </br><h4><a href="http://www.vernier.com/engineering/arduino/projects/control-led-with-accelerometer/">Color-Changing RGB LED: </a></h4>
+        <p>With this project, you can change the color of an RGB LED by tilting a ball back and forth. It's not a difficult idea, but it leads to interesting results. Think about creating a ring of lights that will change color based on tilt, so the highest point is always blue.</p>
+      </div>
+    </div><!--1st robotics row-->
+    </br><div class="row" style="border-bottom:1px solid #00979c;"></div></br>
+    <div class="row"><!--2nd robotics row-->
+      <div class="col-xs-3 col-med-3">
+        </br><h4><a href="http://www.instructables.com/id/Musical-Instrument-Ball/">Tilting Musical Ball: </a></h4>
+        <p>This football has been hacked to include an Arduino and a musical instrument shield that play different notes depending on the tilt. It's a great project to surprise your friends when they just want to play some ball.</p>
+      </div>
+      <div class="col-xs-3 col-med-3">
+        <img src="Images/accel-2c.jpg" alt="..." style="width:95%;margin-top:35px;" class="img-thumbnail">
+      </div>
+      <div class="col-xs-3 col-med-3">
+        </br><h4><a href="http://alexdglover.wordpress.com/2013/02/07/arduino-project-4-tilt-to-unlock/">Tilt-to-unlock box: </a></h4>
+        <p>Secure your stuff by building a box that can only be unlocked by tilting it in a certain combination of directions. No one will expect such a cunning security device, and it's definitely harder to hack than a keypad combination.</p>
+      </div>
+      <div class="col-xs-3 col-med-3">
+        <img src="Images/accel-2d.png" alt="..." style="width:95%;margin-top:15px;" class="img-thumbnail">
+      </div>
+    </div><!--2nd robotics row-->
+
+    <hr class="featurette-divider">
+
+    <div class="row">
+      <div class="col-xs-4 col-med-4">
+        <img src="Images/accel-3.jpg" alt="..." style="width:95%; margin-top:35px;" class="img-thumbnail">
+      </div>
+      <div class="col-xs-8 col-med-8">
+        <h3>Tips and Tricks</h3>
+        <ul>
+          <li><strong>Inertial measurement unit: </strong>An accelerometer and a gyroscope can be combined into one chip called an inertial measurement unit, or IMU. These can be used in applications such as quadcopters to give you a complete picture of the environment.</li>
+          <li><strong>Interpreting measurements: </strong>The math required to interpret your accelerometer readings can be a little dense, so make sure to check out a guide before writing your code. There are lots of guides online, such as <a href="http://www.freescale.com/files/sensors/doc/app_note/AN3107.pdf">this one</a> or <a href="http://www.freescale.com/files/sensors/doc/app_note/AN3461.pdf">this one</a> to get you started.</li>
+          <li><strong>Calibration: </strong>Your accelerometer will drift over time and start giving you less accurate readings. To avoid this issue, make sure you caliubrate it on a regular basis to set it back to zero. Your hardware should include information on how to set the initial angle.</li>
+        </ul>
+        <h4>Good luck, and have fun!</h4>
+      </div>
+    </div>
+
+
+
+    </div><!--/.container-->
+
+    </br></br></br>
+    <hr class="featurette-divider">
+    <div id="footer">
+      <div class="container">
+        <p class="text-muted">Built on Bootstrap by Kristen Pownell</p>
+      </div>
+    </div>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../../bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>

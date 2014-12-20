@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jeopardy</title>
+
+    <!-- Bootstrap -->
+    <link href="../../bootstrap/css/bootstrap.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <!--NAV BAR-->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Arduino World</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li><a href="../../FrontPage/FrontPage.html">Home</a></li>
+
+             <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Learn<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="../../Learn/WhatIsArduino.html">What is Arduino?</a></li>
+                <li class="divider"></li>
+                <li><a href="../../Learn/ElectricityBasics.html">Electricity Basics</a></li>
+                <li class="divider"></li>
+                <li><a href="../../Learn/Hardware.html">Hardware</a></li>
+                <li class="divider"></li>
+                <li><a href="../../Learn/Software.html">Software</a></li>
+              </ul>
+            </li>
+
+             <li class="dropdown active">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li class="active"><a href="Beginner.html">Beginner</a></li>
+                <li class="divider"></li>
+                <li><a href="../Intermediate/Intermediate.html">Intermediate</a></li>
+                <li class="divider"></li>
+                <li><a href="../Advanced/Advanced.html">Advanced</a></li>
+                <li class="divider"></li>
+                <li><a href="../Shields/Shields.html">Shields</a></li>
+              </ul>
+            </li>
+
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">More<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="../More/BeyondArduino.html">Beyond Arduino</a></li>
+                <li class="divider"></li>
+                <li><a href="../More/Links.html">Links</a></li>
+                <li class="divider"></li>
+                <li><a href="../More/Contact.html">Contact</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-2 col-md-2">
+          </br></br></br><img class="img-circle" src="Images/jeopardy-0.jpg" alt="Beginner" style="width: 140px; height: 140px;">
+        </div>
+        <div class="col-xs-10 col-md-10">
+          <div class="page-header">
+            </br></br><h1>Homemade Jeopardy</br><small>Use buttons and LEDs to create a Jeopardy panel!</small></h1>
+          </div><!--/.page-header-->
+        </div>
+      </div>
+
+      <div class="row"><!--Materials-->
+        <div class="col-xs-7 col-med-7">
+          <img src="Images/jeopardy-1.png" alt="..." style="width:95%; margin:10px;" class="img-thumbnail">
+        </div>
+        <div class="col-xs-5 col-med-5">
+          <h3></br></br></br></br>Materials</h3>
+          <ul>
+            <li>Arduino Uno</li>
+            <li>Breadboard and wires</li>
+            <li>2 different-colored LEDs</li>
+            <li>2 push-button switches</li>
+            <li>2-330 ohm resistors</li>
+            <li>2-10 kohm resistors</li>
+          </ul>
+        </div><!--Materials row-->
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row"><!--Breadboard layout-->
+        <div class="col-xs-5 col-med-5">
+          <h3>Breadboard Layout</h3>
+          <ol>
+            <li><strong>LEDs: </strong>This project is going to require 4 pins on the Arduino - 2 for the buttons and 2 for the LEDs. For the LEDs, we're going to use digital pins 10-11. Connect a circuit from each pin to a 330 ohm resistor, the long leg of the LED, and back to ground.</li>
+            <li><strong>Buttons: </strong>We're going to provide a constant power supply to one side of the buttons and then check the other side to see whether it's getting voltage. If the button is pressed down, the circuit will be completed and the digital pin will read HIGH. If the button is up, the circuit will be broken, so the digital pin will read LOW. First, connect the 5V power supply to one side of each button. Connect the other side to a 10k resistor and then back to ground.</li>
+            <li><strong>Button input: </strong>To read input from the buttons, connect a wire from digital pins 8 and 9 to the middle of your button circuit, in between the buttons and the resistors. This will monitor whether or not the circuit is completed.</li>
+            <li><strong>Button troubleshooting: </strong>A common mistake with buttons is to accidentally short the two sides together so it looks like it's always pressed down. To check if yours is wired correctly, you can put an LED after the button and see whether it lights up only when the button is pressed or always. If it's always lit, rotate your button 90 degrees and try again!</li>
+            <li><strong>You're done! </strong>Plug your Arduino into the USB port on your computer.</li>
+          </ol>
+        </div>
+        <div class="col-xs-7 col-med-7">
+            <img src="Images/jeopardy-2.png" alt="..." style="width:95%; margin-top:20px;" class="img-thumbnail">
+        </div>
+      </div><!--Breadboard layout row-->
+
+    <hr class="featurette-divider">
+
+    <div class="row"><!--Software-->
+      <div class="col-xs-4 col-med-4">
+        <img src="Images/jeopardy-3.png" alt="..." style="width:95%; margin-top:70px;" class="img-thumbnail">
+      </div>
+      <div class="col-xs-8 col-med-8">
+        <h3>Software</h3>
+        <ol>
+          <li><strong>Getting started: </strong>Open the Arduino program (it should open automatically once your Arduino is plugged in) and create a new sketch. If you need reference, check out some of the example programs, especially Basics>>Blink.
+          <li><strong>Initialize variables: </strong>Declare ints to store your button pins 1-2 and your leds 1-2.</li>
+          <li><strong>Setup: </strong>In your first required method, set your LEDs to be output and your buttons to be input. Also, initalize the Serial monitor with Serial.begin(9600).</li>
+          <li><strong>Read button input: </strong>What we're going to be doing is checking to see if a particular button is pressed and, if it is, turn on the corresponding light and print the button to the Serial monitor. First, we need to create variables to store the state of the buttons. Create your variables with int buttonStateN = digitalRead(N), where N is buttons 1/2.</li>
+          <li><strong>Turn on LEDs: </strong>We're going to use an if-else block to turn on our LEDs. Each if statement will check if a particular button is on. If it is, it will turn the corresponding light on and print the button to the Serial monitor. It will also make sure that the other lights are off. To do this, write:</br><em>
+          <p style="padding-left:2em;padding-top:1em;">if(buttonState1 == HIGH) {</p>
+            <p style="padding-left:4em;">digitalWrite(ledPin1, HIGH);</br>
+              digitalWrite(ledPin2, LOW);</br></p>
+          <p style="padding-left:2em;">}</p></em>
+          Make sure you also include the default case with your final else that will turn all the LEDs off in case no buttons are pressed. If you're confused, check out the code to the left.
+          </li>
+          <li><strong>Write to Serial monitor: </strong>In every if/else-if block, add another statement that will write the button number to the Serial monitor. This will look like Serial.println("Button 1 pressed"). These statements will let you know who pressed their button first.</li>
+          <li><strong>Debounce the buttons: </strong>The Arduino will check the buttons multiple times a second, which means that even if you press down for a very short amount of time, the Serial monitor will think you've pressed down 20 or 30 times. To prevent this, we're going to do something called debouncing the button. Basically, we add a delay statement in our if-else loops so it only reads one press instead of multiple. Add delay(200) in each of your loop blocks that includes a print statement.</li>
+          <li><strong>Running the program: </strong>Once you upload your program to the Arduino, open the Serial monitor and try pressing each button to make sure it lights up the LED and prints to the screen. If everything works, you're done! Grab a couple friends and get ready for a fierce Jeopardy competition!</li>
+          <li><strong>Experiment: </strong>What if you wanted to play with two friends or four? Can you add a buzzer when a button is pressed? What about a button for the referee to tell when the timer is started/stopped?</li>
+        </ol>
+      </div>
+    </div><!--Software row-->
+
+    <hr class="featurette-divider">
+
+    <div class="row">
+      <div class="col-xs-8 col-xs-offset-2 col-med-8 col-med-offset-2">
+        <h3>The Finished Product</h3>
+        <video controls loop src="Images/jeopardy.mp4" style="width:100%;"></video>
+      </div>
+    </div>
+
+    </div><!--/.container-->
+
+    </br></br></br>
+    <hr class="featurette-divider">
+
+    <div id="footer">
+      <div class="container">
+        <p class="text-muted">Built on Bootstrap by Kristen Pownell</p>
+      </div>
+    </div>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../../bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>

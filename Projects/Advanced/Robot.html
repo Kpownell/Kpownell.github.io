@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Robot</title>
+
+    <!-- Bootstrap -->
+    <link href="../../bootstrap/css/bootstrap.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <!--NAV BAR-->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Arduino World</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li><a href="../../FrontPage/FrontPage.html">Home</a></li>
+
+             <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Learn<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="../../Learn/WhatIsArduino.html">What is Arduino?</a></li>
+                <li class="divider"></li>
+                <li><a href="../../Learn/ElectricityBasics.html">Electricity Basics</a></li>
+                <li class="divider"></li>
+                <li><a href="../../Learn/Hardware.html">Hardware</a></li>
+                <li class="divider"></li>
+                <li><a href="../../Learn/Software.html">Software</a></li>
+              </ul>
+            </li>
+
+             <li class="dropdown active">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="../Beginner/Beginner.html">Beginner</a></li>
+                <li class="divider"></li>
+                <li><a href="../Intermediate/Intermediate.html">Intermediate</a></li>
+                <li class="divider"></li>
+                <li class="active"><a href="Advanced.html">Advanced</a></li>
+                <li class="divider"></li>
+                <li><a href="../Shields/Shields.html">Shields</a></li>
+              </ul>
+            </li>
+
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">More<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="../More/BeyondArduino.html">Beyond Arduino</a></li>
+                <li class="divider"></li>
+                <li><a href="../More/Links.html">Links</a></li>
+                <li class="divider"></li>
+                <li><a href="../More/Contact.html">Contact</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-2 col-md-2">
+          </br></br></br><img class="img-circle" src="Images/robot-0.png" alt="Beginner" style="width: 140px; height: 140px;">
+        </div>
+        <div class="col-xs-10 col-md-10">
+          <div class="page-header">
+            </br></br><h1>Robotics</br><small>Learn about all the possibilities for your own robot!</small></h1>
+          </div><!--/.page-header-->
+        </div>
+      </div>
+
+      <div class="row"><!--Overview-->
+        <div class="col-xs-12 col-med-12">
+          <h3>Overview</h3>
+          <p>In the intermediate projects section, we built a very basic robot, just so you could get used to the idea. Now, we can update that robot with more advanced sensors, better motors, and a stronger body for increased functionality and performance. We've collected some of our favorite robots from around the web to get you started.</p>
+        </div><!--Overview row-->
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row"><!--Parts-->
+        <div class="col-xs-8 col-med-8">
+          <h3>Parts of a Robot</h3>
+          <ol>
+            <li><strong>Chassis: </strong>This is the frame of the robot. It can be as simple or sophisticated as you like. You can use cardboard from around the house, pre-cut pieces from a kit, or 3d printed plastic according to your own specifications. Just make sure there's plenty of room for your arduino and sensors, along with somewhere for the wheels to connect.</li>
+            <li><strong>Sensors: </strong>Your robot can't do anything until it gathers information about its environment. We've used photoresistors before as simple sensors, but you'll probably want to use something more sophisticated here. With the right sensors, you can teach your Arduino to avoid obstacles, follow a line, or more.</li>
+            <li><strong>Actuators: </strong>An actuator is anything that allows the robot to perform an action. The most common actuators are motors that drive the robot forward or backward. In our previous robot, we used servo motors to turn the robot in all directions. For your new robot, you might want to use DC motors instead. DC motors are slightly more complicated to hook up, so make sure you find a good guide before you wire them in. You can even get a shield to take care of the complications for you (check out the shields section of the website for more).</li>
+            <li><strong>Controller: </strong>The controls system provides the bridge between the sensors and the actuators. It interprets the gathered information and uses it to make a decision about where to go next. You'll use the Arduino as the brains of your operation. The software for this can get complicated, so feel free to download open-source code for a framework and modify as needed.</li>
+            <li><strong>Power supply: </strong>Of course, your robot can't go anywhere without power. Generally this consists of a battery pack attached to your chassis. Make sure you leave room for it and allow for easy replacement of batteries!</li>
+          </ol>
+        </div>
+        <div class="col-xs-4 col-med-4">
+            <img src="Images/robot-1.png" alt="..." style="width:95%;margin-top:60px;" class="img-thumbnail">
+        </div>
+      </div><!--Parts row-->
+
+    <hr class="featurette-divider">
+
+    <div class="row"><!--Project-->
+      <div class="col-xs-12 col-med-12">
+        <h3>Project Ideas</h3>
+      </div>
+    </div>
+    <div class="row"><!--1st robotics row-->
+      <div class="col-xs-3 col-med-3">
+        </br><img src="Images/robot-2a.png" alt="..." style="width:95%;" class="img-thumbnail">
+      </div>
+      <div class="col-xs-3 col-med-3">
+        </br><h4><a href="http://makezine.com/projects/building-a-simple-arduino-robot/">Roving Robot: </a></h4>
+        <p>This basic robot is built to avoid obstacles in its path - watch the video at the top of the page to see it in action. You can either purchase the parts yourself or buy a kit for $70. Either way, it's an excellent introduction to more complicated robotics.</p></br>
+      </div>
+      <div class="col-xs-3 col-med-3">
+        <img src="Images/robot-2b.jpg" alt="..." style="width:95%;" class="img-thumbnail">
+      </div>
+      <div class="col-xs-3 col-med-3">
+        </br><h4><a href="http://blog.miguelgrinberg.com/post/building-an-arduino-robot-part-i-hardware-components">Remote-controlled robot: </a></h4>
+        <p>Like the Funduino robot, this one avoids obstacles, but it adds a Bluetooth chip to allow you to control it remotely using your phone. Just a heads-up - this article uses C++ for all its programming, so if you're not familiar with that language, you might want to brush up a little first.</p>
+      </div>
+    </div><!--1st robotics row-->
+    </br><div class="row" style="border-bottom:1px solid #00979c;"></div></br>
+    <div class="row"><!--2nd robotics row-->
+      <div class="col-xs-3 col-med-3">
+        </br><h4><a href="http://apcmag.com/arduino-project-8-stompy-the-robot-part-1.htm">Four-legged Robot: </a></h4>
+        <p>This quadbot walks instead of rolls, which presents unique mechanical challenges - for instance, you'll need eight servo motors. The payoff is more than worth it, though. You can even customize the provided code to change "Stompy's" walking style.</p>
+      </div>
+      <div class="col-xs-3 col-med-3">
+        </br><img src="Images/robot-2d.jpg" alt="..." style="width:95%;" class="img-thumbnail">
+      </div>
+      <div class="col-xs-3 col-med-3">
+        </br><h4><a href="https://github.com/lawsonkeith/budget-balance-bot/wiki">Balancing robot: </a></h4>
+        <p>No matter how often you knock this robot over, it'll roll right back up again! It's built to be stable despite the top-heavy layout. The instructions for this leave a little more up to your control, so this is a good project to leave for later, after you've built up a strong knowledge base.</p>
+      </div>
+      <div class="col-xs-3 col-med-3">
+        <img src="Images/robot-2c.png" alt="..." style="width:95%;" class="img-thumbnail">
+      </div>
+    </div><!--2nd robotics row-->
+
+    <hr class="featurette-divider">
+
+    <div class="row">
+      <div class="col-xs-4 col-med-4">
+        <img src="Images/robot-3.png" alt="..." style="width:95%; margin-top:5px;" class="img-thumbnail">
+      </div>
+      <div class="col-xs-8 col-med-8">
+        <h3>Tips and Tricks</h3>
+        <ul>
+          <li><strong>DC Motors: </strong>As previously mentioned, DC motors are more complicated to hook up than servo motors - you'll need to use a transistor and a diode in order to provide a higher power source and allow switching in either direction. There are plenty of tutorials online to help you, however, including <a href="https://learn.adafruit.com/adafruit-arduino-lesson-13-dc-motors/transistors">this one</a> from Adafruit that shows you the circuit most commonly used.</li>
+          <li><strong>Soldering: </strong>If you want your robot to look more professional, you'll need to solder on the components. Solder is basically glue for wires. There are two types of soldering - surface mount, which is only possible with highly sophisticated equipment, and throughhole, which is what most hobbyists do. If you don't have a soldering iron, you can get one from any of your local hardware stores. Check out a tutorial like <a href="https://learn.sparkfun.com/tutorials/how-to-solder---through-hole-soldering">this one</a> from Sparkfun before you start. Always remember to turn your soldering iron off when you're done!</li>
+          <li><strong>Noise: </strong>Sometimes, the magnetic fields generated by your DC motors can interfere with signals going to your Arduino. This causes strange errors that aren't seen when you're originally prototyping. To avoid this problem, mount your Arduino a safe distance from your motors and motor wires.</li>
+          <li><strong>Using shields: </strong>Most of the projects listed above use a motor control shield, a sensor shield, or both. These add-ons are great ways to simplify the wiring that you have to do. If you'd rather build it yourself, feel free, just know that it will increase the size of your robot and the difficulty of your project.</li>
+        </ul>
+        <h4>Good luck, and have fun!</h4>
+      </div>
+    </div>
+
+
+
+    </div><!--/.container-->
+
+    </br></br></br>
+    <hr class="featurette-divider">
+    <div id="footer">
+      <div class="container">
+        <p class="text-muted">Built on Bootstrap by Kristen Pownell</p>
+      </div>
+    </div>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../../bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>

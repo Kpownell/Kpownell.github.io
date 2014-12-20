@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>LED</title>
+
+    <!-- Bootstrap -->
+    <link href="../../bootstrap/css/bootstrap.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <!--NAV BAR-->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Arduino World</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li><a href="../../FrontPage/FrontPage.html">Home</a></li>
+
+             <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Learn<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="../../Learn/WhatIsArduino.html">What is Arduino?</a></li>
+                <li class="divider"></li>
+                <li><a href="../../Learn/ElectricityBasics.html">Electricity Basics</a></li>
+                <li class="divider"></li>
+                <li><a href="../../Learn/Hardware.html">Hardware</a></li>
+                <li class="divider"></li>
+                <li><a href="../../Learn/Software.html">Software</a></li>
+              </ul>
+            </li>
+
+             <li class="dropdown active">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li class="active"><a href="Beginner.html">Beginner</a></li>
+                <li class="divider"></li>
+                <li><a href="../Intermediate/Intermediate.html">Intermediate</a></li>
+                <li class="divider"></li>
+                <li><a href="../Advanced/Advanced.html">Advanced</a></li>
+                <li class="divider"></li>
+                <li><a href="../Shields/Shields.html">Shields</a></li>
+              </ul>
+            </li>
+
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">More<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="../More/BeyondArduino.html">Beyond Arduino</a></li>
+                <li class="divider"></li>
+                <li><a href="../More/Links.html">Links</a></li>
+                <li class="divider"></li>
+                <li><a href="../More/Contact.html">Contact</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-2 col-md-2">
+          </br></br></br><img class="img-circle" src="Images/blink-0.png" alt="Beginner" style="width: 140px; height: 140px;">
+        </div>
+        <div class="col-xs-10 col-md-10">
+          <div class="page-header">
+            </br></br><h1>Blinking LED</br><small>Turn an LED on and off.</small></h1>
+          </div><!--/.page-header-->
+        </div>
+      </div>
+
+      <div class="row"><!--Materials-->
+        <div class="col-xs-7 col-med-7">
+          <img src="Images/blink-1.png" alt="..." style="width:95%; margin:10px;" class="img-thumbnail">
+        </div>
+        <div class="col-xs-5 col-med-5">
+          <h3></br></br></br></br>Materials</h3>
+          <ul>
+            <li>Arduino Uno (of course!)</li>
+            <li>Breadboard and wires</li>
+            <li>Single-color LED</li>
+            <li>330 ohm resistor</li>
+          </ul>
+        </div><!--Materials row-->
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row"><!--Breadboard layout-->
+        <div class="col-xs-5 col-med-5">
+          <h3></br></br>Breadboard Layout</h3>
+          <ol>
+            <li><strong>Power supply: </strong>Connect a digital pin on the Arduino - let's say pin 10 - to the positive rail on your breadboard and the ground pin to the negative rail. This will provide power to your LED.</li>
+            <li><strong>Resistance: </strong>Connect the 330-ohm resistor from the positive rail on your breadboard to a row in the center.</li>
+            <li><strong>LED: </strong>Connect the long leg of the LED to the same row as the resistor and the short leg to the ground rail (you can use extra wires if your LED doesn't quite reach).</li>
+            <li><strong>You're done! </strong>Plug your Arduino into the USB port on your computer.</li>
+          </ol>
+        </div>
+        <div class="col-xs-7 col-med-7">
+            <img src="Images/blink-2.png" alt="..." style="width:95%;" class="img-thumbnail">
+        </div>
+      </div><!--Breadboard layout row-->
+
+    <hr class="featurette-divider">
+
+    <div class="row"><!--Software-->
+      <div class="col-xs-4 col-med-4">
+        <img src="Images/blink-3.png" alt="..." style="width:95%; margin-top:40px;" class="img-thumbnail">
+      </div>
+      <div class="col-xs-8 col-med-8">
+        <h3>Software</h3>
+        <ol>
+          <li><strong>Getting started: </strong>Open the Arduino program (it should open automatically once your Arduino is plugged in) and create a new sketch. If you need reference, check out some of the example programs, especially Basics>>Blink.
+          <li><strong>Initialize variables: </strong>You'll only need one variable for this program: the pin powering your LED. Declare an int ledPin = 10 to store this value.</li>
+          <li><strong>Setup: </strong>In your first required method, set your LED pin to be output using pinMode(ledPin, OUTPUT).</li>
+          <li><strong>Turning the LED on: </strong>To turn the LED steadily on, include the line digitalWrite(ledPin, HIGH) in your loop method.</li>
+          <li><strong>Blinking the LED: </strong>To blink the LED, we're going to use the delay method. Leave the same line that you had to turn the LED on, but after it, write delay(500). This will pause the program for 500 milliseconds. Then write digitalWrite(ledPin,LOW) to turn the light off again. Include another delay(500) so the light won't immediately turn back on again.</li>
+          <li><strong>Running the program: </strong>With your Arduino connected to the computer, press the right arrow button in the top of your sketch to upload it to the Arduino. The LED should start blinking on the breadboard. Congratulations! You've written your first Arduino program!</li>
+          <li><strong>Experiment: </strong>What else can you do with this program? Can you change the length of time it blinks? What about blinking out SOS - three short blinks and three long? What if you used multiple lights to blink at the same time? The sky's the limit!</li>
+        </ol>
+      </div>
+    </div><!--Software row-->
+
+    <hr class="featurette-divider">
+
+    <div class="row">
+      <div class="col-xs-8 col-xs-offset-2 col-med-8 col-med-offset-2">
+        <h3>The Finished Product</h3>
+        <video controls loop src="Images/blink.mp4" style="width:100%;"></video>
+      </div>
+    </div>
+
+
+
+    </div><!--/.container-->
+
+    </br></br></br>
+    <hr class="featurette-divider">
+    <div id="footer">
+      <div class="container">
+        <p class="text-muted">Built on Bootstrap by Kristen Pownell</p>
+      </div>
+    </div>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../../bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>

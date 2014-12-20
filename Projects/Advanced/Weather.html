@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Weather Station</title>
+
+    <!-- Bootstrap -->
+    <link href="../../bootstrap/css/bootstrap.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <!--NAV BAR-->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Arduino World</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li><a href="../../FrontPage/FrontPage.html">Home</a></li>
+
+             <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Learn<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="../../Learn/WhatIsArduino.html">What is Arduino?</a></li>
+                <li class="divider"></li>
+                <li><a href="../../Learn/ElectricityBasics.html">Electricity Basics</a></li>
+                <li class="divider"></li>
+                <li><a href="../../Learn/Hardware.html">Hardware</a></li>
+                <li class="divider"></li>
+                <li><a href="../../Learn/Software.html">Software</a></li>
+              </ul>
+            </li>
+
+             <li class="dropdown active">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="../Beginner/Beginner.html">Beginner</a></li>
+                <li class="divider"></li>
+                <li><a href="../Intermediate/Intermediate.html">Intermediate</a></li>
+                <li class="divider"></li>
+                <li class="active"><a href="Advanced.html">Advanced</a></li>
+                <li class="divider"></li>
+                <li><a href="../Shields/Shields.html">Shields</a></li>
+              </ul>
+            </li>
+
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">More<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="../More/BeyondArduino.html">Beyond Arduino</a></li>
+                <li class="divider"></li>
+                <li><a href="../More/Links.html">Links</a></li>
+                <li class="divider"></li>
+                <li><a href="../More/Contact.html">Contact</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-2 col-md-2">
+          </br></br></br><img class="img-circle" src="Images/weather-0.png" alt="Beginner" style="width: 140px; height: 140px;">
+        </div>
+        <div class="col-xs-10 col-md-10">
+          <div class="page-header">
+            </br></br><h1>Weather Station</br><small>Use sensors to collect information about the current weather and display it to a screen!</small></h1>
+          </div><!--/.page-header-->
+        </div>
+      </div>
+
+      <div class="row"><!--Overview-->
+        <div class="col-xs-12 col-med-12">
+          <h3>Overview</h3>
+          <p>The major component of this exercise is to learn how to interface with multiple sensors and interpret the given information. Like most projects, it can be as easy or complicated as you want. You can simply collect information from your Arduino's current whereabouts, or you can configure it to deliver that information to your computer wirelessly. If you're feeling really adventurous, you can even use the data to control your home thermostat! It's all up to you.</p>
+        </div><!--Overview row-->
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row"><!--Parts-->
+        <div class="col-xs-8 col-med-8">
+          <h3>Essential Sensors</h3>
+          <ol>
+            <li><strong>Temperature: </strong>Of course, the most basic function of any weater station is to tell you the temperature. You can either use the same sensor we used for several of the intermediate projects or get a fancier one that will tell you temperature and humidity.</li>
+            <li><strong>Humidity: </strong>This can go along with your temperature sensor or be a separate component. Especially useful in temperate climates.</li>
+            <li><strong>Barometric pressure: </strong>This is a fancy word for air pressure. Cooler air exerts more pressure than hotter air. Air pressure can also tell you something about the possibility of rain - higher pressure areas are generally sunny, while low pressure areas are likely to be cloudy.</li>
+            <li><strong>Wind speed and direction: </strong>While this can be neat to include, it's a little harder to hook up, mainly because there's no easy way to measure it without a larger component. Wind speed sensors are also known as anemometers. If you're interested, you can build an entire project around creating your own anemometer by, for instance, measuring the voltage difference across two temperature-controlled diodes.</li>
+            <li><strong>Display: </strong>The other main part of any weather station is the console where you can view the collected data. You can use an LCD display, the Serial monitor, or your own custom screen. Just make sure it has enough room to make everything easily readable.</li>
+          </ol>
+        </div>
+        <div class="col-xs-4 col-med-4">
+            <img src="Images/weather-1.jpeg" alt="..." style="width:95%;margin-top:60px;" class="img-thumbnail">
+        </div>
+      </div><!--Parts row-->
+
+    <hr class="featurette-divider">
+
+    <div class="row"><!--Project-->
+      <div class="col-xs-12 col-med-12">
+        <h3>Project Ideas</h3>
+      </div>
+    </div>
+    <div class="row"><!--1st robotics row-->
+      <div class="col-xs-3 col-med-3">
+        </br><img src="Images/weather-2a.png" alt="..." style="width:95%;" class="img-thumbnail">
+      </div>
+      <div class="col-xs-3 col-med-3">
+        </br><h4><a href="http://www.openhomeautomation.net/weather-station-arduino/">Temperature/Humidity: </a></h4>
+        <p>This is the most basic weather station. It measures temperature and humidity and outputs the information to an LCD. Even if you're planning to upgrade your station later, we'd recommend starting with this one to get the basics down.</p></br>
+      </div>
+      <div class="col-xs-3 col-med-3">
+        </br><img src="Images/weather-2b.png" alt="..." style="width:95%;" class="img-thumbnail">
+      </div>
+      <div class="col-xs-3 col-med-3">
+        </br><h4><a href="http://www.instructables.com/id/Arduino-weather-station/">Adding Air Pressure: </a></h4>
+        <p>This station measures barometric pressure as well as temperature and humidity for a bit more complexity. The instrutable also provides information on how to build a nice casing to store your station.</p>
+      </div>
+    </div><!--1st robotics row-->
+    </br><div class="row" style="border-bottom:1px solid #00979c;"></div></br>
+    <div class="row"><!--2nd robotics row-->
+      <div class="col-xs-3 col-med-3">
+        <h4><a href="http://www.instructables.com/id/The-Arduino-Weather-Station-Thermostat/#step0">Thermostat Control: </a></h4>
+        <p>Use this instructable as a template for eventual thermostat control. It takes you as far as determining whether you're outside your comfortable temperature range - from there, you'll need to learn to interface with your own thermostat. This station also relies on a battery pack rather than external power connections.</p>
+      </div>
+      <div class="col-xs-3 col-med-3">
+        <img src="Images/weather-2c.jpg" alt="..." style="width:95%;margin-top:10px;" class="img-thumbnail">
+      </div>
+      <div class="col-xs-3 col-med-3">
+        </br><h4><a href="https://learn.adafruit.com/wifi-weather-station-arduino-cc3000/introduction">WiFi Weather Station: </a></h4>
+        <p>If you'd like to send your data over the web, use this tutorial to get an idea of the protocols involved. This station measures only temperature and humidity, but once you have the web basics down, you can definitely expand its functionality.</p>
+      </div>
+      <div class="col-xs-3 col-med-3">
+        <img src="Images/weather-2d.png" alt="..." style="width:95%;margin-top:25px;" class="img-thumbnail">
+      </div>
+    </div><!--2nd robotics row-->
+
+    <hr class="featurette-divider">
+
+    <div class="row">
+      <div class="col-xs-4 col-med-4">
+        <img src="Images/weather-3.png" alt="..." style="width:95%; margin-top:25px;" class="img-thumbnail">
+      </div>
+      <div class="col-xs-8 col-med-8">
+        <h3>Tips and Tricks</h3>
+        <ul>
+          <li><strong>Casing: </strong>If you're measuring indoor temperature, your weather station can be as exposed as you want. If, however, you're trying to house it outdoors, you'll need to think about protection from the elements. Make sure whatever you use is waterproof and won't blow away easy. Test it beforehand to avoid accidentaly ruining your Arduino later!</li>
+          <li><strong>WiFi connection: </strong>Sending information over the internet is more complicated than you might think. If you're trying to build a WiFi compatible station, make sure you have a good handle on web programming first. The tutorial above suggests basic familiarity with PHP and server protocols before you start. You can check <a href="http://www.codecademy.com/">Codecademy</a> or a similar site to beef up your skills.</li>
+          <li><strong>Noise: </strong>As always, interference is a real problem. For instance, if your temperature sensor is mounted near your batteries, you'll get a higher heat reading than you would otherwise. Plan your layout to ensure minimum interference from component to component.</li>
+          <li><strong>Anemometers: </strong>As previously mentioned, making an anemometer is a project in and of itself. If you want an overview of the different types, check out <a href="http://www.fonema.se/anemom/anemom.html">this article</a> for more information.</li>
+        </ul>
+        <h4>Good luck, and have fun!</h4>
+      </div>
+    </div>
+
+
+
+    </div><!--/.container-->
+
+    </br></br></br>
+    <hr class="featurette-divider">
+    <div id="footer">
+      <div class="container">
+        <p class="text-muted">Built on Bootstrap by Kristen Pownell</p>
+      </div>
+    </div>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../../bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>

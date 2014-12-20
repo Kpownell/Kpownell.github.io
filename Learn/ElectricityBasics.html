@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Electricity</title>
+
+    <!-- Bootstrap -->
+    <link href="../bootstrap/css/bootstrap.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <!--NAV BAR-->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Arduino World</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li><a href="../FrontPage/FrontPage.html">Home</a></li>
+
+             <li class="dropdown active">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Learn<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="WhatIsArduino.html">What is Arduino?</a></li>
+                <li class="divider"></li>
+                <li class="active"><a href="#">Electricity Basics</a></li>
+                <li class="divider"></li>
+                <li><a href="Hardware.html">Hardware</a></li>
+                <li class="divider"></li>
+                <li><a href="Software.html">Software</a></li>
+              </ul>
+            </li>
+
+             <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="../Projects/Beginner/Beginner.html">Beginner</a></li>
+                <li class="divider"></li>
+                <li><a href="../Projects/Intermediate/Intermediate.html">Intermediate</a></li>
+                <li class="divider"></li>
+                <li><a href="../Projects/Advanced/Advanced.html">Advanced</a></li>
+                <li class="divider"></li>
+                <li><a href="../Projects/Shields/Shields.html">Shields</a></li>
+              </ul>
+            </li>
+
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">More<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="../More/BeyondArduino.html">Beyond Arduino</a></li>
+                <li class="divider"></li>
+                <li><a href="../More/BeyondArduino.html">Links</a></li>
+                <li class="divider"></li>
+                <li><a href="../More/Contact.html">Contact</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+
+   <div class="container">
+    <div class="row">
+      <div class="col-xs-2 col-md-2">
+        </br></br></br><img class="img-circle" src="Images/electricity-header.jpg" alt="Learn" style="width: 140px; height: 140px;">
+      </div>
+      <div class="col-xs-10 col-md-10">
+        <div class="page-header">
+          </br></br><h1>Electricity Basics</br><small>What makes a circuit work, anyway?</small></h1>
+        </div><!--/.page-header-->
+      </div>
+    </div>
+      <div class="panel-group" id="accordion">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                Overview
+              </a>
+            </h4>
+          </div>
+          <div id="collapseOne" class="panel-collapse collapse in">
+            <div class="panel-body">
+              If you're a little rusty on your physics, use this page to get a quick overview of all the electricity and magnetism we'll need for our projects. If you've forgotten an equation, check out the reference at the bottom of the page for help.
+            </div>
+          </div>
+        </div>
+        <!--break-->
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                What Is Electricity?
+              </a>
+            </h4>
+          </div>
+         <!--break-->
+          <div id="collapseTwo" class="panel-collapse collapse">
+            <div class="panel-body">
+              <div class="row">
+                <div class="col-xs-8 col-med-8">
+                  To explain electricity, we have to go back to the basic model of an atom. Atoms are made up of protons (positively charged particles), neutrons (neutral particles), and electrons (negatively charged particles). The protons and neutrons stick together to make up the nucleus, which is responsible for most of the atom’s mass. The electrons, which are much lighter, spin around the nucleus in an electron cloud. Sometimes, electrons which are more loosely attracted to the nucleus will break off and float towards another atom. This flow of electrons is called current.
+                  </br></br>
+                  All atoms want to be balanced – to have an equal number of protons and electrons. When they loose an electron, they become positively charged. Opposites attract, so any loose electrons will flow towards the positive atom in order to return it to a neutral state. The force of attraction between two oppositely charged materials decreases with the square root of distance – the farther apart two charged materials are, the less they’ll attract. This attraction between positively and negatively charged materials is called electric force. Electricity is the general term used to describe all the phenomena associated with electric force – flow of current, built-up charge, stored field energy, etc. There are several conflicting descriptions, but in general, when you’re talking about electricity, you’re talking about electrons moving back and forth to balance out atoms.
+                </div><!--col-->
+                <div class="col-xs-4 col-med-4">
+                  <img src="Images/electricity-1.png" alt="Arduino" class="img-thumbnail" style="margin:10px;">
+                </div><!--col-->
+              </div><!--row-->
+            </div><!--panel-body-->
+          </div><!--collapseTwo-->
+        </div><!--panel-->
+        <!--break-->
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+                More About Charge
+              </a>
+            </h4>
+          </div>
+          <div id="collapseThree" class="panel-collapse collapse">
+            <div class="row">
+              <div class="col-xs-4 col-med-4">
+                 <img src="Images/electricity-2.png" alt="Arduino" class="img-thumbnail" style="margin-top:10px; margin-bottom:5px; margin-left:20px;">
+               </div>
+               <div class="col-xs-8 col-med-8">
+                <div class="panel-body">
+                  </br>
+                  You can transfer charge either by conduction (charged object directly touches another) or induction (charging without touch). In inductive charging, you bring a charged object close enough to the other that it attracts the opposite charge without actually moving it over. Imagine that protons are pro-Bieber fans, and electrons are anti-Bieber. If Justin Bieber walks down a street, all the fans on the other side of the street will come close to the curb, while all the others will move farther away. If an earthquake suddenly split the sidewalk, you’d have one section charged with extreme pro-Bieber sentiment and another charged with anti-Bieber sentiment – that’s charging by induction. If there was a crosswalk halfway through and all the fans ran over to the other side of the street, that would be charging by conduction, because the two sidewalks are now touching.
+                  </br></br>
+                  Charge, or the amount of excess protons or electrons in an atom, is measured in coulombs. One coulomb is about 6.242x1018 times the charge of one proton, and one proton has 1.602x1019 coulombs of charge. Electrons have the same charge as protons, but negative – one electron has -1.602x1019 coulombs of charge. We abbreviate coulomb as C and use the variable Q in equations when the amount of charge is unknown.
+                </div>
+              </div><!--col-->
+            </div><!--row-->
+          </div>
+        </div>
+        <!--break-->
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
+                A Note on Current
+              </a>
+            </h4>
+          </div>
+          <div id="collapseFour" class="panel-collapse collapse">
+            <div class="row">
+              <div class="col-xs-8 col-med-8">
+                <div class="panel-body">
+                  Current is technically created by the flow of electrons, but when we write equations with current, we define it as the flow of positive charges. In real life, these positive charges don’t exist – protons are stuck to the nucleus and can’t move. However, having only positive quantities makes the math a lot simpler. Basically, measured current moves in the opposite direction that electrons actually flow. If you’re confused, just forget about electrons and think only in terms of positive quantities. That’s all we’ll be using from now on. 
+                  </br></br>
+                  You may also have heard about conductors vs. insulators. In conductive materials such as metal, the electrons are very loosely bonded so it’s easy for large amounts of electrons to move around. In insulators like rubber or cloth, the electrons can’t move as easily. Water is a conductor, which is why you’re never supposed to be in a pool during a thunderstorm. Some materials are also semiconductors, which have a conductive ability in between that of conductors and insulators. Understanding semiconductors involves a lot of complicated quantum mechanics, so we won’t go into it here, but you should know that semiconductors make basically all modern electronics possible.
+                  </br></br>
+                  The unit we use for current is Amperes (A). Amperes measure the amount of charge that passes through a point in a set amount of time. One ampere is equal to one coulomb moving past in one second. We use the variable I to define unknown currents in equations.
+                </div>
+              </div>
+              <div class="col-xs-4 col-med-4">
+                <img src="Images/electricity-3.gif" alt="Arduino" class="img-thumbnail" style="margin-top:80px; margin-right:10px;width:95%;">
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--break-->
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapseFive">
+                Electric Fields
+              </a>
+            </h4>
+          </div>
+          <div id="collapseFive" class="panel-collapse collapse">
+            <div class="row">
+              <div class="col-xs-4 col-med-4">
+                <img src="Images/electricity-4.png" alt="Arduino" class="img-thumbnail" style="margin-top:5px; margin-bottom:5px;margin-left:40px; margin-right:5px;">
+              </div>
+              <div class="col-xs-8 col-med-8">
+                <div class="panel-body">
+                  Any charged particle will exert a force on other charged particles. That’s electric force. But what if you take the second charge away? The first still has the potential to exert charge on something, even if there’s nothing there right now. That ability to exert force is called an electric field. It’s the amount of force that the particle would exert on a hypothetical unit electric charge at a given distance. Electric fields behave differently for different types of charged materials. For point charges, they expand outwards radially in all directions. For infinite sheets of charge, they emanate in a single direction perpendicular to the field. For irregular objects, the fields from different parts interfere and create interesting effects. 
+                  </br></br>
+                  The strength of an electric field is measured in units of Newtons per coulomb – the amount of force that it would exert on a single charge if placed into the field. Electric fields exist at all points around a charged object but are generally depicted with radial lines just so it’s easier to draw.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--break-->
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapseSix">
+                Voltage
+              </a>
+            </h4>
+          </div>
+          <div id="collapseSix" class="panel-collapse collapse">
+            <div class="row">
+              <div class="col-xs-8 col-med-8">
+                <div class="panel-body">
+                  Voltage is the official term for electric potential difference. If you’ve ever taken mechanics, you know that potential energy is stored energy, energy that isn’t being used right now but is available later if needed. Gravitational potential energy, for example, increases as your altitude increases because you’ll be able to reach a higher velocity going down. Electric potential energy works similarly, but with charge instead of height. If you pile up more and more electrons in one area, they’ll repel each other more and more strongly, so when you let them go, they’ll release more energy moving apart. 
+                  </br></br>
+                  We define voltage as potential difference instead of potential energy because it’s hard to tell when something has absolutely zero energy. It’s a lot easier and more meaningful to measure voltages relative to each other instead. We can tell how much energy something gains or loses when it moves between two points. Voltage is the work done per unit charge to move a charge in an electric field. Voltage can exist between two points even if there’s no charge there right now – hypothetically, if you moved charge from one place to another, you would create an energy difference equal to that voltage.
+                </div>
+              </div>
+              <div class="col-xs-4 col-med-4">
+               <img src="Images/electricity-5.jpg" alt="Arduino" class="img-thumbnail" style="width:95%; margin:10px;">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-4 col-med-4">
+               <img src="Images/electricity-6.jpg" alt="Arduino" class="img-thumbnail" style="margin:10px;">
+              </div>
+              <div class="col-xs-8 col-med-8">
+                <div class="panel-body">
+                  </br>
+                  You can think of voltages like the pressure in a hose. If there’s higher pressure (voltage) at one end, water (current) will flow out of that end towards the other. If there’s higher pressure, the water will be moving with greater energy and will be able to do more work. If there’s no pressure difference between the two ends of the hose, there’s nothing to make the water move, and it will just sit there.
+                  </br></br>
+                  Voltage is, of course, measured in volts (V). The actual definition of volts is a little complicated – one volt is the difference in electric potential between the two ends of a conducting wire when a current of one amp dissipates one watt of power between the ends. You’ll get more familiar with normal voltage measurements as we move along. AA batteries are 1.5 volts, the big D batteries are 9 volts, and most wall plugs are 220.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--break-->
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapseSeven">
+                Resistance and Ohm's Law
+              </a>
+            </h4>
+          </div>
+          <div id="collapseSeven" class="panel-collapse collapse">
+            <div class="row">
+              <div class="col-xs-8 col-med-8">
+                <div class="panel-body">
+                </br></br>
+                  Resistance is pretty much exactly what it sounds like – a measurement of how strongly materials push back against the flow of current. Resistance increases with length and decreases with cross-sectional area. Going back to the hose analogy, adding resistance is like sticking a rock in the middle of the pipe to slow down the flow of water. Electrons have to use up energy to push through the resistance. All resistive elements dissipate power in proportion to the amount of current and resistance in the material. Every material, whether conductive or not, has resistance, even if it’s very low. Sometimes, resistance can be a bad thing, especially if there’s too much of it. However, sometimes we need resistors to avoid overloading components like LEDs or speakers. Resistance, like any fundamental property, can be helpful or harmful depending on the context.
+                  </br></br>
+                  The unit of resistance is ohms (Ω). One ohm is defined as the resistance between two points of a conductor when a constant potential difference of one volt produces a current of one amp. Ohm is shorthand for volts/amp. This leads us into Ohm’s Law, which is a very useful equation that relates voltage, current, and resistance. Ohm’s law in short form is written as V = IR, voltage is equal to current times resistance. Given a circuit with constant voltage, we can use this equation to determine how much current will flow if we add different resistance values. Ohm’s law only applies to linear elements, but it’s still very useful for analyzing many circuits.
+                </div>
+              </div>
+              <div class="col-xs-4 col-med-4">
+                <img src="Images/electricity-7.jpg" alt="Arduino" class="img-thumbnail" style="margin-right:20px; margin-top:10px; margin-bottom:10px; width:95%;">
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--break-->
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapseEight">
+                Circuit Basics and Kirchoff's Laws
+              </a>
+            </h4>
+          </div>
+          <div id="collapseEight" class="panel-collapse collapse">
+            <div class="row">
+              <div class="col-xs-4 col-med-4">
+                <img src="Images/electricity-8.png" alt="Arduino" class="img-thumbnail" style="margin-top:25px; margin-left:60px;">
+              </div>
+              <div class="col-xs-8 col-med-8">
+                <div class="panel-body">
+                  A circuit is a closed loop around which current can flow. You can put any elements you want into a circuit – batteries, resistors, lights, speakers, etc – as long as the current has a path to get from start to end. There also has to be a voltage difference at some point, or else the current won’t move. Other than that, there can be branches, twists, loops – anything you want.
+                  </br></br>
+                  We already talked about Ohm’s Law as one of the major equations governing circuit behavior. There are two other laws that you’ll use a lot when looking at circuits – Kirchoff’s Voltage and Current Laws. Kirchoff’s Voltage Law (abbreviated as KVL) states that for any path around a circuit, the sum of voltages (increasing through batteries and decreasing through resistors) must add to zero. This is basically conservation of energy – you can’t go around a loop and wind up with more energy than where you started. You can think of voltages like hills, where higher voltage means higher altitude. If you don’t start and end at the same level, you’ll have an awkward gap in height, and the circuit won’t work.  
+                  </br></br>
+                  Kirchoff’s Current Law (KCL) is also basically common sense. It states that the current entering a node must equal the current leaving a node. Generally, a node is defined as the connection between two branches of a circuit, like a fork in the road. If three people go into the fork, three people have to come out. It’s fine if two go down one path and one goes down another, as long as you don’t have four people popping out of nowhere or someone falling into a sinkhole or something. Now that you know KCL, KVL, and Ohm’s Law, you can analyze most basic circuits. Congratulations!
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--break-->
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapseNine">
+                Series vs. Parallel
+              </a>
+            </h4>
+          </div>
+          <div id="collapseNine" class="panel-collapse collapse">
+            <div class="row">
+              <div class="col-xs-8 col-med-8">
+                <div class="panel-body">
+                  Sometimes, circuits go around in a straight loop, but most of the time, they’ll branch somewhere. A circuit that goes in a straight line, so the current has only one path to travel, is called a series circuit. A circuit where the current has a couple choices about where to go is called a parallel circuit. You can also combine the two, like if you have one path with two resistors and another with one.
+                  </br></br>
+                  Series circuits are pretty straightforward. If you have multiple resistances along a path, they’ll add together. Current through a series circuit is constant through all elements. In a parallel circuit, things get a little more complicated. If you have two branches with a 50-ohm resistor in one and a 100-ohm resistor in the other, you don’t have to have the same current down each branch. You have to have identical voltages, though. Think back to the hill analogy – if you go down one hill that’s 3 ft tall and your friend goes down one that’s 10 ft tall, you won’t be able to meet back up again at the end. If you have the same voltage but different resistances, according to Ohm’s Law, the currents have to be different. More current will flow down the path with the least resistance. Remember KCL, though – all the current that goes in the branch has to come out of the branch, too.
+                </div>
+              </div>
+              <div class="col-xs-4 col-med-4">
+                <img src="Images/electricity-9.png" alt="Arduino" class="img-thumbnail" style="width:95%; margin-top:30px; margin-right:25px;">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-4 col-med-4">
+                <img src="Images/electricity-10.png" alt="Arduino" class="img-thumbnail" style="margin-top:10px; margin-bottom:10px; width:95%; margin-left:25px;">
+              </div>
+              <div class="col-xs-8 col-med-8">
+                <div class="panel-body">
+                  What if you want to combine a parallel branch to make it into a series branch? You can definitely do that. Resistances in parallel add in inverse – the total resistance is equal to 1/(sum of 1/each resistance). For example, for our 50-ohm and 100-ohm branches, the total resistance would be 1/(1/50 + 1/100), or 33.3 ohms. In general, parallel branches will decrease your total amount of resistance. Another cool thing about parallel branches is that they’ll prevent your entire circuit from breaking if one element goes out. In a string of Christmas lights, for example, if you lay them out in series and one goes out, the current will be stuck at the breakage and none of the lights will go on. In parallel, though, the current can just go around another way. The single light will go out, but none of the rest will. We’ll be using a combination of parallel and series circuits to implement our projects later on.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--break-->
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapseTen">
+                DC vs. AC Current
+              </a>
+            </h4>
+          </div>
+          <div id="collapseTen" class="panel-collapse collapse">
+            <div class="row">
+              <div class="col-xs-8 col-med-8">
+                <div class="panel-body">
+                </br>
+                  DC stands for Direct Current. It’s constant and never changes. Batteries use DC current to ensure a consistent voltage supply – the difference from positive to negative end is always 1.5V, and the current only ever flows in one direction.
+                  </br></br>
+                  AC stands for Alternating Current. This type of current is a little more complicated because it’s always changing direction. If you graph the direction of current, it comes out like a sine wave that goes up and down. Sometimes the current is going all in one direction, sometimes all in the other, and sometimes it’s switching so there’s less current coming out. Wall sockets use alternating current because it’s a lot easier to transform voltages with AC current instead of DC. You’ll also generally hear about the frequency of AC current, which is the speed at which it switches from one direction to another. Most of our applications on this site will use DC current, but it’s nice to know about AC current as well.
+                </div>
+              </div>
+              <div class="col-xs-4 col-med-4">
+                <img src="Images/electricity-11.jpg" alt="Arduino" class="img-thumbnail" style="margin:10px; width:95%;">
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--break-->
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapseEleven">
+                Capacitors and Inductors
+              </a>
+            </h4>
+          </div>
+          <div id="collapseEleven" class="panel-collapse collapse">
+            <div class="row">
+              <div class="col-xs-4 col-med-4">
+                <img src="Images/electricity-12.jpg" alt="Arduino" class="img-thumbnail" style="margin-left:20px; margin-top:30px;">
+              </div>
+              <div class="col-xs-8 col-med-8">
+                <div class="panel-body">
+                  Capacitors and inductors are able to store energy rather than simply dissipate it. Capacitors store energy in an electric field while inductors store energy in a magnetic field. Most capacitors are made with two parallel plates. As charge builds up on one plate, the other plate is charged by induction and creates an equal current flow on the other side. When the voltage across the plates is equal to the voltage in the battery, the capacitor is fully charged and current stops flowing. You can connect a circuit with a charged capacitor and without a battery, and current will still flow. Capacitors are described by capacitance, which is the ratio of charge on the plates to voltage between them (C = Q/V).  Current across a capacitor is equal to the capacitance times the rate of change of the voltage (I(t) = C*dV/dt). This means that current can’t change instantaneously but has to increase gradually as the capacitor charges.
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-8 col-med-8">
+                <div class="panel-body">
+                  Inductors are made from loops of wire. When current passes through the wire, it creates a magnetic field that tries to slow down current. Just like a capacitor is characterized by capacitance, an inductor is characterized by inductance, which is the ratio of voltage to rate of change of current (L = V/(dI/dt), or V = L*dI/dt). Inductance increases with number of turns and cross-sectional area and decreases with length. It’s measured in units of henries (H), where an inductance of 1 henry produces a flux of 1V when the current changes at a rate of 1 A/sec. When using an inductor, it’s impossible for the voltage to change instantaneously because the current can’t have an infinite range of increase – it has to grow slowly over time, like currents in capacitors.
+                </div>
+              </div>
+              <div class="col-xs-4 col-med-4">
+                <img src="Images/electricity-13.png" alt="Arduino" class="img-thumbnail" style="margin-right:20px; margin-bottom:10px; width:95%">
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--break-->
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwelve">
+                Circuit Symbols and Relevant Equations
+              </a>
+            </h4>
+          </div>
+          <div id="collapseTwelve" class="panel-collapse collapse">
+            <div class="row">
+              <div class="panel-body">
+                  (Insert Later)
+              </div>
+            </div>
+          </div>
+        </div>
+
+        
+    </div><!--/.container-->
+
+    </br></br></br>
+
+    <div id="footer">
+      <div class="container">
+        <p class="text-muted">Built on Bootstrap by Kristen Pownell</p>
+      </div>
+    </div>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Electronic Harmonica</title>
+
+    <!-- Bootstrap -->
+    <link href="../../bootstrap/css/bootstrap.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <!--NAV BAR-->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Arduino World</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li><a href="../../FrontPage/FrontPage.html">Home</a></li>
+
+             <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Learn<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="../../Learn/WhatIsArduino.html">What is Arduino?</a></li>
+                <li class="divider"></li>
+                <li><a href="../../Learn/ElectricityBasics.html">Electricity Basics</a></li>
+                <li class="divider"></li>
+                <li><a href="../../Learn/Hardware.html">Hardware</a></li>
+                <li class="divider"></li>
+                <li><a href="../../Learn/Software.html">Software</a></li>
+              </ul>
+            </li>
+
+             <li class="dropdown active">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li class="active"><a href="Beginner.html">Beginner</a></li>
+                <li class="divider"></li>
+                <li><a href="../Intermediate/Intermediate.html">Intermediate</a></li>
+                <li class="divider"></li>
+                <li><a href="../Advanced/Advanced.html">Advanced</a></li>
+                <li class="divider"></li>
+                <li><a href="../Shields/Shields.html">Shields</a></li>
+              </ul>
+            </li>
+
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">More<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="../More/BeyondArduino.html">Beyond Arduino</a></li>
+                <li class="divider"></li>
+                <li><a href="../More/Links.html">Links</a></li>
+                <li class="divider"></li>
+                <li><a href="../More/Contact.html">Contact</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-2 col-md-2">
+          </br></br></br><img class="img-circle" src="Images/harmonica-0.jpeg" alt="Beginner" style="width: 140px; height: 140px;">
+        </div>
+        <div class="col-xs-10 col-md-10">
+          <div class="page-header">
+            </br></br><h1>Electronic Harmonica</br><small>Make your own musical instrument!</small></h1>
+          </div><!--/.page-header-->
+        </div>
+      </div>
+
+      <div class="row"><!--Materials-->
+        <div class="col-xs-7 col-med-7">
+          <img src="Images/harmonica-1.png" alt="..." style="width:95%; margin:10px;" class="img-thumbnail">
+        </div>
+        <div class="col-xs-5 col-med-5">
+          <h3></br></br></br></br></br>Materials</h3>
+          <ul>
+            <li>Arduino Uno</li>
+            <li>Breadboard and wires</li>
+            <li>10 kohm slide or rotary potentiometer</li>
+            <li>8 ohm small speaker</li>
+            <li>100 ohm resistor</li>
+          </ul>
+        </div><!--Materials row-->
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row"><!--Breadboard layout-->
+        <div class="col-xs-5 col-med-5">
+          <h3>Breadboard Layout</h3>
+          <ol>
+            <li><strong>Potentiometer to breadboard: </strong>A potentiometer is a variable resistor. Depending on where the slide is, the resistance can be anywhere from 0 to 10kohm. We've used a rotary potentiometer in the diagram to save space, but the slide type will make it look more like a harmonica. There are three legs on the potentiometer - one for power, one for ground, and one that acts as a voltage divider with only some resistance. Connect the divider leg (it should be separated from the others) to pin A0 on the Arduino and the other two to power and ground.</li>
+            <li><strong>Speaker: </strong>The speaker, like the RGB LED in the dimmer project, needs to be connected to the PWM pins to work properly. Connect pin 9 on the Arduino to the speaker and then through the 100-ohm resistor to ground.</li>
+            <li><strong>You're done! </strong>The set-up for this is pretty basic, so you're already finished! Plug your Arduino into the USB port on your computer.</li>
+          </ol>
+        </div>
+        <div class="col-xs-7 col-med-7">
+            <img src="Images/harmonica-2.png" alt="..." style="width:95%; margin-top:20px;" class="img-thumbnail">
+        </div>
+      </div><!--Breadboard layout row-->
+
+    <hr class="featurette-divider">
+
+    <div class="row"><!--Software-->
+      <div class="col-xs-4 col-med-4">
+        <img src="Images/harmonica-3.png" alt="..." style="width:95%; margin-top:125px;" class="img-thumbnail">
+      </div>
+      <div class="col-xs-8 col-med-8">
+        <h3>Software</h3>
+        <ol>
+          <li><strong>Getting started: </strong>Create a new sketch and initalize variables to store your potentiometer and speaker pins. In the setup method, set your potentiometer to be input and the speaker to be output.</li>
+          <li><strong>Using pitches: </strong>To play notes on your speaker, you're going to need to use the tone library, which takes in note frequencies as an argument. As you can imagine, it's difficult to remember the different frequences of every single note you want to use. Instead, we're going to import a file that already has the frequencies defined for us. Copy-paste the <a href="pitches.html">pitches.h file</a> and save it in the same folder as your harmonica sketch so your program can access it. Then, in your main sketch, write #include 'pitches.h' at the top. Now you can write NOTE_C4 instead of remembering that the exact frequency is 262 Hz.</li>
+          <li><strong>Choose your notes: </strong>For this program, we're not going to slide between all the available notes, or you'll get overwhelmed. Instead, we'll just choose 9 to store an octave scale. At the top of your program, declare an array to store your chosen notes: int notes[] = {NOTE_C4...NOTE_C5} (make sure you actually write out all the notes). This will save us from having to use a gigantic if-else block later.</li>
+          <li><strong>Read and convert potentiometer input: </strong>If you did the dimmer project, you already have practice with reading in analog values and converting them to analog output. The potentiometer creates a voltage divider just like the photoresistor did, so we'll get voltage outputs between half voltage (512) and full voltage (1023). Instead of converting these values to 0-255, we'll use 0-8 so we can easily get the corresponding note out of our array. You can even do it all in one line: int value = map(analogRead(potPin), 512, 1023, 0, 8).</li>
+          <li><strong>Output to speaker: </strong>Use the tone method to output your value to the speaker. We won't include a duration because we want the harmonica to be continually playing, so just write tone(speakerPin, notes[value]). This will get the correct note from your array and give the corresponding frequency from pitches.h to the speaker.</li>
+          <li><strong>Running the program: </strong>Upload your program and slide the potentiometer back and forth to see what happens! If the speaker is too loud or too soft, try changing the resistor value - higher = softer, lower = louder. Different size speakers need different resistances, so mess around until you find the one that works for you.</li>
+          <li><strong>Experiment: </strong>You can change the notes, add more or fewer, put in a song, or try using duration so your harmonica isn't always on. You can also try adding a switch so you can change the octave or turn the harmonica off.</li>
+        </ol>
+      </div>
+    </div><!--Software row-->
+
+    <hr class="featurette-divider">
+
+    <div class="row">
+      <div class="col-xs-8 col-xs-offset-2 col-med-8 col-med-offset-2">
+        <h3>The Finished Product</h3>
+        <video controls loop src="Images/harmonica.mp4" style="width:100%;"></video>
+      </div>
+    </div>
+
+    </div><!--/.container-->
+
+    </br></br></br>
+
+    <hr class="featurette-divider">
+
+    <div id="footer">
+      <div class="container">
+        <p class="text-muted">Built on Bootstrap by Kristen Pownell</p>
+      </div>
+    </div>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../../bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Alarm Clock</title>
+
+    <!-- Bootstrap -->
+    <link href="../../bootstrap/css/bootstrap.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <!--NAV BAR-->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Arduino World</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li><a href="../../FrontPage/FrontPage.html">Home</a></li>
+
+             <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Learn<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="../../Learn/WhatIsArduino.html">What is Arduino?</a></li>
+                <li class="divider"></li>
+                <li><a href="../../Learn/ElectricityBasics.html">Electricity Basics</a></li>
+                <li class="divider"></li>
+                <li><a href="../../Learn/Hardware.html">Hardware</a></li>
+                <li class="divider"></li>
+                <li><a href="../../Learn/Software.html">Software</a></li>
+              </ul>
+            </li>
+
+             <li class="dropdown active">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="../Beginner/Beginner.html">Beginner</a></li>
+                <li class="divider"></li>
+                <li><a href="../Intermediate/Intermediate.html">Intermediate</a></li>
+                <li class="divider"></li>
+                <li class="active"><a href="Advanced.html">Advanced</a></li>
+                <li class="divider"></li>
+                <li><a href="../Shields/Shields.html">Shields</a></li>
+              </ul>
+            </li>
+
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">More<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="../More/BeyondArduino.html">Beyond Arduino</a></li>
+                <li class="divider"></li>
+                <li><a href="../More/Links.html">Links</a></li>
+                <li class="divider"></li>
+                <li><a href="../More/Contact.html">Contact</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-2 col-md-2">
+          </br></br></br><img class="img-circle" src="Images/clock-0.jpg" alt="Beginner" style="width: 140px; height: 140px;">
+        </div>
+        <div class="col-xs-10 col-md-10">
+          <div class="page-header">
+            </br></br><h1>Alarm Clock</br><small>Create an alarm clock that can play music, talk to you, and more!</small></h1>
+          </div><!--/.page-header-->
+        </div>
+      </div>
+
+      <div class="row"><!--Overview-->
+        <div class="col-xs-12 col-med-12">
+          <h3>Overview</h3>
+          <p>Imagine waking up to a device of your own creation. That's exactly what you can do with these clock tutorials! The possibilities for an alarm clock are endless - you can simply display the time and date, or you can add music, voice, or even internet connectivity to jazz up your morning.</p>
+        </div><!--Overview row-->
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row"><!--Parts-->
+        <div class="col-xs-8 col-med-8">
+          <h3>Things to Know</h3>
+          <ul>
+            <li><strong>The Time Library: </strong>If you'd like to build a solely software-powered alarm clock, you don't need anything more than a standard Arduino. The Arduino board contains a quarz crystal for timing. This crystal keeps track of the amount of time since it was last turned on. This is great for most programs, but for telling time, it has the downside of resetting every time you unplug it. If you're going to keep your clock powered on all the time, though, you can just use the Time library for simplification. For more information and to download the library, click <a href = "http://playground.arduino.cc/code/time">here.</a></li>
+            <li><strong>Real time clock: </strong>An RTC is a chip that keeps track of time even when your Arduino is turned off or unplugged. It runs on a coin cell battery that's separate from the Arduino power system, so as long as its battery works, it will tick along perfectly. You can find an example of a commonly used RTC <a href="http://playground.arduino.cc/Main/DS1302">here.</a></li>
+            <li><strong>Alarm components: </strong>You can make your alarm however you want - buzzer, voice recording, radio, etc. Probably the simplest would just be a piezo buzzer, but if you'd like something more complicated, you can even try internet connectivity. Decide which components you want before you start.</li>
+          </ul>
+        </div>
+        <div class="col-xs-4 col-med-4">
+            <img src="Images/clock-1.jpg" alt="..." style="width:95%;margin-top:15px;" class="img-thumbnail">
+        </div>
+      </div><!--Parts row-->
+
+    <hr class="featurette-divider">
+
+    <div class="row"><!--Project-->
+      <div class="col-xs-12 col-med-12">
+        <h3>Project Ideas</h3>
+      </div>
+    </div>
+    <div class="row"><!--1st robotics row-->
+      <div class="col-xs-3 col-med-3">
+        </br><img src="Images/clock-2a.jpg" alt="..." style="width:95%;" class="img-thumbnail">
+      </div>
+      <div class="col-xs-3 col-med-3">
+        </br><h4><a href="http://www.instructables.com/id/Motion-Sensitive-LCD-Real-Time-ClockAlarmTimer/#step0">Motion-Sensitive Alarm Clock: </a></h4>
+        <p>This alarm clock is a generally basic project - buzzer and LCD display - but it has the added perk of a motion sensor so the diplay turns off when you're not in the room. It can easily be customized if you want to add on later.</p></br>
+      </div>
+      <div class="col-xs-3 col-med-3">
+        </br><img src="Images/clock-2b.jpg" alt="..." style="width:95%;" class="img-thumbnail">
+      </div>
+      <div class="col-xs-3 col-med-3">
+        </br><h4><a href="http://www.instructables.com/id/Make-a-Talking-Clock/">Talking clock: </a></h4>
+        <p>If you'd like to record a voice message to wake you up, this tutorial will show you how to combine an RTC with an SD card. You can save multiple files for multiple days as well. The SD card will increase the Arduino's memory enough to be able to save the sound samples.</p>
+      </div>
+    </div><!--1st robotics row-->
+    </br><div class="row" style="border-bottom:1px solid #00979c;"></div></br>
+    <div class="row"><!--2nd robotics row-->
+      <div class="col-xs-3 col-med-3">
+        </br><h4><a href="http://zeedijker.blogspot.com/2011/11/arduino-alarm-clock-with-wake-up-light.html">Radio clock: </a></h4>
+        <p>If you'd like to wake up to your favorite radio station, try out this tutorial. The author has a lot of ideas, so the article is still in progress and continually being updated. He also has instructions on how to build a nice box to keep your electronics in.</p>
+      </div>
+      <div class="col-xs-3 col-med-3">
+        <img src="Images/clock-2c.png" alt="..." style="width:95%;margin-top:15px;" class="img-thumbnail">
+      </div>
+      <div class="col-xs-3 col-med-3">
+        </br><h4><a href="http://makezine.com/projects/s-m-a-r-t-alarm-clock/">Internet-connected clock: </a></h4>
+        <p>This clock uses the Arduino Yun, which provides for internet connectivity, instead of the Uno, but it's still super cool. It syncs with your google calendar to set alarms based on what you have going on the next day. Instead of a normal LCD display, it uses a touchscreen shield for added functionality.</p>
+      </div>
+      <div class="col-xs-3 col-med-3">
+        <img src="Images/clock-2d.png" alt="..." style="width:95%;margin-top:15px;" class="img-thumbnail">
+      </div>
+    </div><!--2nd robotics row-->
+
+    <hr class="featurette-divider">
+
+    <div class="row">
+      <div class="col-xs-4 col-med-4">
+        <img src="Images/clock-3.jpg" alt="..." style="width:95%; margin-top:35px;" class="img-thumbnail">
+      </div>
+      <div class="col-xs-8 col-med-8">
+        <h3>Tips and Tricks</h3>
+        <ul>
+          <li><strong>Adding music: </strong>If you looked at the tutorial for the talking alarm clock, you'll know that it used an SD card instead of just storing sound in the Arduino. The reason for this is that memory on the Arduino is pretty limited. It's great for small programs, but for anything larger, you'll need external storage. SD card readers are a good way to increase your memory capacity.</li>
+          <li><strong>Formatting the time: </strong>Most RTCs will come with a specific protocol for accessing the hour, minute, and second. You should be able to find this easily online. Most project instructions will include pre-written code that you can download and modify as necessary.</li>
+          <li><strong>Clock enclosure: </strong>If you're going to be using your clock every day, you'll probably want it to look nice instead of like a jumble of wires. When you're picking your parts, try to choose ones that will fit into a reasonably sized space so you can build a sleek box to keep them in later.</li>
+        </ul>
+        <h4>Good luck, and have fun!</h4>
+      </div>
+    </div>
+
+
+
+    </div><!--/.container-->
+
+    </br></br></br>
+    <hr class="featurette-divider">
+    <div id="footer">
+      <div class="container">
+        <p class="text-muted">Built on Bootstrap by Kristen Pownell</p>
+      </div>
+    </div>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../../bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>

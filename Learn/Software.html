@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Software</title>
+
+    <!-- Bootstrap -->
+    <link href="../bootstrap/css/bootstrap.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <!--NAV BAR-->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Arduino World</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li><a href="../FrontPage/FrontPage.html">Home</a></li>
+
+             <li class="dropdown active">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Learn<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="WhatIsArduino.html">What is Arduino?</a></li>
+                <li class="divider"></li>
+                <li><a href="ElectricityBasics.html">Electricity Basics</a></li>
+                <li class="divider"></li>
+                <li><a href="Hardware.html">Hardware</a></li>
+                <li class="divider"></li>
+                <li class="active"><a href="#">Software</a></li>
+              </ul>
+            </li>
+
+             <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="../Projects/Beginner/Beginner.html">Beginner</a></li>
+                <li class="divider"></li>
+                <li><a href="../Projects/Intermediate/Intermediate.html">Intermediate</a></li>
+                <li class="divider"></li>
+                <li><a href="../Projects/Advanced/Advanced.html">Advanced</a></li>
+                <li class="divider"></li>
+                <li><a href="../Projects/Shields/Shields.html">Shields</a></li>
+              </ul>
+            </li>
+
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">More<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="../More/BeyondArduino.html">Beyond Arduino</a></li>
+                <li class="divider"></li>
+                <li><a href="../More/Links.html">Links</a></li>
+                <li class="divider"></li>
+                <li><a href="../More/Contact.html">Contact</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+
+   <div class="container">
+    <div class="row">
+      <div class="col-xs-2 col-md-2">
+        </br></br></br><img class="img-circle" src="Images/software-header.jpg" alt="Learn" style="width: 140px; height: 140px;">
+      </div>
+      <div class="col-xs-10 col-md-10">
+        <div class="page-header">
+          </br></br><h1>Software</br><small>Let's get coding!</small></h1>
+        </div><!--/.page-header-->
+      </div>
+    </div>
+      <div class="panel-group" id="accordion">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                Overview
+              </a>
+            </h4>
+          </div>
+          <div id="collapseOne" class="panel-collapse collapse in">
+            <div class="panel-body">
+              Arduino code is written in Processing, a language based loosely on Java. If you know Java, it’s not that hard to get the hang of; there are just a few Arduino-specific quirks you need to learn. We won’t cover programming basics on this page, but we will go into the quirks. Hope this helps!
+            </div>
+          </div>
+        </div>
+        <!--break-->
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                Starting a Sketch
+              </a>
+            </h4>
+          </div>
+         <!--break-->
+          <div id="collapseTwo" class="panel-collapse collapse">
+            <div class="row">
+              <div class="col-xs-8 col-med-8">
+                <div class="panel-body">
+                  </br>In the Arduino world, each separate class is saved in a sketch. When you download the Arduino software, it comes with a bunch of example sketches – check under File >> Examples. To test your Arduino with no hardware, open the Blink sketch. You can click the check mark in the upper left corner to make sure all the syntax looks good, then press the sideways arrow to upload the sketch to your Arduino. A loading bar will appear in the bottom of the sketch screen. If something goes wrong, it’ll give you an error message at the bottom. Once your sketch is uploaded, it’s saved in the Arduino’s memory and will run whenever your Arduino has power. Easy, right?
+                </div>
+              </div><!--col-->
+              <div class="col-xs-4 col-med-4">
+                <img src="Images/software-1.png" alt="Arduino" class="img-thumbnail" style="margin-top:10px;margin-bottom:10px; margin-right:10px;width:95%;">
+              </div><!--col-->
+            </div><!--row-->
+          </div><!--collapseTwo-->
+        </div><!--panel-->
+        <!--break-->
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+                Class Variables
+              </a>
+            </h4>
+          </div>
+          <div id="collapseThree" class="panel-collapse collapse">
+            <div class="row">
+              <div class="col-xs-4 col-med-4">
+                 <img src="Images/software-2.png" alt="Arduino" class="img-thumbnail" style="margin-top:20px; margin-bottom:5px; margin-left:85px;">
+               </div>
+               <div class="col-xs-8 col-med-8">
+                <div class="panel-body">
+                  When you’re working with Arduino, it’s hard to remember which component is plugged into which pin. That’s why we use class variables to store the information up front. At the top of every program, you’ll want to declare variables to store the components plugged into each pin. Digital pins are represented by integers – for example, if you have an LED in digital pin 13, you’d say int ledPin = 13. For analog pins, it’s still stored as an int, but you’ll need to put an A in front of the pin number. If you have a potentiometer in analog pin 2, for example, you’d say int potPin = A2. You can make these variables constant so they won’t change halfway through your program, and then whenever you want to send a command to that pin, you can send it to ledPin or potPin instead of having to remember what’s plugged into pin 13.
+                </div>
+              </div><!--col-->
+            </div><!--row-->
+          </div>
+        </div>
+        <!--break-->
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
+                The setup() method
+              </a>
+            </h4>
+          </div>
+          <div id="collapseFour" class="panel-collapse collapse">
+            <div class="row">
+              <div class="col-xs-8 col-med-8">
+                <div class="panel-body">
+                  </br>Every Arduino program must contain at least two methods: setup() and loop(). The setup() method is called only once, when the program first begins. This is a good place to initialize any extra variables you might have. You’ll also need to tell the Arduino which pins are input and which are output. You do this by calling pinMode(pinName, INPUT/OUTPUT). If you have a declared ledPin variable and you want it to be output, for example, you’d say pinMode(ledPin, OUTPUT). This is also where you initialize the Serial monitor, which is where you can print things out to your computer screen. The command for that is Serial.begin(9600), where 9600 is the rate at which it’ll check for new input. If there are any other methods you need to call to set up your program, do that in this method as well.
+                </div>
+              </div>
+              <div class="col-xs-4 col-med-4">
+                <img src="Images/software-3.png" alt="Arduino" class="img-thumbnail" style="margin-top:10px; margin-bottom:10px; margin-left:60px;">
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--break-->
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapseFive">
+                The loop() method
+              </a>
+            </h4>
+          </div>
+          <div id="collapseFive" class="panel-collapse collapse">
+            <div class="row">
+              <div class="col-xs-4 col-med-4">
+                <img src="Images/software-4.png" alt="Arduino" class="img-thumbnail" style="margin-top:45px; margin-bottom:10px;margin-left:15px; margin-right:5px;">
+              </div>
+              <div class="col-xs-8 col-med-8">
+                <div class="panel-body">
+                  Loop() is also necessary for every Arduino program. It’s called repeatedly as long as your Arduino is powered on. If you have an operation that’s repeated over and over, you put it in the loop() method. However, if you’re trying to do something like blink an LED, you don’t want the Arduino to continually call run, or it’ll turn the LED on and off so fast that you won’t even be able to see it changing. Instead, you use the delay method to pause the program momentarily. Delay takes as its arguments the number of milliseconds to pause. If you wanted to turn an LED off for 1 second, for example, you’d say delay(1000). If you know your program is supposed to be doing something but it doesn’t look like it is, check if you missed a delay and it ran too quickly for you to see! 
+                  </br></br>
+                  The other thing to remember in the loop() method is to make sure you cover all your cases. If you’re checking if one of two buttons is pressed, you’ll have to write an if statement to check if the first is on, if the second is on, or if both are off, and write commands for all of them. All your variables have to be in some state at all times. Basically, you’re building a state machine, where the Arduino’s behavior is perfectly defined for each state. If you don’t give part of the Arduino instructions for one of your states, it’ll get confused and do something you don’t expect. Always give all your variables a value, and you’ll be fine! 
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--break-->
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapseSix">
+                Digital Input/Output
+              </a>
+            </h4>
+          </div>
+          <div id="collapseSix" class="panel-collapse collapse">
+            <div class="row">
+              <div class="col-xs-8 col-med-8">
+                <div class="panel-body">
+                  </br></br>Digital input/output is binary valued – on or off. The Arduino language writes this as HIGH or LOW. The methods to get or set digital pins are digitalRead and digitalWrite, respectively. To explain these methods, let’s pretend we have two LED variables, one stored in ledPin1, and one in ledPin2. If we wanted to check if our first LED is on, we’d write int state = digitalRead(ledPin1). That would store either 0 for LOW or 1 for HIGH in the variable state. If we wanted to turn the second LED on, we’d say digitalWrite(ledPin2, HIGH). Digital is pretty straightforward!
+                </div>
+              </div>
+              <div class="col-xs-4 col-med-4">
+               <img src="Images/software-5.png" alt="Arduino" class="img-thumbnail" style="margin-top:10px; margin-bottom:10px; margin-left:25px;">
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--break-->
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapseSeven">
+                Analog Input/Output
+              </a>
+            </h4>
+          </div>
+          <div id="collapseSeven" class="panel-collapse collapse">
+            <div class="row">
+              <div class="col-xs-8 col-med-8">
+                <div class="panel-body">
+                  Unlike digital values, analog values come in a range. The methods you’ll use to store and output these values, though, are still similar: analogRead and analogWrite. The only difference is that you’ll pass in a number instead of HIGH or LOW. The range of input given by analogRead is 0-1023, and the range of output you can write to a PWM pin is 0-255. Worried about the math to convert from one to the other? Never fear; you can use the map function to do it for you! The prototype for the math function is map(value, fromLow, fromHigh, toLow, toHigh). For instance, if you read in an analog value stored in int val and wanted to output it to another analog pin, you’d say int newVal = map(val, 0, 1023, 0, 255), and it would give you the necessary number to output. It’s a little annoying, but you’ll get used to it! 
+                </div>
+              </div>
+              <div class="col-xs-4 col-med-4">
+                <img src="Images/software-6.png" alt="Arduino" class="img-thumbnail" style="margin-right:20px; margin-top:30px; margin-bottom:10px;">
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--break-->
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapseEight">
+                The Serial Monitor
+              </a>
+            </h4>
+          </div>
+          <div id="collapseEight" class="panel-collapse collapse">
+            <div class="row">
+              <div class="col-xs-4 col-med-4">
+                <img src="Images/software-7.png" alt="Arduino" class="img-thumbnail" style="margin-top:45px; margin-left:40px; margin-bottom:10px;">
+              </div>
+              <div class="col-xs-8 col-med-8">
+                <div class="panel-body">
+                  In most programming languages, you can print output to the console. With Arduino, you can print to the Serial monitor. You initialize it in the setup() method by including Serial.begin(9600), which tells the Serial pins to start communicating at a rate of 9600 bits per second. Then, whenever you want to print something out, you can say Serial.println(“Hello World!”), and your output will show up onscreen. You open the Serial monitor by pressing the button in the top right corner of the sketch that looks like a magnifying glass. It won’t open automatically; you’ll have to do it after you upload your sketch to the Arduino. The Serial monitor is great for debugging; you can print your input or output to make sure you’re getting the right values, or use keyboard input to control different parts of the Arduino. Experiment with printing to see what you can create!
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--break-->
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapseNine">
+                Tone()
+              </a>
+            </h4>
+          </div>
+          <div id="collapseNine" class="panel-collapse collapse">
+            <div class="row">
+              <div class="col-xs-8 col-med-8">
+                <div class="panel-body">
+                  </br></br></br>
+                  When using a speaker, you’ll need to use the tone and noTone methods to control what note is playing. The prototype for tone is either tone(pin, frequency) or tone(pin, frequency, duration) if you only want the tone to be playing for a certain amount of time. As you can imagine, it’s a little annoying to have to constantly remember which frequency corresponds to which note. To fix this, we generally define constants to keep track of different frequencies. For example, if you wanted to play a 4th octave C, you could write #define NOTE_C4 262, and then whenever you want to play C4, you just have to say tone(speakerPin, NOTE_C4) and it’ll work. To stop a speaker from playing, use noTone(pin).
+                </div>
+              </div>
+              <div class="col-xs-4 col-med-4">
+                <img src="Images/software-8.png" alt="Arduino" class="img-thumbnail" style="margin-top:10px; margin-bottom:10px; margin-left:50px;">
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--break-->
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapseTen">
+                Using Other Libraries
+              </a>
+            </h4>
+          </div>
+          <div id="collapseTen" class="panel-collapse collapse">
+            <div class="row">
+              <div class="col-xs-8 col-med-8">
+                <div class="panel-body">
+                  The default Arduino methods are great, but sometimes you might want to do something a little more complicated. That’s what libraries are for. A library is a collection of methods used to do something specific, like talk to a certain sensor. For instance, if you use a Max7219 to control several 7-segment displays, you’ll need to use the LedControl library. You can download libraries off the Arduino website. They should come as .zip files – don’t unzip them yet. Instead, go to Sketch >> Import Library >> Add Library, navigate to your zip file, and press choose. Whenever you want to use methods from that library in one of your sketches, make sure you import the library at the top of your sketch. To import the LedControl library, for instance, you’d type #include “LedControl.h.” Then you can use any of the LedControl methods you want.
+                </div>
+              </div>
+              <div class="col-xs-4 col-med-4">
+                <img src="Images/software-9.png" alt="Arduino" class="img-thumbnail" style="margin-top:10px; margin-bottom:10px; width:95%; margin-right:10px;">
+              </div>
+            </div>
+          </div>
+        </div>
+        
+    </div><!--/.container-->
+
+    </br></br></br>
+
+    <div id="footer">
+      <div class="container">
+        <p class="text-muted">Built on Bootstrap by Kristen Pownell</p>
+      </div>
+    </div>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>

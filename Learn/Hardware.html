@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hardware</title>
+
+    <!-- Bootstrap -->
+    <link href="../bootstrap/css/bootstrap.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <!--NAV BAR-->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Arduino World</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li><a href="../FrontPage/FrontPage.html">Home</a></li>
+
+             <li class="dropdown active">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Learn<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="WhatIsArduino.html">What is Arduino?</a></li>
+                <li class="divider"></li>
+                <li><a href="ElectricityBasics.html">Electricity Basics</a></li>
+                <li class="divider"></li>
+                <li class="active"><a href="#">Hardware</a></li>
+                <li class="divider"></li>
+                <li><a href="Software.html">Software</a></li>
+              </ul>
+            </li>
+
+             <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="../Projects/Beginner/Beginner.html">Beginner</a></li>
+                <li class="divider"></li>
+                <li><a href="../Projects/Intermediate/Intermediate.html">Intermediate</a></li>
+                <li class="divider"></li>
+                <li><a href="../Projects/Advanced/Advanced.html">Advanced</a></li>
+                <li class="divider"></li>
+                <li><a href="../Projects/Shields/Shields.html">Shields</a></li>
+              </ul>
+            </li>
+
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">More<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="../More/BeyondArduino.html">Beyond Arduino</a></li>
+                <li class="divider"></li>
+                <li><a href="../More/Links.html">Links</a></li>
+                <li class="divider"></li>
+                <li><a href="../More/Contact.html">Contact</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+
+   <div class="container">
+    <div class="row">
+      <div class="col-xs-2 col-md-2">
+        </br></br></br><img class="img-circle" src="Images/hardware-header.png" alt="Learn" style="width: 140px; height: 140px;">
+      </div>
+      <div class="col-xs-10 col-md-10">
+        <div class="page-header">
+          </br></br><h1>Hardware</br><small>The essential parts to know</small></h1>
+        </div><!--/.page-header-->
+      </div>
+    </div>
+      <div class="panel-group" id="accordion">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                Overview
+              </a>
+            </h4>
+          </div>
+          <div id="collapseOne" class="panel-collapse collapse in">
+            <div class="panel-body">
+              Let’s get an idea of the basic components we’ll be using in our projects. Most are pretty straightforward, but take a look just in case to make sure your circuits won’t blow out! 
+            </div>
+          </div>
+        </div>
+        <!--break-->
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                Breadboards, Wires, and Batteries
+              </a>
+            </h4>
+          </div>
+         <!--break-->
+          <div id="collapseTwo" class="panel-collapse collapse">
+            <div class="panel-body">
+              <div class="row">
+                <div class="col-xs-8 col-med-8">
+                  Breadboards are the foundation of all your circuits. It’s where you’ll build pretty much everything you’re making, at least at first. We can connect wires by plugging them in instead of having to solder them together. The holes on the breadboard are connected to each other in rows in the center and columns on the outside (the long rails). Generally, the rails are used to connect to power and ground, and the middle rows are used for the actual components. All you have to do to connect things is push the wire into the breadboard, and it’ll work!
+                  </br></br>
+                  No matter which power source you’re using, whether an Arduino or a battery, make sure you’ve connected it to both power and ground on the breadboard. Just for safety reasons, it’s usually best to connect the battery last to avoid shorting anything midway through connecting your circuit. When choosing a battery, make sure you have enough voltage that your circuit works  but not so much that it burns out your components. AA and AAA batteries are 1.5 volts; D batteries are 9 volts. Your Arduino can supply either 3.3 or 5 (we’ll usually use 5).
+                  </br></br>
+                  A quick note on circuit terminology: when there’s a gap in the connection, we say it’s an open circuit. When there’s a straight wire connecting power to ground without passing through any components, the circuit is shorted. In either of these conditions, your circuit won’t work correctly. If something isn’t working, check your connections!
+
+                </div><!--col-->
+                <div class="col-xs-4 col-med-4">
+                  <img src="Images/hardware-1.png" alt="Arduino" class="img-thumbnail" style="margin:10px;">
+                </div><!--col-->
+              </div><!--row-->
+            </div><!--panel-body-->
+          </div><!--collapseTwo-->
+        </div><!--panel-->
+        <!--break-->
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+                Resistors
+              </a>
+            </h4>
+          </div>
+          <div id="collapseThree" class="panel-collapse collapse">
+            <div class="row">
+              <div class="col-xs-4 col-med-4">
+                 <img src="Images/hardware-2.png" alt="Arduino" class="img-thumbnail" style="margin-top:10px; margin-bottom:5px; margin-left:20px;">
+               </div>
+               <div class="col-xs-8 col-med-8">
+                <div class="panel-body">
+                  </br></br></br></br></br>
+                  Most circuits need a resistor so you don’t overload the components. Resistors dissipate energy and, according to Ohm’s Law, can lower the amount of current that’s flowing through a circuit. However, if your resistance is too high, the current will be so small that it won’t be able to do much of anything. Always check your resistor values before you start building! The colored bands on the resistors stand for different values – check the color code chart to see what they mean. In general, the first two bands are the number (like 10), the third band is the order of magnitude (like 10^3), and the fourth is the tolerance level, which means how close the actual value is to the reported value (like 5%). Resistors are the bread and butter of the electrical world!
+                </div>
+              </div><!--col-->
+            </div><!--row-->
+          </div>
+        </div>
+        <!--break-->
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
+                Switches
+              </a>
+            </h4>
+          </div>
+          <div id="collapseFour" class="panel-collapse collapse">
+            <div class="row">
+              <div class="col-xs-8 col-med-8">
+                <div class="panel-body">
+                  When working with Arduino, you can either use a switch to cut off power directly or use it as digital input to make something else happen in the circuit. Switches are an open circuit until you press down the button and complete the circuit. If you’re using them as digital input, you’ll need a resistor; otherwise, you can get away without one, as long as the other components are hooked up right. For pushbutton switches, two are input and two are output. If you accidentally connect two of the same legs, it'll short the switch and act like a straight wire. Make sure you've connected the input and output legs correctly!
+                </div>
+              </div>
+              <div class="col-xs-4 col-med-4">
+                <img src="Images/hardware-3.png" alt="Arduino" class="img-thumbnail" style="margin-top:20px; margin-right:10px;width:95%;">
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--break-->
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapseFive">
+                LEDs
+              </a>
+            </h4>
+          </div>
+          <div id="collapseFive" class="panel-collapse collapse">
+            <div class="row">
+              <div class="col-xs-4 col-med-4">
+                <img src="Images/hardware-4.jpg" alt="Arduino" class="img-thumbnail" style="margin-top:30px; margin-bottom:10px;margin-left:15px; margin-right:5px;">
+              </div>
+              <div class="col-xs-8 col-med-8">
+                <div class="panel-body">
+                  LED stands for Light Emitting Diode. They’re generally small, energy-efficient lightbulbs that come in a multitude of different colors. There are two essential things to remember about LEDs. First, always include a resistor when hooking them up in a circuit. LEDs will burn out if exposed to too much current, so if you don’t include a resistor, they’ll stop working. Check the current rating on your parts and use Ohm’s Law to determine the resistor value you need. Second, double-check to make sure you’ve put them in your circuit in the right direction. LEDs are diodes, which means they only allow current to flow in one direction, like a battery. In general, the long leg is the positive terminal, which means it needs to be on the side closer to the power source, and the short leg is negative, closer to ground. If your LED doesn’t turn on, you may have put it in the wrong way, creating an open circuit. 
+                  </br></br>
+                  Most LEDs take digital input, on or off. RGB LEDs, however, take in analog values and use them to turn different colors. If yours is common cathode, it means you connect the long leg to ground; if it’s common anode, you connect the long leg to power. The other three legs each control one color: red, green, and blue. If you supply power to the blue leg and cut it off from red and green, your light will be all blue. If you supply power to all three at once, the LED will be white. You can also supply analog values and make it turn different colors, like orange or purple. Experiment to see what’s possible!
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--break-->
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapseSix">
+                7-Segment Displays
+              </a>
+            </h4>
+          </div>
+          <div id="collapseSix" class="panel-collapse collapse">
+            <div class="row">
+              <div class="col-xs-8 col-med-8">
+                <div class="panel-body">
+                  </br>
+                  These displays have the same layout as the digits on a typical digital alarm clock. There are generally nine pins per digit: one for each segment, one for the decimal point, and one for either power or ground (power on common anode, ground on common cathode). Check your datasheet or just experiment to find out which pin corresponds to which segment. As you can imagine, it quickly gets annoying to plug in nine wires per digit, especially if you want to use more than one. To solve this problem, you can use LED driver chips like the Max7219 to do your work for you. Instead of needing nine pins on the Arduino, the Max7219 only needs three. This frees up your available pins and leaves you lots of room for other components.
+                </div>
+              </div>
+              <div class="col-xs-4 col-med-4">
+               <img src="Images/hardware-5.png" alt="Arduino" class="img-thumbnail" style="width:95%; margin:10px; height:200px;">
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--break-->
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapseSeven">
+                Speakers
+              </a>
+            </h4>
+          </div>
+          <div id="collapseSeven" class="panel-collapse collapse">
+            <div class="row">
+              <div class="col-xs-8 col-med-8">
+                <div class="panel-body">
+                </br></br>
+                  The simplest speaker we’ll be using is actually a piezoelectric buzzer, which is driven by an oscillating electric circuit (don’t worry if you don’t know what that means). A speaker requires analog input, or else it’ll just play one pitch, so you have to plug it into one of the PWM pins on your Arduino. You’ll use the tone library to output the correct frequency to the speaker so it plays the note you want. Like an LED, the speaker requires a resistor in series to work correctly.
+                </div>
+              </div>
+              <div class="col-xs-4 col-med-4">
+                <img src="Images/hardware-6.jpg" alt="Arduino" class="img-thumbnail" style="margin-right:20px; margin-top:10px; margin-bottom:10px; width:95%;">
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--break-->
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapseEight">
+                Potentiometers
+              </a>
+            </h4>
+          </div>
+          <div id="collapseEight" class="panel-collapse collapse">
+            <div class="row">
+              <div class="col-xs-4 col-med-4">
+                <img src="Images/hardware-7.jpg" alt="Arduino" class="img-thumbnail" style="margin-top:10px; margin-left:60px; margin-bottom:10px; height:175px;">
+              </div>
+              <div class="col-xs-8 col-med-8">
+                <div class="panel-body">
+                  </br>
+                  A potentiometer is a variable resistor. The amount of resistance changes when you turn the knob. The actual values vary based on your potentiometer; a typical potentiometer might, for instance, be capable of providing between 0 and 10,000 ohms of resistance. Potentiometers have three terminals: one for input, one for output, and one for ground. If you wanted to vary the brightness of an LED, for instance, you’d connect power to the input terminal, output to the positive leg of the LED, and then ground to ground. You can also use a potentiometer for analog input on your Arduino.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--break-->
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapseNine">
+                Photoresistors
+              </a>
+            </h4>
+          </div>
+          <div id="collapseNine" class="panel-collapse collapse">
+            <div class="row">
+              <div class="col-xs-8 col-med-8">
+                <div class="panel-body">
+                  </br>
+                  This is another variable resistor, but instead of turning a switch, you change the value based on light. The darker the surrounding area, the higher the resistance. Light gives the electrons in the photoresistor enough energy to flow through the conducting area. Like the potentiometer, this can also be used as analog input. If you want a light to grow brighter when the room gets darker, for instance, you won’t be able to plug it in directly, or the resistance will decrease with increasing brightness. You’ll have to take in the value, do some calculations, and output the new value to your light. Photoresistors can also be used as primitive motion detectors if something passes above them, causing a temporary shadow.
+                </div>
+              </div>
+              <div class="col-xs-4 col-med-4">
+                <img src="Images/hardware-8.png" alt="Arduino" class="img-thumbnail" style="width:95%; margin-top:10px; margin-bottom:10px; margin-right:25px;">
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--break-->
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapseTen">
+                Capacitors
+              </a>
+            </h4>
+          </div>
+          <div id="collapseTen" class="panel-collapse collapse">
+            <div class="row">
+              <div class="col-xs-8 col-med-8">
+                <div class="panel-body">
+                </br>
+                  Like we talked about in the electricity section, capacitors store energy. In a DC circuit where current is constant, capacitors act like an open circuit. If you have a circuit with AC and DC components, you can use capacitors to block the DC and only let the AC through (this is called a coupling capacitor). You can also use them to smooth out AC signals that are switching rapidly. Generally, we’ll use them to make our circuits more stable.
+                </div>
+              </div>
+              <div class="col-xs-4 col-med-4">
+                <img src="Images/hardware-9.png" alt="Arduino" class="img-thumbnail" style="margin:10px; width:95%;">
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--break-->
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapseEleven">
+                Motors
+              </a>
+            </h4>
+          </div>
+          <div id="collapseEleven" class="panel-collapse collapse">
+            <div class="row">
+              <div class="col-xs-4 col-med-4">
+                <img src="Images/electricity-12.jpg" alt="Arduino" class="img-thumbnail" style="margin-left:20px; margin-top:30px;">
+              </div>
+              <div class="col-xs-8 col-med-8">
+                <div class="panel-body">
+                  (Add in later)
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+    </div><!--/.container-->
+
+    </br></br></br>
+
+    <div id="footer">
+      <div class="container">
+        <p class="text-muted">Built on Bootstrap by Kristen Pownell</p>
+      </div>
+    </div>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>

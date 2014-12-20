@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Keyboard</title>
+
+    <!-- Bootstrap -->
+    <link href="../../bootstrap/css/bootstrap.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <!--NAV BAR-->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Arduino World</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li><a href="../../FrontPage/FrontPage.html">Home</a></li>
+
+             <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Learn<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="../../Learn/WhatIsArduino.html">What is Arduino?</a></li>
+                <li class="divider"></li>
+                <li><a href="../../Learn/ElectricityBasics.html">Electricity Basics</a></li>
+                <li class="divider"></li>
+                <li><a href="../../Learn/Hardware.html">Hardware</a></li>
+                <li class="divider"></li>
+                <li><a href="../../Learn/Software.html">Software</a></li>
+              </ul>
+            </li>
+
+             <li class="dropdown active">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li class="active"><a href="Beginner.html">Beginner</a></li>
+                <li class="divider"></li>
+                <li><a href="../Intermediate/Intermediate.html">Intermediate</a></li>
+                <li class="divider"></li>
+                <li><a href="../Advanced/Advanced.html">Advanced</a></li>
+                <li class="divider"></li>
+                <li><a href="../Shields/Shields.html">Shields</a></li>
+              </ul>
+            </li>
+
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">More<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="../More/BeyondArduino.html">Beyond Arduino</a></li>
+                <li class="divider"></li>
+                <li><a href="../More/Links.html">Links</a></li>
+                <li class="divider"></li>
+                <li><a href="../More/Contact.html">Contact</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-2 col-md-2">
+          </br></br></br><img class="img-circle" src="Images/keyboard-0.jpeg" alt="Beginner" style="width: 140px; height: 140px;">
+        </div>
+        <div class="col-xs-10 col-md-10">
+          <div class="page-header">
+            </br></br><h1>Keyboard</br><small>Play your own simple melodies on an Arduino!</small></h1>
+          </div><!--/.page-header-->
+        </div>
+      </div>
+
+      <div class="row"><!--Materials-->
+        <div class="col-xs-7 col-med-7">
+          <img src="Images/keyboard-1.png" alt="..." style="width:95%; margin:10px;" class="img-thumbnail">
+        </div>
+        <div class="col-xs-5 col-med-5">
+          <h3></br></br></br>Materials</h3>
+          <ul>
+            <li>Arduino Uno</li>
+            <li>Breadboard and wires</li>
+            <li>3 different-colored LEDs</li>
+            <li>3 pushbutton switches</li>
+            <li>8 ohm speaker</li>
+            <li>10 kohm photoresistor</li>
+            <li>1-100 ohm resistor</li>
+            <li>3-330 ohm resistors</li>
+            <li>3-10 kohm resistor</li>
+          </ul>
+        </div><!--Materials row-->
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row"><!--Breadboard layout-->
+        <div class="col-xs-5 col-med-5">
+          <h3>Breadboard Layout</h3>
+          <ol>
+            <li><strong>Power and ground: </strong>This project is going to require a lot of wiring, so don't worry if your board gets a little messy. Make sure when you start wiring that the buttons and LEDs are lined up so you can tell which is which - it'll make things easier on the user. Start by connecting a power and ground rail on the breadboard to the Arduino.</li>
+            <li><strong>Buttons: </strong>First create your Arduino-less button circuits by connecting the power rail to one end of the buttons and the other through the 10k resistors to ground. Then include the Arduino by connecting pins 10-12 into the middle of the circuits between the buttons and the resistors.</li>
+            <li><strong>Speaker: </strong>Connect the 100 ohm resistor from pin 9 to the speaker and then to ground. Speakers allow bidirectional current, so it doesn't matter which direction it's plugged in.</li>
+            <li><strong>LEDs: </strong>Connect the 330 ohm resistors from pins 6-8 to the long legs of the LEDs. Connect the short legs of the LEDs to ground.</li>
+            <li><strong>You're done! </strong>Plug your Arduino into the USB port on your computer.</li>
+          </ol>
+        </div>
+        <div class="col-xs-7 col-med-7">
+            <img src="Images/keyboard-2.png" alt="..." style="width:90%;margin-top:50px;" class="img-thumbnail">
+        </div>
+      </div><!--Breadboard layout row-->
+
+    <hr class="featurette-divider">
+
+    <div class="row"><!--Software-->
+      <div class="col-xs-4 col-med-4">
+        <img src="Images/keyboard-3.png" alt="..." style="width:95%; margin-top:30px;" class="img-thumbnail">
+      </div>
+      <div class="col-xs-8 col-med-8">
+        <h3>Software</h3>
+        <ol>
+          <li><strong>Getting started: </strong>Initialize variables for the speaker, LEDs, and button pins. Remember, we have the buttons in 6-8, the speaker in 9, and the LEDS in 10-12. In your setup method, declare the LED and speaker as output and the photoresistor as input. 
+          <li><strong>Choose your pitches: </strong>First, include <a href="pitches.h">pitches.h</a> the same way we've been doing it - save the file in your folder, then #include it at the top of your sketch. We're going to choose three pitches to play on the keyboard and save them into an array, similar to what we did in the harmonica program. We chose a major scale, but you can do whatever you like. Declare int notes[] = {NOTE_C4, NOTE_E4, NOTE_G4}.</li>
+          <li><strong>Read button input: </strong>In the loop method, declare variables to store the result of calling digitalRead on each button pin. We're going to use this information to determine which note to play.</li>
+          <li><strong>Turn on lights: </strong>Create an if-else block that accounts for 4 cases: one for each button being on and one for all being off. In each block, turn on the corresponding LED and turn the other two LEDs off. In the final block, make sure you turn off all the LEDs.</li>
+          <li><strong>Play notes: </strong>Inside of your if-else blocks, you're also going to call tone on the speaker and play a note from your selected notes array. For example, if button1State == HIGH, you would say tone(speakerPin, notes[0]). In the default method, write noTone(speakerPin) so it'll turn off if nothing is happening.</li>
+          <li><strong>Running the program: </strong>Upload your sketch and try it out! If the LEDs don't match the buttons, check your wiring or change the numbers in the sketch to make it work.</li>
+          <li><strong>Experiment: </strong>It's not hard to add more notes to your keyboard - it just requires a little extra wiring. You can also replace the normal LEDs with one RGB LED and have it light up different colors instead of having a separate LED for each note. Can you figure out how to play multiple notes at once? What about changing octaves with a fourth button?</li>
+        </ol>
+      </div>
+    </div><!--Software row-->
+
+    <hr class="featurette-divider">
+
+    <div class="row">
+      <div class="col-xs-8 col-xs-offset-2 col-med-8 col-med-offset-2">
+        <h3>The Finished Product</h3>
+        <video controls loop src="Images/keyboard.mp4" style="width:100%;"></video>
+      </div>
+    </div>
+
+    </div><!--/.container-->
+
+    </br></br></br>
+    <hr class="featurette-divider">
+
+    <div id="footer">
+      <div class="container">
+        <p class="text-muted">Built on Bootstrap by Kristen Pownell</p>
+      </div>
+    </div>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../../bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>

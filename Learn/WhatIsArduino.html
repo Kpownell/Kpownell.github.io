@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>What is Arduino?</title>
+
+    <!-- Bootstrap -->
+    <link href="../bootstrap/css/bootstrap.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <!--NAV BAR-->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Arduino World</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li><a href="../FrontPage/FrontPage.html">Home</a></li>
+
+             <li class="dropdown active">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Learn<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li class="active"><a href="#">What is Arduino?</a></li>
+                <li class="divider"></li>
+                <li><a href="ElectricityBasics.html">Electricity Basics</a></li>
+                <li class="divider"></li>
+                <li><a href="Hardware.html">Hardware</a></li>
+                <li class="divider"></li>
+                <li><a href="Software.html">Software</a></li>
+              </ul>
+            </li>
+
+             <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="../Projects/Beginner/Beginner.html">Beginner</a></li>
+                <li class="divider"></li>
+                <li><a href="../Projects/Intermediate/Intermediate.html">Intermediate</a></li>
+                <li class="divider"></li>
+                <li><a href="../Projects/Advanced/Advanced.html">Advanced</a></li>
+                <li class="divider"></li>
+                <li><a href="../Projects/Shields/Shields.html">Shields</a></li>
+              </ul>
+            </li>
+
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">More<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="../More/BeyondArduino.html">Beyond Arduino</a></li>
+                <li class="divider"></li>
+                <li><a href="../More/Links.html">Links</a></li>
+                <li class="divider"></li>
+                <li><a href="../More/Contact.html">Contact</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+
+   <div class="container">
+    <div class="row">
+      <div class="col-xs-2 col-md-2">
+        </br></br></br><img class="img-circle" src="Images/learn-header-2.jpg" alt="Learn" style="width: 140px; height: 140px;">
+      </div>
+      <div class="col-xs-10 col-md-10">
+        <div class="page-header">
+          </br></br><h1>What is Arduino?</br><small>Learn the basics!</small></h1>
+        </div><!--/.page-header-->
+      </div>
+    </div>
+
+      <div class="panel-group" id="accordion">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                Overview
+              </a>
+            </h4>
+          </div>
+          <div id="collapseOne" class="panel-collapse collapse in">
+            <div class="panel-body">
+              Never heard of Arduino before? Use this page to get oriented! Find out what an Arduino is, what it's used for, and why it's the favorite tool of makers worldwide. Also, get a quick overview of the parts of an Arduino that we'll be using for projects.
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                What is an Arduino?
+              </a>
+            </h4>
+          </div>
+          <div id="collapseTwo" class="panel-collapse collapse">
+            <div class="panel-body">
+              <div class="row">
+                <div class="col-xs-8 col-med-8">
+                  An Arduino is a type of microcontroller, or mini-computer. Microcontrollers have memory so they can store your programs and input/output ports so they can interact with other electronic components. They’re generally used for electronics that have to run automatically – engine controls, pacemakers, remotes, printers, microwaves, etc. A lot of people confuse microcontrollers with microprocessors. Microprocessors only include a CPU for processing power but don’t have any memory included. Your computer uses microprocessors instead of microcontrollers, which means it has to store memory in an external drive instead.
+                  </br></br>
+                  In general, microcontrollers are used for applications where input and output are specifically defined. When programming an Arduino, you get to define the input and output.  You’ll connect different components to the Arduino’s ports and use Processing to tell the microcontroller chip what information it’s getting and what to do with it. Because the Arduino has memory, it will remember what you told it even after you unplug it from the computer, as long as it’s connected to power. Neat, right?
+                </div><!--col-->
+                <div class="col-xs-4 col-med-4">
+                  <img src="Images/what-is-arduino-2.jpg" alt="Arduino" class="img-thumbnail">
+                </div><!--col-->
+              </div><!--row-->
+            </div><!--panel-body-->
+          </div><!--collapseTwo-->
+        </div><!--panel-->
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+                What can an Arduino do?
+              </a>
+            </h4>
+          </div>
+          <div id="collapseThree" class="panel-collapse collapse">
+            <div class="row">
+              <div class="col-xs-4 col-med-4">
+                 <img src="Images/what-is-arduino-3.jpg" alt="Arduino" class="img-thumbnail" style="width: 400px; height: 250px; margin:5px;">
+               </div>
+               <div class="col-xs-8 col-med-8">
+                <div class="panel-body"></br></br>
+                  Arduinos make circuits smart. You can think of an Arduino-less circuit as a single plane flying from New York to Vancouver. It has directions for its route, but it can only go in one direction, and it can’t control any other planes. Adding an Arduino is like adding an air traffic control center to both airports. Now you can have multiple flights all going in different directions. The Arduino will keep track of which circuit is going where and can use information about one to direct another. We’ll get more into specific applications in the projects section, but for now, you just need to know that including an Arduino makes everything much more interesting.
+                </div>
+              </div><!--col-->
+            </div><!--row-->
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
+                Why use Arduino?
+              </a>
+            </h4>
+          </div>
+          <div id="collapseFour" class="panel-collapse collapse">
+            <div class="row">
+              <div class="col-xs-8 col-med-8">
+                <div class="panel-body"></br></br>
+                  There are hundreds of different types of microcontrollers, but a lot of them are used for very specific applications (like the display on your washing machine). Many of the programmable ones can be expensive or difficult to use. Arduino was designed to be a low-cost, simple microcontroller that can be used by hobbyists, students, and other amateurs as an entry-level platform to the world of electronics. Arduino software runs on PC, Mac, and Linux and is relatively easy to program compared to other languages. It’s also totally open-source, which means anyone who makes a cool project with Arduino will publish their code online so other people can do the same thing. Arduino is to electrical engineering hobbyists as iMovie is to beginning filmmakers – it provides a broad base of functionality at a low cost so new learners can get the same benefits as experienced makers.
+                </div>
+              </div>
+              <div class="col-xs-4 col-med-8">
+                <img src="Images/what-is-arduino-4.jpg" alt="Arduino" class="img-thumbnail" style="margin-top:5px; margin-bottom:5px;">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapseFive">
+                Parts of an Arduino
+              </a>
+            </h4>
+          </div>
+          <div id="collapseFive" class="panel-collapse collapse">
+            <div class="panel-body">
+              <div class="row">
+                <div class="col-xs-4 col-med-4">
+                  <img src="Images/what-is-arduino-5.png" alt="Arduino" class="img-thumbnail" style="margin-top:5px; margin-bottom:5px;">
+                </div>
+                <div class="col-xs-8 col-med-8">
+                  <ul>
+                    <li><strong>USB Port:</strong> When you’re programming an Arduino, you’ll connect this port to the USB drive on your computer using an A-B USB cable. This will also provide power to your Arduino.</li>
+
+                    <li><strong>Analog reference pin:</strong> This isn’t currently supported by Arduino software, so don’t worry about it for now.</li>
+
+                    <li><strong>Digital ground:</strong> This ensures that your computer has a basis for taking digital measurements (on or off). See the power/ground input section for more info.</li>
+
+                    <li><strong>Digital pins 2-13:</strong> These can be used for digital input or output. Digital measurements can only be 1 or 0, on or off. There are a couple special pins along here that are explained further below.</li>
+
+                    <li><strong>Reset button (S1):</strong> Used to restart the program that’s running on the Arduino.</li>
+
+                    <li><strong>Analog in pins 0-5:</strong> These are used to read in analog measurements, which can take on any value between 0 and 1023. You can use them to read in digital measurements as well, but they can’t output any information.</li>
+
+                    <li><strong>Power and ground pins:</strong> Power pins do exactly what they’re named for: provide power to the Arduino. If you’re powering your Arduino through the USB port, you can also connect these pins to external components to give them power. Ground provides a reference point so that if your battery goes from 0.3-5.3 instead of 0-5 volts, the Arduino will still be able to tell when things are on and off.</li>
+                  </ul>
+                </div><!--col-->
+              </div><!--row-->
+              <div class="row">
+                <div class="col-xs-12 col-med-12">
+                <strong>Special digital pins:</strong></br>
+                <ul>
+                  <li><em>Serial pins (0/1):</em> These are used to receive (0-RX) and transmit (1-TX)  serial data. The Arduino and your computer use these pins to sent data back and forth one bit at a time. If you’re ever printing something out to the computer, you can’t use these pins for normal digital input/output.</li>
+
+                  <li><em>External interrupts (2/3):</em> These pins can trigger an interrupt when something happens in your circuit. If you’re trying to read a value from a rotary wheel, for instance, this means that you can just stop the program when the number changes instead of constantly checking the input and clogging up your processing capacity.</li>
+
+                  <li><em>PWM pins (3, 5, 6, 9, 10, 11):</em> You can output 8-bit analog values to these pins instead of just 0/1 digital values. For example, if you’re using a speaker, you need to use a PWM pin to play different notes.</li>
+
+                  <li><em>SPI: 10 (SS), 11 (MOSI), 12 (MISO), 13 (SCK):</em> SPI, which stands for Serial Peripheral Interface, is a type of communication that Arduinos use to talk to other chips. The SS, slave select, pin chooses which device is the master (controls the clock and starts transmission) and which is the slave. The SCK pin controls the clock cycle. The clock in a computer goes high and low at regular intervals, like the ticking of a clock. Data can only be sent when the clock changes to high or low. The MOSI (master out, slave in) pin is used to transmit data from the master to the slave, and the MISO (master in, slave out) pin is used to transmit data from the slave to the master.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div><!--/.panel-group-->
+    </div><!--/.container-->
+
+    </br></br></br>
+
+    <div id="footer">
+      <div class="container">
+        <p class="text-muted">Built on Bootstrap by Kristen Pownell</p>
+      </div>
+    </div>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>

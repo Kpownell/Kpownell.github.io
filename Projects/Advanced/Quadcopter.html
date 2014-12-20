@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Quadcopter</title>
+
+    <!-- Bootstrap -->
+    <link href="../../bootstrap/css/bootstrap.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <!--NAV BAR-->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Arduino World</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li><a href="../../FrontPage/FrontPage.html">Home</a></li>
+
+             <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Learn<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="../../Learn/WhatIsArduino.html">What is Arduino?</a></li>
+                <li class="divider"></li>
+                <li><a href="../../Learn/ElectricityBasics.html">Electricity Basics</a></li>
+                <li class="divider"></li>
+                <li><a href="../../Learn/Hardware.html">Hardware</a></li>
+                <li class="divider"></li>
+                <li><a href="../../Learn/Software.html">Software</a></li>
+              </ul>
+            </li>
+
+             <li class="dropdown active">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="../Beginner/Beginner.html">Beginner</a></li>
+                <li class="divider"></li>
+                <li><a href="../Intermediate/Intermediate.html">Intermediate</a></li>
+                <li class="divider"></li>
+                <li class="active"><a href="Advanced.html">Advanced</a></li>
+                <li class="divider"></li>
+                <li><a href="../Shields/Shields.html">Shields</a></li>
+              </ul>
+            </li>
+
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">More<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="../More/BeyondArduino.html">Beyond Arduino</a></li>
+                <li class="divider"></li>
+                <li><a href="../More/Links.html">Links</a></li>
+                <li class="divider"></li>
+                <li><a href="../More/Contact.html">Contact</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-2 col-md-2">
+          </br></br></br><img class="img-circle" src="Images/quadcopter-0.jpg" alt="Beginner" style="width: 140px; height: 140px;">
+        </div>
+        <div class="col-xs-10 col-md-10">
+          <div class="page-header">
+            </br></br><h1>Quadcopter</br><small>Build and customize your own flying drone!</small></h1>
+          </div><!--/.page-header-->
+        </div>
+      </div>
+
+      <div class="row"><!--Overview-->
+        <div class="col-xs-12 col-med-12">
+          <h3>Overview</h3>
+          <p>A quadcopter is a remote-controlled helicopter-like device with four rotors. They come in all shapes and sizes and are made of all different types of materials. Quadcopters are everywhere these days, from kid's toys at the mall to Amazon's research on delivering packages straight to customers.  Building your own quadcopter is no simple feat, but there's a huge support community to help you out. Whether you opt for using a kit or starting from scratch, you'll find plenty of resources to guide you on your way!</p>
+        </div><!--Overview row-->
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row"><!--Parts-->
+        <div class="col-xs-8 col-med-8">
+          <h3>Parts of a Quadcopter</h3>
+          <ol>
+            <li><strong>Frame: </strong>Your frame should be sturdy enough to hold your components, yet lightweight enough to avoid extra weight. The most common materials are carbon fiber, aluminum, and plywood. You'll also have to decide between an 'x' and a '+' configuration - basically just determining which direction will be forward. If you use a '+', you can just have one motor controlling each direction. For 'x', you'll have two motors each way, which is more complicated to program but also provides more power.</li>
+            <li><strong>Roll, pitch, and yaw: </strong>You'll be hearing these words a lot, so here's a quick definition: Roll is rotation around the longitudinal (x) axis, or diagonally side to side (like tilting your head). Pitch is rotation around the latitudinal (y) axis, or forward and backward (like nodding your head). Yaw is rotation around the vertical (z) axis, or horizontally side to side (like turning your head).</li>
+            <li><strong>Brushless motors: </strong>A quadcopter uses four motors to drive the propellers that keep it aloft. They're very similar to DC motors, except that they lack a component called a brush that can switch the direction of rotation (hence the name brushless). This simplifies the motor and allows it to run faster on less energy. When choosing your motors, make sure they're both lightweight and powerful so your quadcopter has no trouble getting into the air. <a href="http://blog.oscarliang.net/how-to-choose-motor-and-propeller-for-quadcopter/">This guide</a> has more information on choosing a motor.</li>
+            <li><strong>Propellers: </strong>Not all propellers are created equal. If all your propellers are exactly the same, your quadcopter will spin around out of control. Instead, you'll need both opposite spin and opposite tilt to stabilize. You can check <a href="http://blog.tkjelectronics.dk/2012/03/quadcopters-how-to-get-started/">this handy website</a> or the link under the motors section for more information and to find the correct size and tilt of propellers for your quadcopter.</li>
+          </ul>
+        </div>
+        <div class="col-xs-4 col-med-4">
+            <img src="Images/quadcopter-1a.jpg" alt="..." style="width:95%;margin-top:80px;" class="img-thumbnail">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-4 col-med-4">
+            <img src="Images/quadcopter-1b.jpg" alt="..." style="width:95%;margin-top:15px;margin-left:30px;" class="img-thumbnail">
+        </div>
+        <div class="col-xs-8 col-med-8">
+          <ol start="5">
+            <li><strong>Battery: </strong>In order to power all your electronic components, you'll need a lightweight battery pack. The most widely used type are LiPo packs with 3 cells in series and one in parallel (3SP1). This provides 12 volts when fully charged. You can use <a href="http://multicopter.forestblue.nl/lipo_need_calculator.html">this calculator</a> to determine the optimal batteries for your needs.</li>
+            <li><strong>Electronic speed controller: </strong>The ESC determines the speed of the motors by converting the DC signal from the battery into an AC signal that tells the motor how quickly to spin. It interfaces between your flight controller and your motors.</li>
+            <li><strong>Inertial measurement unit: </strong>The IMU is a sensor that combines and accelerometer and a gyroscope so your quadcopter can tell where it is in the air. This information is then used to re-orient your quadcopter as necessary. You can either buy a separate IMU or buy a flight controller that contains one already.</li>
+            <li><strong>RC transmitter: </strong>This sends radio signals between the quadcopter and your controller. There's a huge variety in cost, quality, and method of control. Check out <a href="http://blog.oscarliang.net/choose-rc-transmitter-quadcopter/">this article</a> for more information about choosing one.</li>
+            <li><strong>Flight controller: </strong>This is the brains of the operation. It takes in signals from the RC transmitter and the IMU to determine how best to travel in the desired direction while maintaining stability. It then translates these signals and sends them to the ESC to move the quadcopter. You can read <a href="http://robot-kingdom.com/best-flight-controller-for-quadcopter-and-multicopter/">this article</a> for more information about the variety of different controllers and boards available.</li>
+        </div>
+      </div><!--Parts row-->
+
+    <hr class="featurette-divider">
+
+    <div class="row"><!--Project-->
+      <div class="col-xs-12 col-med-12">
+        <h3>Project Ideas</h3>
+      </div>
+    </div>
+    <div class="row"><!--1st robotics row-->
+      <div class="col-xs-3 col-med-3">
+        </br><img src="Images/quadcopter-2a.jpg" alt="..." style="width:95%;" class="img-thumbnail">
+      </div>
+      <div class="col-xs-3 col-med-3">
+        </br><h4><a href="http://dzlsevilgeniuslair.blogspot.dk/2013/11/more-toy-quadcopter-hacking.html">Hacking a Quadcopter: </a></h4>
+        <p>This article covers how to take apart a toy quadcopter and repurpose it to control it yourself. You can read <a href=http://hackaday.com/2013/11/19/hacking-a-cheap-toy-quadcopter-to-work-with-arduino/>this page,</a> which covers the purpose of the tutorial, to learn more about it. This is a great place to start if you don't want to build an entire quadcopter from scratch.</p></br>
+      </div>
+      <div class="col-xs-3 col-med-3">
+        </br><img src="Images/quadcopter-2b.jpg" alt="..." style="width:95%;" class="img-thumbnail">
+      </div>
+      <div class="col-xs-3 col-med-3">
+        </br><h4><a href="http://www.scoutuav.com/build-scout/">Scout UAV: </a></h4>
+        <p>This site lays out a thorough tutorial for building a quadcopter nicknamed Scout. It uses the Ardupilot board rather than an Arduino board, but the programming platform is the same. The site also has a store so you can buy a kit or separate parts.</p>
+      </div>
+    </div><!--1st robotics row-->
+    </br><div class="row" style="border-bottom:1px solid #00979c;"></div></br>
+    <div class="row"><!--2nd robotics row-->
+      <div class="col-xs-3 col-med-3">
+        </br><h4><a href="http://aeroquad.com/showwiki.php">Aeroquad: </a></h4>
+        <p>Rather than a single build tutorial, this site functions as a forum for a community of users building similar quadcopters with the Aeroquad platform. You'll find a plethora of articles, photos, videos, tutorials, etc. to help you along the way.</p>
+      </div>
+      <div class="col-xs-3 col-med-3">
+        <img src="Images/quadcopter-2c.jpg" alt="..." style="width:95%;margin-top:15px;" class="img-thumbnail">
+      </div>
+      <div class="col-xs-3 col-med-3">
+        </br><h4><a href="https://code.google.com/p/quaduino-ng/">Quaduino: </a></h4>
+        <p>This project set out to build a low-cost Arduino quadcopter. Total parts list comes out to about $500. The instructions on the site are a little sparse, but you can email the user for more detailed information.</p>
+      </div>
+      <div class="col-xs-3 col-med-3">
+        <img src="Images/quadcopter-2d.jpg" alt="..." style="width:95%;margin-top:15px;" class="img-thumbnail">
+      </div>
+    </div><!--2nd robotics row-->
+
+    <hr class="featurette-divider">
+
+    <div class="row">
+      <div class="col-xs-4 col-med-4">
+        <img src="Images/quadcopter-3.jpg" alt="..." style="width:95%; margin-top:30px;" class="img-thumbnail">
+      </div>
+      <div class="col-xs-8 col-med-8">
+        <h3>Tips and Tricks</h3>
+        <ul>
+          <li><strong>Adding sensors: </strong>If you'd like, you can improve your quadcopter by adding GPS, cameras, or ultrasonic sensors. Be careful to account for the extra weight, but any attachments will definitely increase your quadcopter's usefulness and impress your friends!</li>
+          <li><strong>Acrobatics: </strong>There are two methods of controlling your quadcopter - one, called Rate, allows your quadcopter to do acrobatics, while the other, called Stable, lets you change direction but not rotation. Stable is better for beginners because it's easier to control, but if you'd like, you can try out Rate to do fancy tricks.</li>
+          <li><strong>Starting out: </strong>Quadcopters are complicated to build and complicated to fly. If you're just getting introduced to the world of quadcopters, you might want to start out by buying a cheap toy to see how it flies. Using a kit rather than building from scratch can also be an easier way to make sure you're building something that will work.</li>
+          <li><strong>Forums: </strong>Quadcopters have become very popular in the online community, so no matter what problem you're having, someone else has doubtless had it before. The internet is your friend. Use forums like <a "href=http://www.multiwii.com/forum/">this one</a> or <a href="http://www.rcgroups.com/forums/index.php">this one</a> to get support when you need it.</li>
+        </ul>
+        <h4>Good luck, and have fun!</h4>
+      </div>
+    </div>
+
+
+
+    </div><!--/.container-->
+
+    </br></br></br>
+    <hr class="featurette-divider">
+    <div id="footer">
+      <div class="container">
+        <p class="text-muted">Built on Bootstrap by Kristen Pownell</p>
+      </div>
+    </div>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../../bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>
