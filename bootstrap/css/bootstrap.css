@@ -937,7 +937,6 @@ img {
   display: block;
   width: 100% \9;
   max-width: 100%;
-  height: auto;
 }
 .img-rounded {
   border-radius: 6px;
@@ -956,11 +955,76 @@ img {
        -o-transition: all .2s ease-in-out;
           transition: all .2s ease-in-out;
 }
+
+.img-thumbnail-learn {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 5px;
+  max-width: 90%;
+  height: auto;
+  padding: 4px;
+  line-height: 1.42857143;
+  background-color: #fff;
+  border: 2px solid #00979c;
+  border-radius: 4px;
+  -webkit-transition: all .2s ease-in-out;
+       -o-transition: all .2s ease-in-out;
+          transition: all .2s ease-in-out;
+}
+
+.img-thumbnail-project {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 30px;
+  max-width: 100%;
+  height: auto;
+  padding: 4px;
+  line-height: 1.42857143;
+  background-color: #fff;
+  border: 2px solid #00979c;
+  border-radius: 4px;
+  -webkit-transition: all .2s ease-in-out;
+       -o-transition: all .2s ease-in-out;
+          transition: all .2s ease-in-out;
+}
+
+.img-thumbnail-project-link {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 100%;
+  height: auto;
+  padding: 4px;
+  line-height: 1.42857143;
+  background-color: #fff;
+  border: 2px solid #00979c;
+  border-radius: 4px;
+  -webkit-transition: all .2s ease-in-out;
+       -o-transition: all .2s ease-in-out;
+          transition: all .2s ease-in-out;
+}
+
+.img-project-header {
+  height:300px;
+  width:300px;
+  margin-top:20px;
+}
+
 .img-circle {
   border-radius: 50%;
   border-style: solid;
   border-width: 2px;
   border-color: #00979c;
+}
+.img-circle-header {
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #00979c;
+  width:140px;
+  height:140px;
 }
 .front-page-header {
   color: #00979c;
@@ -1104,6 +1168,16 @@ h5,
 h6,
 .h6 {
   font-size: 12px;
+}
+.cite {
+  display:block;
+  text-align: center;
+  font-style: italic;
+}
+.cite-header {
+  display:block;
+  text-align: left;
+  font-style: italic;
 }
 p {
   margin: 0 0 10px;
