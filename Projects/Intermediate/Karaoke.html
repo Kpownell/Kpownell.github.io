@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Karaoke</title>
+
+    <!-- Bootstrap -->
+    <link href="../../bootstrap/css/bootstrap.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <!--NAV BAR-->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Arduino World</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li><a href="../../index.html">Home</a></li>
+
+             <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Learn<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="../../Learn/WhatIsArduino.html">What is Arduino?</a></li>
+                <li class="divider"></li>
+                <li><a href="../../Learn/ElectricityBasics.html">Electricity Basics</a></li>
+                <li class="divider"></li>
+                <li><a href="../../Learn/Hardware.html">Hardware</a></li>
+                <li class="divider"></li>
+                <li><a href="../../Learn/Software.html">Software</a></li>
+              </ul>
+            </li>
+
+             <li class="dropdown active">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="../Beginner/Beginner.html">Beginner</a></li>
+                <li class="divider"></li>
+                <li class="active"><a href="Intermediate.html">Intermediate</a></li>
+                <li class="divider"></li>
+                <li><a href="../Advanced/Advanced.html">Advanced</a></li>
+                <li class="divider"></li>
+                <li><a href="../Shields/Shields.html">Shields</a></li>
+              </ul>
+            </li>
+
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">More<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="../More/BeyondArduino.html">Beyond Arduino</a></li>
+                <li class="divider"></li>
+                <li><a href="../More/Links.html">Links</a></li>
+                <li class="divider"></li>
+                <li><a href="../More/Contact.html">Contact</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-2 col-md-2">
+          </br></br></br><a href="http://i.imgur.com/9Yw7rQW.png"><img class="img-circle-header" src="http://i.imgur.com/9Yw7rQW.png" alt="Intermediate"></a>
+        </div>
+        <div class="col-xs-10 col-md-10">
+          <div class="page-header">
+            </br></br><h1>Karaoke</br><small>Display lyrics and notes to go along with your song!</small></h1>
+          </div><!--/.page-header-->
+        </div>
+      </div>
+
+      <div class="row"><!--Materials-->
+        <div class="col-xs-7 col-med-7">
+          <a href="http://i.imgur.com/0ILA7NC.png"><img src="http://i.imgur.com/0ILA7NC.png" alt="..." style="width:95%;" class="img-thumbnail-project"></a>
+        </div>
+        <div class="col-xs-5 col-med-5">
+          <h3></br>Learning Objectives</h3>
+          <ul>
+            <li><strong>Emphasis: </strong>Software</li>
+            <li><strong>Hardware: </strong>LCD Display (Become more comfortable)</li>
+            <li><strong>Software: </strong>Print stored text to LCD screen</li>
+          </ul>
+          <h3>Materials</h3>
+          <ul>
+            <li>Arduino Uno</li>
+            <li>Breadboard and wires</li>
+            <li>16x2 LCD Display</li>
+            <li>Potentiometer</li>
+            <li>Piezo buzzer</li>
+            <li>100 ohm resistor</li>
+            <li>Pushbutton switch</li>
+            <li>10kohm resistor</li>
+          </ul>
+        </div><!--Materials row-->
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row"><!--Breadboard layout-->
+        <div class="col-xs-5 col-med-5">
+          <h3>Breadboard Layout</h3>
+          <ol>
+            <li><strong>LCD: </strong>Hook up the LCD and the potentiometer the same way as we did in the <a href="Scroll.html">Scroll tutorial</a>. You should be using 10 of the 14 pins, hooked up to power, ground, the potentiometer, and Arduino pins 2-5, 11, and 12.</li>
+            <li><strong>Speaker: </strong>Connect one end of the speaker to pin 9. Connect the other end through the 100 ohm resistor to ground.</li>
+            <li><strong>Button: </strong>Connect one side of the button to power and the other through the 10kohm resistor to ground. Connect a wire from pin 8 on the Arduino to the joint between the button and the resistor. This will read the value from the resulting voltage divider.</li>
+            <li><strong>You're done! </strong>Plug your Arduino into the USB port on your computer.</li>
+          </ol>
+        </div>
+        <div class="col-xs-7 col-med-7">
+            <a href="http://i.imgur.com/9qB5h4x.png"><img src="http://i.imgur.com/9qB5h4x.png" alt="..." style="width:95%;" class="img-thumbnail-project"></a>
+        </div>
+      </div><!--Breadboard layout row-->
+
+    <hr class="featurette-divider">
+
+    <div class="row"><!--Software-->
+      <div class="col-xs-4 col-med-4">
+        <a href="http://i.imgur.com/723X3bT.png"><img src="http://i.imgur.com/723X3bT.png" alt="..." style="width:95%;" class="img-thumbnail-project"></a>
+      </div>
+      <div class="col-xs-8 col-med-8">
+        <h3>Software</h3>
+        <ol>
+          <li><strong>Getting started: </strong>Import <a href="../Beginner/pitches.html">pitches.h</a> and the LCD display and initialize variables for the LCD, button, and speaker.</li>
+          <li><strong>Store song values: </strong> To store our song, we need three arrays. One will store the lyrics. One will store the note names. Those will be used for the LCD display. The third array will store the pitches that will be played by the speaker. You can either use the same values in the code on the left or make up your own song. If you want silence, put a 0 in the pitches array.</li>
+          <li><strong>Setup: </strong>Set the speaker pin to output and the button pin to input. Initalize the LCD with lcd.begin(16,2).</li>
+          <li><strong>Start playing song: </strong>We want to check if the button has been pressed to start the song. If so, we will loop through our arrays and output the values to the LCD and speaker. Start out by writing an if statement to check if the button has been pressed.</li>
+          <li><strong>Loop through LCD values: </strong>Our song has four lines, so we need to run an if statement four times. For each loop, we want to print one line of lyrics and one line of notes to the LCD. To print to the LCD, you first set your cursor to the space you want to start, then print. We'll need to set our cursor to the top line, print one line of lyrics, set our cursor to the second line, and then print one line of notes.</li>
+          <li><strong>Play song notes: </strong>Each one of our lines corresponds to four notes, so for each time through our outer loop, we'll need an inner loop to run four times. Inside our inner loop, check to see if the current note is 0 - that means silence. If it is, output noTone to your speaker pin. Otherwise, play the note using tone. The duration of the note will be 250 msec. Then, delay for 500 msec to let the note play out. Outside the inner loop, but still in the outer loop, clear the LCD display for the next time through the loop.</li>
+          <li><strong>Experiment: </strong>Try writing different songs with new lyrics. Can you add more buttons so you can choose different songs? If you want to get more complicated and write a longer song, experiment with storing the lyrics and notes in an outside text file and loading it in later.</li>
+        </ol>
+      </div>
+    </div><!--Software row-->
+
+    <hr class="featurette-divider">
+
+    <div class="row">
+      <div class="col-xs-8 col-xs-offset-2 col-med-8 col-med-offset-2">
+        <h3>The Finished Product</h3>
+        <video controls loop src="blink.mp4" style="width:100%;"></video>
+      </div>
+    </div>
+
+      </br><hr class="featurette-divider"></br>
+
+      <p>
+        <a class="btn btn-primary btn-lg pull-left" role="button" href="Scroll.html"><-- Previous: Scroll</a>
+        <a class="btn btn-primary btn-lg pull-right" role="button" href="Timer.html">Next: Stopwatch --></a>
+      </p>
+
+    </div><!--/.container-->
+
+    </br></br></br>
+    <div id="footer">
+      <div class="container">
+        <p class="text-muted"><em>Header image based on <a href="http://pixabay.com/en/karaoke-stereo-microphone-mic-149745/">Karaoke</a> by OpenClips (Public Domain)</em></p>
+        <p class="text-muted">Built on Bootstrap by Kristen Pownell</p>
+      </div>
+    </div>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../../bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>

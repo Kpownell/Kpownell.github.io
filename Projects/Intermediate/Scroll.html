@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Scroll</title>
+
+    <!-- Bootstrap -->
+    <link href="../../bootstrap/css/bootstrap.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <!--NAV BAR-->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Arduino World</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li><a href="../../index.html">Home</a></li>
+
+             <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Learn<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="../../Learn/WhatIsArduino.html">What is Arduino?</a></li>
+                <li class="divider"></li>
+                <li><a href="../../Learn/ElectricityBasics.html">Electricity Basics</a></li>
+                <li class="divider"></li>
+                <li><a href="../../Learn/Hardware.html">Hardware</a></li>
+                <li class="divider"></li>
+                <li><a href="../../Learn/Software.html">Software</a></li>
+              </ul>
+            </li>
+
+             <li class="dropdown active">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="../Beginner/Beginner.html">Beginner</a></li>
+                <li class="divider"></li>
+                <li class="active"><a href="Intermediate.html">Intermediate</a></li>
+                <li class="divider"></li>
+                <li><a href="../Advanced/Advanced.html">Advanced</a></li>
+                <li class="divider"></li>
+                <li><a href="../Shields/Shields.html">Shields</a></li>
+              </ul>
+            </li>
+
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">More<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="../More/BeyondArduino.html">Beyond Arduino</a></li>
+                <li class="divider"></li>
+                <li><a href="../More/Links.html">Links</a></li>
+                <li class="divider"></li>
+                <li><a href="../More/Contact.html">Contact</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-2 col-md-2">
+          </br></br></br><a href="http://i.imgur.com/OOgY2OI.jpg"><img class="img-circle-header" src="http://i.imgur.com/OOgY2OI.jpg" alt="Intermediate"></a>
+        </div>
+        <div class="col-xs-10 col-md-10">
+          <div class="page-header">
+            </br></br><h1>Message Scroll</br><small>Use a liquid crystal display to scroll your name!</small></h1>
+          </div><!--/.page-header-->
+        </div>
+      </div>
+
+      <div class="row"><!--Materials-->
+        <div class="col-xs-7 col-med-7">
+          <a href="http://i.imgur.com/1Mm1FGr.png"><img src="http://i.imgur.com/1Mm1FGr.png" alt="..." style="width:95%;" class="img-thumbnail-project"></a>
+        </div>
+        <div class="col-xs-5 col-med-5">
+          <h3></br>Learning Objectives</h3>
+          <ul>
+            <li><strong>Emphasis: </strong>Equal</li>
+            <li><strong>Hardware: </strong>LCD Display</li>
+            <li><strong>Software: </strong>Use external libraries (Liquid Crystal)</li>
+          </ul>
+          <h3>Materials</h3>
+          <ul>
+            <li>Arduino Uno</li>
+            <li>Breadboard and wires</li>
+            <li>16x2 LCD display</li>
+            <li>Potentiometer</li>
+          </ul>
+        </div><!--Materials row-->
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row"><!--Breadboard layout-->
+        <div class="col-xs-5 col-med-5">
+          <h3>Breadboard Layout</h3>
+          <ol>
+            <li><strong>LCD Preparation: </strong>When you first take an LCD out of the box, you can't immediately hook it up to your Arduino; you have to solder on header pins first. You can either just solder in the pins and connect it to a breadboard, or you can make the LCD self-sufficient by connecting wires to the header pins, as in <a href="http://www.instructables.com/id/Connect-A-16x2-LCD-Display-To-An-Arduino/#step0">this tutorial.</a>
+            </li>
+            <li><strong>LCD Set-up: </strong>The LCD has 14 pins. For these tutorials, we're only going to be using 4 bits, which means we only need to use 10 of the pins. Use the guide below or on <a href="http://www.instructables.com/id/Connecting-an-LCD-to-the-Arduino/">this site</a>:
+              <ul>
+                <li>Pin 1 (Vss/GND): GND pin on Arduino and potentiometer</li>
+                <li>Pin 2 (Vcc/5 V): 5V pin on Arduino and potentiometer</li>
+                <li>Pin 3 (Vee/Contrast Adjustment): Potentiometer wiper</li>
+                <li>Pin 4 (H/L Register Select): Arduino pin 12</li>
+                <li>Pin 5 (H/L Read/Write): GND</li>
+                <li>Pin 6 (H/L Enable): Arduino pin 11</li>
+                <li>Pin 11 (Data Bus Line 4): Pin 5</li>
+                <li>Pin 12 (DB5): Pin 4</li>
+                <li>Pin 13 (DB6): Pin 3</li>
+                <li>Pin 14 (DB7): Pin 2</li>
+              </ul>
+            <li><strong>You're done! </strong>Plug your Arduino into the USB port on your computer.</li>
+          </ol>
+        </div>
+        <div class="col-xs-7 col-med-7">
+            <a href="http://i.imgur.com/Ni9r2jw.pngg"><img src="http://i.imgur.com/Ni9r2jw.png" alt="..." style="width:95%;" class="img-thumbnail-project"></a>
+        </div>
+      </div><!--Breadboard layout row-->
+
+    <hr class="featurette-divider">
+
+    <div class="row"><!--Software-->
+      <div class="col-xs-4 col-med-4">
+        <a href="http://i.imgur.com/qEmH67H.png"><img src="http://i.imgur.com/qEmH67H.png" alt="..." style="width:95%;" class="img-thumbnail-project"></a>
+      </div>
+      <div class="col-xs-8 col-med-8">
+        <h3>Software</h3>
+        <ol>
+          <li><strong>Getting started: </strong>Before you start making new sketches, first test your LCD to make sure it works. The Arduino program has built-in sketches for LCDs; go to File > Examples > LiquidCrystal and load HelloWorld onto your Arduino. If nothing shows up on your LCD, try twisting the potentiometer to change the contrast.</li>
+          <li><strong>Initializing: </strong>For this tutorial, we're essentially modifying one of the example sketches already present in the Arduino library. First, import the LiquidCrystal library and initialize your LCD with the correct pin numbers. Also, choose and store a String to scroll across your LCD.</li>
+          <li><strong>Setup: </strong>Set up your LCD with the command lcd.begin(16, 2). This tells the program that you're using an LCD with 16 columns and 2 rows. Then print your string to the display. Delay for a bit to ensure the string prints correctly.</li>
+          <li><strong>Scroll string: </strong>To scroll our string, we need to know how many spaces it needs to move. Inside your loop method, initialize a variable to store the total number of spaces you're using: 16 columns + the length of your string. Then, set up a for loop that will run the same number of times. Each time through the loop, call the lcd.scrollDisplayLeft() method to move your message over one space. Delay to ensure your message doesn't skip around so quickly you miss it. Congratulations; you have a scrolling message!
+          </li>
+          <li><strong>Experiment: </strong>Arduino comes with plenty of built-in commands for LCDs. Try scrolling right instead of left, or scroll back and forth. Can you make your message blink, move to the second row, or count up each time it goes across?</li>
+        </ol>
+      </div>
+    </div><!--Software row-->
+
+    <hr class="featurette-divider">
+
+    <div class="row">
+      <div class="col-xs-8 col-xs-offset-2 col-med-8 col-med-offset-2">
+        <h3>The Finished Product</h3>
+        <video controls loop src="blink.mp4" style="width:100%;"></video>
+      </div>
+    </div>
+
+      </br><hr class="featurette-divider"></br>
+
+      <p>
+        <a class="btn btn-primary btn-lg pull-right" role="button" href="Karaoke.html">Next: Karaoke --></a>
+      </p>
+
+    </div><!--/.container-->
+
+    </br></br></br>
+    <div id="footer">
+      <div class="container">
+        <p class="text-muted"><em>Header image based on <a href="http://commons.wikimedia.org/wiki/File:2x8_amber_HD44780_LCD_CIMG0416.JPG">HD44780 LCD CIMG0416</a> by MikroLogika (CC-BY-SA)</em></p>
+        <p class="text-muted">Built on Bootstrap by Kristen Pownell</p>
+      </div>
+    </div>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../../bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>

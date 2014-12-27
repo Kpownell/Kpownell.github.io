@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Spinner</title>
+
+    <!-- Bootstrap -->
+    <link href="../../bootstrap/css/bootstrap.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <!--NAV BAR-->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Arduino World</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li><a href="../../index.html">Home</a></li>
+
+             <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Learn<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="../../Learn/WhatIsArduino.html">What is Arduino?</a></li>
+                <li class="divider"></li>
+                <li><a href="../../Learn/ElectricityBasics.html">Electricity Basics</a></li>
+                <li class="divider"></li>
+                <li><a href="../../Learn/Hardware.html">Hardware</a></li>
+                <li class="divider"></li>
+                <li><a href="../../Learn/Software.html">Software</a></li>
+              </ul>
+            </li>
+
+             <li class="dropdown active">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="../Beginner/Beginner.html">Beginner</a></li>
+                <li class="divider"></li>
+                <li class="active"><a href="Intermediate.html">Intermediate</a></li>
+                <li class="divider"></li>
+                <li><a href="../Advanced/Advanced.html">Advanced</a></li>
+                <li class="divider"></li>
+                <li><a href="../Shields/Shields.html">Shields</a></li>
+              </ul>
+            </li>
+
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">More<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="../More/BeyondArduino.html">Beyond Arduino</a></li>
+                <li class="divider"></li>
+                <li><a href="../More/Links.html">Links</a></li>
+                <li class="divider"></li>
+                <li><a href="../More/Contact.html">Contact</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-2 col-md-2">
+          </br></br></br><a href="http://i.imgur.com/L8VYMpF.jpg"><img class="img-circle-header" src="http://i.imgur.com/L8VYMpF.jpg" alt="Intermediate"></a>
+        </div>
+        <div class="col-xs-10 col-md-10">
+          <div class="page-header">
+            </br></br><h1>Spinner</br><small>Watch the wheel go round and round... Where will it stop?</small></h1>
+          </div><!--/.page-header-->
+        </div>
+      </div>
+
+      <div class="row"><!--Materials-->
+        <div class="col-xs-7 col-med-7">
+          <a href="http://i.imgur.com/npUE4Ex.png"><img src="http://i.imgur.com/npUE4Ex.png" alt="..." style="width:95%;" class="img-thumbnail-project"></a>
+        </div>
+        <div class="col-xs-5 col-med-5">
+          <h3></br>Learning Objectives</h3>
+          <ul>
+            <li><strong>Emphasis: </strong>Hardware</li>
+            <li><strong>Hardware: </strong>DC Motor, Transistor, Diode</li>
+            <li><strong>Software: </strong>Run a DC motor; simple state machine</li>
+          </ul>
+          <h3>Materials</h3>
+          <ul>
+            <li>Arduino Uno</li>
+            <li>Breadboard and wires</li>
+            <li>Small DC Motor</li>
+            <li>Diode (1N4001 or similar)</li>
+            <li>Transistor (PN2222 or similar)</li>
+            <li>330 ohm resistor</li>
+            <li>Pushbutton switches</li>
+            <li>10kohm resistor</li>
+          </ul>
+        </div><!--Materials row-->
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row"><!--Breadboard layout-->
+        <div class="col-xs-5 col-med-5">
+          <h3>Breadboard Layout</h3>
+          <ol>
+            <li><strong>Switch: </strong>Let's do the easy part first - hook up one end of the pushbutton switch to power and the other to the 10kohm resistor and ground. Connect a wire from pin 11 to the joint between the button and the resistor.</li>
+            <li><strong>Transistor: </strong>To control the motor, we could just send 5 V straight through. However, DC motors generally draw more power than an Arduino can provide. Therefore, we need to use a transistor to act as a middleman between the Arduino and the motor. The transistor has three pins: from left to right, looking at the flat side, collector, base, and emitter. When a little bit of current is sent to the base, it turns the transistor on and allows a large amount of current to flow from the collector to the emitter. Connect the collector pin of the transistor to one end of the motor and the emitter pin to ground. Connect the base pin through the 330-ohm resistor to pin 9 on the Arduino.</li>
+            <li><strong>Diode: </strong>Turning off the power to the motor could potentially create a reverse current that might damage the transistor or the Arduino. To protect against this, we need to add a diode, which only allows current to flow in one direction. The striped end of the diode is the positive end. Connect this to power and to the unconnected end of the motor. Connect the unstriped end to the other end of the motor and the collector pin on the transistor. Congratulations, you have a safe, functional motor circuit!</li>
+            <li><strong>Motor: </strong>To use your circuit as a wheel of fortune, simply attach a colorful wheel to the spinning end of your DC motor. We used the cardboard wheel from the Game of Life, but you can make your own if you'd like.</li>
+            <li><strong>You're done! </strong>Plug your Arduino into the USB port on your computer.</li>
+          </ol>
+        </div>
+        <div class="col-xs-7 col-med-7">
+            <a href="http://i.imgur.com/DxPiNcx.png"><img src="http://i.imgur.com/DxPiNcx.png" alt="..." style="width:95%;" class="img-thumbnail-project"></a>
+        </div>
+      </div><!--Breadboard layout row-->
+
+    <hr class="featurette-divider">
+
+    <div class="row"><!--Software-->
+      <div class="col-xs-4 col-med-4">
+        <a href="http://i.imgur.com/EQ3XCV0.png"><img src="http://i.imgur.com/EQ3XCV0.png" alt="..." style="width:95%;" class="img-thumbnail-project"></a>
+      </div>
+      <div class="col-xs-8 col-med-8">
+        <h3>Software</h3>
+        <ol>
+          <li><strong>Getting started: </strong>Our program needs to read the button input and use it to decide whether to start, stop, or continue running the motor. Declare variables to store your button and transistor (motor) pins. Also, declare a variable to store the state of the motor - on or off.</li>
+          <li><strong>Setup: </strong>Set the motor to input and the button to output.</li>
+          <li><strong>Change button state: </strong>First read the button input to determine if the motor needs to change state. If the button has been pressed, we need to switch the state of the motor from on to off. We can do this with a single line of code: running = !running. The delay statement debounces the button so it doesn't get read more than once.</li>
+          <li><strong>Run motor: </strong>We plugged our motor into a PWM pin, so it can be run at any speed from 0-255. We chose 150 as a medium value. AnalogWrite your chosen value to the motorPin. You need to multiply your value by the running variable so that the motor won't run if it needs to be turned off. That's it! Run your program and experiment with different speeds. If your wheel doesn't work immediately, try spinning it manually to get the motor started - it tends to get stuck at first.</li>
+          <li><strong>Experiment: </strong>Can you make the motor go backwards? (Hint: Try switching the motor pins.) What about having it change up halfway through the spin? Can you make it choose a random amount of spin time rather than spinning only when the button is pressed? Try using a potentiometer to change spin speed.</li>
+        </ol>
+      </div><!--col-->
+    </div><!--row-->
+
+    <hr class="featurette-divider">
+
+    <div class="row">
+      <div class="col-xs-8 col-xs-offset-2 col-med-8 col-med-offset-2">
+        <h3>The Finished Product</h3>
+        <video controls loop src="blink.mp4" style="width:100%;"></video>
+      </div>
+    </div>
+
+      </br><hr class="featurette-divider"></br>
+
+      <p>
+        <a class="btn btn-primary btn-lg pull-left" role="button" href="Mood.html"><-- Previous: Mood Sensor</a>
+        <a class="btn btn-primary btn-lg pull-right" role="button" href="../Advanced/Advanced.html">Start Advanced Projects!</a>
+      </p>
+
+    </div><!--/.container-->
+
+    </br></br></br>
+    <div id="footer">
+      <div class="container">
+        <p class="text-muted"><em>Header image based on <a href="http://commons.wikimedia.org/wiki/File:Roulette_-_detail.jpg">Roulette</a> by Conor Ogle (CC-BY)</em></p>
+        <p class="text-muted">Built on Bootstrap by Kristen Pownell</p>
+      </div>
+    </div>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../../bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>

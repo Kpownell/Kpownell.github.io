@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Karaoke</title>
+
+    <!-- Bootstrap -->
+    <link href="../../bootstrap/css/bootstrap.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <!--NAV BAR-->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Arduino World</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li><a href="../../index.html">Home</a></li>
+
+             <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Learn<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="../../Learn/WhatIsArduino.html">What is Arduino?</a></li>
+                <li class="divider"></li>
+                <li><a href="../../Learn/ElectricityBasics.html">Electricity Basics</a></li>
+                <li class="divider"></li>
+                <li><a href="../../Learn/Hardware.html">Hardware</a></li>
+                <li class="divider"></li>
+                <li><a href="../../Learn/Software.html">Software</a></li>
+              </ul>
+            </li>
+
+             <li class="dropdown active">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="../Beginner/Beginner.html">Beginner</a></li>
+                <li class="divider"></li>
+                <li class="active"><a href="Intermediate.html">Intermediate</a></li>
+                <li class="divider"></li>
+                <li><a href="../Advanced/Advanced.html">Advanced</a></li>
+                <li class="divider"></li>
+                <li><a href="../Shields/Shields.html">Shields</a></li>
+              </ul>
+            </li>
+
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">More<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="../More/BeyondArduino.html">Beyond Arduino</a></li>
+                <li class="divider"></li>
+                <li><a href="../More/Links.html">Links</a></li>
+                <li class="divider"></li>
+                <li><a href="../More/Contact.html">Contact</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-2 col-md-2">
+          </br></br></br><a href="http://i.imgur.com/FclRgwL.jpg"><img class="img-circle-header" src="http://i.imgur.com/FclRgwL.jpg" alt="Intermediate"></a>
+        </div>
+        <div class="col-xs-10 col-md-10">
+          <div class="page-header">
+            </br></br><h1>Stopwatch</br><small>Keep time with your own Arduino stopwatch!</small></h1>
+          </div><!--/.page-header-->
+        </div>
+      </div>
+
+      <div class="row"><!--Materials-->
+        <div class="col-xs-7 col-med-7">
+          <a href="http://i.imgur.com/loPcyEQ.png"><img src="http://i.imgur.com/loPcyEQ.png" alt="..." style="width:95%;" class="img-thumbnail-project"></a>
+        </div>
+        <div class="col-xs-5 col-med-5">
+          <h3></br>Learning Objectives</h3>
+          <ul>
+            <li><strong>Emphasis: </strong>Software</li>
+            <li><strong>Hardware: </strong>LCD with additional components</li>
+            <li><strong>Software: </strong>Find, parse, and display current time</li>
+          </ul>
+          <h3>Materials</h3>
+          <ul>
+            <li>Arduino Uno</li>
+            <li>Breadboard and wires</li>
+            <li>16x2 LCD Display</li>
+            <li>Potentiometer</li>
+            <li>Piezo buzzer</li>
+            <li>100 ohm resistor</li>
+            <li>3 pushbutton switches</li>
+            <li>3-10kohm resistor</li>
+            <li>LED</li>
+            <li>330ohm resistor</li>
+          </ul>
+        </div><!--Materials row-->
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row"><!--Breadboard layout-->
+        <div class="col-xs-5 col-med-5">
+          <h3>Breadboard Layout</h3>
+          <ol>
+            <li><strong>LCD: </strong>Hook up the LCD and the potentiometer the same way as we did in the <a href="Scroll.html">Scroll tutorial</a>. You should be using 10 of the 14 pins, hooked up to power, ground, the potentiometer, and Arduino pins 2-5, 11, and 12.</li>
+            <li><strong>Speaker: </strong>Connect one end of the speaker to pin 9. Connect the other end through the 100 ohm resistor to ground.</li>
+            <li><strong>Buttons: </strong>For each button, connect one side the power and the other through a 10-kohm resistor to ground. Connect Arduino pins 6-8 in between the buttons and the resistors.</li>
+            <li><strong>LED: </strong>Connect pin 10 through the 330-ohm resistor to the long leg of the LED. Connect the short leg to ground.</li>
+            <li><strong>You're done! </strong>Plug your Arduino into the USB port on your computer.</li>
+          </ol>
+        </div>
+        <div class="col-xs-7 col-med-7">
+            <a href="http://i.imgur.com/gpWZxeK.png"><img src="http://i.imgur.com/gpWZxeK.png" alt="..." style="width:95%;" class="img-thumbnail-project"></a>
+        </div>
+      </div><!--Breadboard layout row-->
+
+    <hr class="featurette-divider">
+
+    <div class="row"><!--Software-->
+      <div class="col-xs-4 col-med-4">
+        <a href="http://i.imgur.com/ilUAKFO.png"><img src="http://i.imgur.com/ilUAKFO.png" alt="..." style="width:95%;" class="img-thumbnail-project"></a>
+      </div>
+      <div class="col-xs-8 col-med-8">
+        <h3>Software</h3>
+        <ol>
+          <li><strong>Getting started: </strong>We want our timer to start counting when we press one button, pause when we press another, and reset when we press the third button. The LED will be on when tme is counting and off when it's not. The speaker will buzz whenever a button is pressed. The Arduino library has a function to keep track of milliseconds, but we're going to need an extra function to convert the raw time reading to something we can use. Let's get started! Initalize variables for your buttons, speaker, LED, and LCD.</li>
+          <li><strong>Time variables: </strong>We need variables to keep track of time started, finished, elapsed, and paused. Initalize four longs (decimal values) to store these numbers. We also need to know whether the timer is on or off. Initalize an integer that will be 0 when the timer is off and 1 when it's on. Inside your setup method, set your start and finished variables equal to millis(), the current time reading.</li>
+          <li><strong>DisplayResult Method: </strong>Create a new method called displayResult(). Inside this method, declare four floats (decimal numbers) to store the hour, minute, second, and millisecond. Then declare four integers to store the four digits we'll be displaying on our LCD. Finally, declare another long that will store the overflow.</li>
+          <li><strong>Find time elapsed: </strong>We need to find time elapsed in order to display it on the LCD, but time elapsed is different if the timer is going or paused. If timer is going, we can find time elapsed simply by subtracting our start time from the current millis() reading. If the timer is paused, we've stored the time paused into our finished variable, so elapsed = finished - start instead.</li>
+          <li><strong>Convert milliseconds to displayable time: </strong>We're going to need some math to change the milliseconds into minutes and seconds. The % operator allows us to store the remainder from division instead of simply the integer result. Use the formula in the code to the left to get your numbers into a usable form. The next set of if statements is necessary in case your timer has gone over an hour. We have one integer for each digit. After we have the digits, we concatenate them to form a string, then print the string to the console. Voila! You have displayable time.</li>
+        </ol>
+      </div><!--col-->
+    </div><!--row-->
+    <div class="row"><!--Software-->
+      <div class="col-xs-8 col-med-8">
+        <ol start="6">
+          <li><strong>Loop method: </strong>Onto the next step! Inside our loop method, we're going to need conditional statements that let us define what happens when we start, pause, and reset the timer. Start out by storing the states of your three buttons into three variables.</li>
+          <li><strong>Reset: </strong>In this state, we need to reset all our times and turn off the timer and LED. Change start and finished to millis() so they store the same time. Turn off the LED, and change timerOn to 0. Then delay a few hundred milliseconds. This is called debouncing; it ensures that the program doesn't read the button as being pressed multiple times.</li>
+          <li><strong>Start timer: </strong>If we pressed the button to start the timer while the timer isn't running, we need to play a short tone on the speaker, turn the LED on, and change our time variables. We need to determine whether we're starting from scratch or from a paused state. If your start and finished variables are the same, it's starting from scratch, so you can just store start as the current millis(). Otherwise, you need to account for the time lost during the pause. Add the time paused (current time - pause) to start to move up your start time. Then turn on your timer variable and debounce the button.</li>
+          <li><strong>Pause timer: </strong>If we pressed the pause button while the timer is running, we need to store the time paused, turn off the LED and timer, and play a short note on the speaker. Store the current time in both finished and pause. Debounce the button to finish.</li>
+          <li><strong>Display time: </strong>You've already written a method to display the time on the LCD - call it at the end of your loop method by writing displayResult(). Congratulations, you have a functioning timer!</li>
+          <li><strong>Experiment: </strong>Add a few more LEDs to light up different colors for different states of your timer. What if you wanted to count down instead of up? Could you have more than one timer going at once?</li>
+        </ol>
+      </div>
+      <div class="col-xs-4 col-med-4">
+        <a href="http://i.imgur.com/TZZ3XBJ.png"><img src="http://i.imgur.com/TZZ3XBJ.png" alt="..." style="width:95%;" class="img-thumbnail-project"></a>
+      </div>
+    </div><!--Software row-->
+
+    <hr class="featurette-divider">
+
+    <div class="row">
+      <div class="col-xs-8 col-xs-offset-2 col-med-8 col-med-offset-2">
+        <h3>The Finished Product</h3>
+        <video controls loop src="blink.mp4" style="width:100%;"></video>
+      </div>
+    </div>
+
+      </br><hr class="featurette-divider"></br>
+
+      <p>        
+        <a class="btn btn-primary btn-lg pull-left" role="button" href="Karaoke.html"><-- Previous: Karaoke</a>
+        <a class="btn btn-primary btn-lg pull-right" role="button" href="Robot.html">Next: Random Drawing Robot --></a>
+      </p>
+
+    </div><!--/.container-->
+
+    </br></br></br>
+    <div id="footer">
+      <div class="container">
+        <p class="text-muted"><em>Header image based on <a href="https://www.flickr.com/photos/purplemattfish/3020016417/">Ready Steady...Go</a> by Matthew (CC-BY-NC-ND)</em></p>
+        <p class="text-muted">Built on Bootstrap by Kristen Pownell</p>
+      </div>
+    </div>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../../bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>

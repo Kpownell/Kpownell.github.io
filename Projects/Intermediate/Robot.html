@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Robot</title>
+
+    <!-- Bootstrap -->
+    <link href="../../bootstrap/css/bootstrap.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <!--NAV BAR-->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Arduino World</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li><a href="../../index.html">Home</a></li>
+
+             <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Learn<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="../../Learn/WhatIsArduino.html">What is Arduino?</a></li>
+                <li class="divider"></li>
+                <li><a href="../../Learn/ElectricityBasics.html">Electricity Basics</a></li>
+                <li class="divider"></li>
+                <li><a href="../../Learn/Hardware.html">Hardware</a></li>
+                <li class="divider"></li>
+                <li><a href="../../Learn/Software.html">Software</a></li>
+              </ul>
+            </li>
+
+             <li class="dropdown active">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="../Beginner/Beginner.html">Beginner</a></li>
+                <li class="divider"></li>
+                <li class="active"><a href="Intermediate.html">Intermediate</a></li>
+                <li class="divider"></li>
+                <li><a href="../Advanced/Advanced.html">Advanced</a></li>
+                <li class="divider"></li>
+                <li><a href="../Shields/Shields.html">Shields</a></li>
+              </ul>
+            </li>
+
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">More<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="../More/BeyondArduino.html">Beyond Arduino</a></li>
+                <li class="divider"></li>
+                <li><a href="../More/Links.html">Links</a></li>
+                <li class="divider"></li>
+                <li><a href="../More/Contact.html">Contact</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-2 col-md-2">
+          </br></br></br><a href="http://i.imgur.com/Xjchpcr.jpg"><img class="img-circle-header" src="http://i.imgur.com/Xjchpcr.jpg" alt="Intermediate"></a>
+        </div>
+        <div class="col-xs-10 col-md-10">
+          <div class="page-header">
+            </br></br><h1>Random Drawing Robot</br><small>Create your own mini-masterpieces with this electronic artist.</small></h1>
+          </div><!--/.page-header-->
+        </div>
+      </div>
+
+      <div class="row"><!--Materials-->
+        <div class="col-xs-7 col-med-7">
+          <a href="http://i.imgur.com/a0wXT8u.png"><img src="http://i.imgur.com/a0wXT8u.png" alt="..." style="width:95%;" class="img-thumbnail-project"></a>
+        </div>
+        <div class="col-xs-5 col-med-5">
+          <h3></br>Learning Objectives</h3>
+          <ul>
+            <li><strong>Emphasis: </strong>Equal</li>
+            <li><strong>Hardware: </strong>Servo motor</li>
+            <li><strong>Software: </strong>Random number generation</li>
+          </ul>
+          <h3>Materials</h3>
+          <ul>
+            <li>Arduino Uno</li>
+            <li>Breadboard and wires</li>
+            <li>Standard Servo Motor</li>
+            <li>10kohm resistor</li>
+            <li>Pushbutton switch</li>
+            <li>Crayon, colored pencil, or marker</li>
+          </ul>
+        </div><!--Materials row-->
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row"><!--Breadboard layout-->
+        <div class="col-xs-5 col-med-5">
+          <h3>Breadboard Layout</h3>
+          <ol>
+            <li><strong>Switch: </strong>Connect the switch the same way as always: one end to power, the other through the 10k resistor to ground, and a wire from the switch-resistor joint to pin 7.</li>
+            <li><strong>Servo Motor: </strong>A servo is a small motor that allows you control the angle of rotation. Unlike DC motors or continuous rotation servos, a standard servo only moves from 0-180 degrees. This makes it great for precise applications, like robot arms or sensor control. It's also really easy to hook up. You should have three wires coming from your servo: black, red, and white. Connect the black wire to ground and the red to power. Connect the white to a PWM pin on the Arduino - we used pin 10. That's all there is to it!</li>
+            <li><strong>Drawing utensil: </strong>Our robot can't draw without a pen! Your servo should have come with several plastic parts that hook onto the rotating end of the motor. Attach the long, skinny part and tape on your drawing utensil of choice. Check the video below if you're not sure what this looks like.</li>
+            <li><strong>You're done! </strong>Plug your Arduino into the USB port on your computer.</li>
+          </ol>
+        </div>
+        <div class="col-xs-7 col-med-7">
+            <a href="http://i.imgur.com/WK2itfi.png"><img src="http://i.imgur.com/WK2itfi.png" alt="..." style="width:95%;" class="img-thumbnail-project"></a>
+        </div>
+      </div><!--Breadboard layout row-->
+
+    <hr class="featurette-divider">
+
+    <div class="row"><!--Software-->
+      <div class="col-xs-4 col-med-4">
+        <a href="http://i.imgur.com/vlvSknE.png"><img src="http://i.imgur.com/vlvSknE.png" alt="..." style="width:95%;" class="img-thumbnail-project"></a>
+      </div>
+      <div class="col-xs-8 col-med-8">
+        <h3>Software</h3>
+        <ol>
+          <li><strong>Getting started: </strong>To make a random drawing robot, we need to generate random numbers to set the servo to a random angle at a random interval. This will allow our robot to make random strokes on the paper. Start by declaring ints to store your pin numbers and another int to store the robot state: on (1) or off (0).</li>
+          <li><strong>Servo setup: </strong>To program our servos, we need to import the servo library with the #include statement at the top of the code to the left. Then we declare a servo by creating Servo myServo at the top of our program. Inside our setup method, after we've set our input/output pins, set the servo pin by writing myServo.attach(servoPin). Now you have a valid servo that you can program.</li>
+          <li><strong>Seed random number generator: </strong>We need to initialize our random number using the randomSeed command. This tells our Arduino to generate random numbers based on a nonsense reading from an unconnected pin - we'll use analogRead(0) to tell it to use the noise coming off of pin 0. These values aren't tied to anything, and they're constantly changing, which will allow our numbers to appear as random as possible.</li>
+          <li><strong>Turn robot on: </strong>If we press the button, we want to change the robot state to be the opposite of what it currently is. We do this with a single line of code: robotOn = !robotOn. Then we need to delay to debounce the button.</li>
+          <li><strong>Generate random numbers: </strong>If your robot is turned on, it's time to draw! The random command can either take only an upper-bound (exclusive) or an upper (exclusive) and lower (inclusive) bound. Our servo can take values from 0-180 degrees, but the actual drawing range so it can work on paper is really from about 30-120 degrees. Write a random value between 30-120 degrees to the servo. We'll also delay a random amount so the brush strokes seem more random - generate and delay a random number of milliseconds from 100-500.</li>
+          <li><strong>Experiment: </strong>Try with multiple servos and multiple colors to make a true masterpiece. Can you change the speed or angle of your servo? What if you connect the robot to a light detector so it acts like a motion sensor and only draws when someone is close by? What else can you do with rotating servos?</li>
+        </ol>
+      </div><!--col-->
+    </div><!--row-->
+
+    <hr class="featurette-divider">
+
+    <div class="row">
+      <div class="col-xs-8 col-xs-offset-2 col-med-8 col-med-offset-2">
+        <h3>The Finished Product</h3>
+        <video controls loop src="blink.mp4" style="width:100%;"></video>
+      </div>
+    </div>
+
+      </br><hr class="featurette-divider"></br>
+
+      <p>
+        <a class="btn btn-primary btn-lg pull-left" role="button" href="Timer.html"><-- Previous: Stopwatch</a>
+        <a class="btn btn-primary btn-lg pull-right" role="button" href="Mood.html">Next: Mood Light --></a>
+      </p>
+
+    </div><!--/.container-->
+
+    </br></br></br>
+    <div id="footer">
+      <div class="container">
+        <p class="text-muted"><em>Header image based on <a href="http://commons.wikimedia.org/wiki/File:Colored_pencils_chevre.jpg">Colored pencils chevre</a> by Chevre (CC-BY-SA)</em></p>
+        <p class="text-muted">Built on Bootstrap by Kristen Pownell</p>
+      </div>
+    </div>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../../bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>

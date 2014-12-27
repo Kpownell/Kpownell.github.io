@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mood</title>
+
+    <!-- Bootstrap -->
+    <link href="../../bootstrap/css/bootstrap.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <!--NAV BAR-->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Arduino World</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li><a href="../../index.html">Home</a></li>
+
+             <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Learn<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="../../Learn/WhatIsArduino.html">What is Arduino?</a></li>
+                <li class="divider"></li>
+                <li><a href="../../Learn/ElectricityBasics.html">Electricity Basics</a></li>
+                <li class="divider"></li>
+                <li><a href="../../Learn/Hardware.html">Hardware</a></li>
+                <li class="divider"></li>
+                <li><a href="../../Learn/Software.html">Software</a></li>
+              </ul>
+            </li>
+
+             <li class="dropdown active">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="../Beginner/Beginner.html">Beginner</a></li>
+                <li class="divider"></li>
+                <li class="active"><a href="Intermediate.html">Intermediate</a></li>
+                <li class="divider"></li>
+                <li><a href="../Advanced/Advanced.html">Advanced</a></li>
+                <li class="divider"></li>
+                <li><a href="../Shields/Shields.html">Shields</a></li>
+              </ul>
+            </li>
+
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">More<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="../More/BeyondArduino.html">Beyond Arduino</a></li>
+                <li class="divider"></li>
+                <li><a href="../More/Links.html">Links</a></li>
+                <li class="divider"></li>
+                <li><a href="../More/Contact.html">Contact</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-2 col-md-2">
+          </br></br></br><a href="http://i.imgur.com/bvee6IN.jpg"><img class="img-circle-header" src="http://i.imgur.com/bvee6IN.jpg" alt="Intermediate"></a>
+        </div>
+        <div class="col-xs-10 col-md-10">
+          <div class="page-header">
+            </br></br><h1>Mood Sensor</br><small>Change RGB color based on temperature.</small></h1>
+          </div><!--/.page-header-->
+        </div>
+      </div>
+
+      <div class="row"><!--Materials-->
+        <div class="col-xs-7 col-med-7">
+          <a href="http://i.imgur.com/QoLaNJk.png"><img src="http://i.imgur.com/QoLaNJk.png" alt="..." style="width:95%;" class="img-thumbnail-project"></a>
+        </div>
+        <div class="col-xs-5 col-med-5">
+          <h3></br>Learning Objectives</h3>
+          <ul>
+            <li><strong>Emphasis: </strong>Software</li>
+            <li><strong>Hardware: </strong>Temperature Sensor/RGB LED</li>
+            <li><strong>Software: </strong>Convert sensor readings into usable values</li>
+          </ul>
+          <h3>Materials</h3>
+          <ul>
+            <li>Arduino Uno</li>
+            <li>Breadboard and wires</li>
+            <li>RGB LED (common cathode)</li>
+            <li>3-330 ohm resistors</li>
+            <li>Temperature sensor (TMP36 or similar)</li>
+          </ul>
+        </div><!--Materials row-->
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row"><!--Breadboard layout-->
+        <div class="col-xs-5 col-med-5">
+          <h3>Breadboard Layout</h3>
+          <ol>
+            <li><strong>RGB LED: </strong>Connect the RGB LED the same way you hooked it up in <a href="../Beginner/Dim.html">Dim the Lights.</a> If your LED is common cathode, the long leg connects to ground. The single leg separated by the long leg is red; the two to the other side, from inside to out, are green and blue. Each light leg connects through a 330-ohm resistor to a PWM pin - we used 9-11.</li>
+            <li><strong>Temperature Sensor: </strong>The temperature sensor we're using is hooked up similar to a potentiometer. The outer two legs go to power and ground, and the inner goes to an analog read pin (A0). However, unlike the potentiometer, this sensor won't work if you hook it up backwards. If you're looking at the flat side, the leftmost pin is power and the rightmost is ground.</li>
+            <li><strong>You're done! </strong>Plug your Arduino into the USB port on your computer.</li>
+          </ol>
+        </div>
+        <div class="col-xs-7 col-med-7">
+            <a href="http://i.imgur.com/vub6mzQ.png"><img src="http://i.imgur.com/vub6mzQ.png" alt="..." style="width:95%;" class="img-thumbnail-project"></a>
+        </div>
+      </div><!--Breadboard layout row-->
+
+    <hr class="featurette-divider">
+
+    <div class="row"><!--Software-->
+      <div class="col-xs-4 col-med-4">
+        <a href="http://i.imgur.com/EIP4nZZ.png"><img src="http://i.imgur.com/EIP4nZZ.png" alt="..." style="width:95%;" class="img-thumbnail-project"></a>
+      </div>
+      <div class="col-xs-8 col-med-8">
+        <h3>Software</h3>
+        <ol>
+          <li><strong>Getting started: </strong>You know the drill: open a new sketch and initalize variables for your light pins and temperature sensor input.</li>
+          <li><strong>Store RGB values: </strong>We want the RGB values to change based on temperature. To do this, we're going to map a range of temperature values to a specific group of RGB colors. We chose 12 colors based on <a href="http://timvandevall.com/wp-content/uploads/2013/08/Color-Wheel-Template-02.png">this color wheel</a> and made three arrays to store the corresponding values for the different colored lights. Check the code on the left for reference, or feel free to come up with your own values.</li>
+          <li><strong>Setup: </strong>Set your LED pins to output and initalize the Serial port so you can print the current temperature.</li>
+          <li><strong>Read temperature value: </strong>Read in the analog value from the temperature sensor and store it in a variable. Create another variable to store the value we're mapping to our RGB color index.</li>
+          <li><strong>Convert temperature to color: </strong>The TMP36 sensor has a range of -40 to 125 C, but we're only going to operate at or around room temperature, about 22 C/72 F. Our mood light responds to changes from 12-34 C, or ~54-93 F. The TMP36 returns 500mV at 0 C and increases by 10mV for every 1 C. Therefore, our range corresponds to readings from 620-840 mV. To write the code, we need to convert our analog value into mV, single out a certain range, and map that to values from 0-11. Got it? Don't worry if you don't understand the math; you can always use the reference code. The first line converts our reading into millivolts. The if statements confine our readings to the range around room temperature. Then we convert our millivolts into a value from 0-11 and write the corresponding color value from our stored color array into each PWM pin. Voila, instant color!
+          </li>
+          <li><strong>Print temperature value: </strong>We can also convert our reading into C/F and print that to the Serial monitor. For this, we're going to store our value in a float mapped from our 0-1023 range to 0-5 V. To convert to Celsius, we're going to use the fact that 500mV = 0 C and each 0.01 V = 1 C. Check the code for the resulting formula. To convert to Fahrenheit, use the normal formula: F = C * 9/5 + 32. Print the temperature in either system to the Serial monitor.</li>
+          <li><strong>Experiment: </strong>The most obvious change comes from tweaking the RBG values. Can you make your sensor more or less sensitive? What if you wanted to measure the room temperature and set off an alarm if it's too hot or cold? Consider printing the temperature to the LCD instead of just the Serial monitor.</li>
+        </ol>
+      </div>
+    </div><!--Software row-->
+
+    <hr class="featurette-divider">
+
+    <div class="row">
+      <div class="col-xs-8 col-xs-offset-2 col-med-8 col-med-offset-2">
+        <h3>The Finished Product</h3>
+        <video controls loop src="blink.mp4" style="width:100%;"></video>
+      </div>
+    </div>
+
+      </br><hr class="featurette-divider"></br>
+
+      <p>
+        <a class="btn btn-primary btn-lg pull-left" role="button" href="Robot.html"><-- Previous: Random Drawing Robot</a>
+        <a class="btn btn-primary btn-lg pull-right" role="button" href="Spinner.html">Next: Spinner --></a>
+      </p>
+
+    </div><!--/.container-->
+
+    </br></br></br>
+    <div id="footer">
+      <div class="container">
+        <p class="text-muted"><em>Header image based on <a href="http://pixabay.com/en/glow-stick-colorful-light-color-558591/">Glow Stick</a> by erA_Blackout (Public Domain)</em></p>
+        <p class="text-muted">Built on Bootstrap by Kristen Pownell</p>
+      </div>
+    </div>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../../bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>
