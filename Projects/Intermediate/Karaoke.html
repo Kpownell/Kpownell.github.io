@@ -112,6 +112,7 @@
             <li>Pushbutton switch</li>
             <li>10kohm resistor</li>
           </ul>
+          <em><a href="https://github.com/Kpownell/ArduinoWorld_Reference/tree/master/Intermediate/Karaoke">Reference Files</a></em>
         </div><!--Materials row-->
       </div>
 
@@ -126,6 +127,7 @@
             <li><strong>Button: </strong>Connect one side of the button to power and the other through the 10kohm resistor to ground. Connect a wire from pin 8 on the Arduino to the joint between the button and the resistor. This will read the value from the resulting voltage divider.</li>
             <li><strong>You're done! </strong>Plug your Arduino into the USB port on your computer.</li>
           </ol>
+          <em><a href="https://github.com/Kpownell/ArduinoWorld_Reference/blob/master/Intermediate/Karaoke/karaoke_schematic.png">Reference Schematic</a></em>
         </div>
         <div class="col-xs-7 col-med-7">
             <a href="http://i.imgur.com/9qB5h4x.png"><img src="http://i.imgur.com/9qB5h4x.png" alt="..." style="width:95%;" class="img-thumbnail-project"></a>
@@ -141,7 +143,7 @@
       <div class="col-xs-8 col-med-8">
         <h3>Software</h3>
         <ol>
-          <li><strong>Getting started: </strong>Import <a href="../Beginner/pitches.html">pitches.h</a> and the LCD display and initialize variables for the LCD, button, and speaker.</li>
+          <li><strong>Getting started: </strong>Import <a href="https://github.com/Kpownell/ArduinoWorld_Reference/blob/master/Intermediate/Karaoke/pitches.h">pitches.h</a> and the LCD display and initialize variables for the LCD, button, and speaker.</li>
           <li><strong>Store song values: </strong> To store our song, we need three arrays. One will store the lyrics. One will store the note names. Those will be used for the LCD display. The third array will store the pitches that will be played by the speaker. You can either use the same values in the code on the left or make up your own song. If you want silence, put a 0 in the pitches array.</li>
           <li><strong>Setup: </strong>Set the speaker pin to output and the button pin to input. Initalize the LCD with lcd.begin(16,2).</li>
           <li><strong>Start playing song: </strong>We want to check if the button has been pressed to start the song. If so, we will loop through our arrays and output the values to the LCD and speaker. Start out by writing an if statement to check if the button has been pressed.</li>
@@ -149,6 +151,7 @@
           <li><strong>Play song notes: </strong>Each one of our lines corresponds to four notes, so for each time through our outer loop, we'll need an inner loop to run four times. Inside our inner loop, check to see if the current note is 0 - that means silence. If it is, output noTone to your speaker pin. Otherwise, play the note using tone. The duration of the note will be 250 msec. Then, delay for 500 msec to let the note play out. Outside the inner loop, but still in the outer loop, clear the LCD display for the next time through the loop.</li>
           <li><strong>Experiment: </strong>Try writing different songs with new lyrics. Can you add more buttons so you can choose different songs? If you want to get more complicated and write a longer song, experiment with storing the lyrics and notes in an outside text file and loading it in later.</li>
         </ol>
+        <em><a href="https://github.com/Kpownell/ArduinoWorld_Reference/blob/master/Intermediate/Karaoke/Karaoke.ino">Reference Code</a></em>
       </div>
     </div><!--Software row-->
 
@@ -157,7 +160,7 @@
     <div class="row">
       <div class="col-xs-8 col-xs-offset-2 col-med-8 col-med-offset-2">
         <h3>The Finished Product</h3>
-        <video controls loop src="blink.mp4" style="width:100%;"></video>
+        <video controls loop src="Karaoke.mp4" style="width:100%;"></video>
       </div>
     </div>
 

@@ -109,6 +109,7 @@
             <li>3-330 ohm resistors</li>
             <li>Temperature sensor (TMP36 or similar)</li>
           </ul>
+          <em><a href="https://github.com/Kpownell/ArduinoWorld_Reference/tree/master/Intermediate/Mood%20Light">Reference Files</a></em>
         </div><!--Materials row-->
       </div>
 
@@ -122,6 +123,7 @@
             <li><strong>Temperature Sensor: </strong>The temperature sensor we're using is hooked up similar to a potentiometer. The outer two legs go to power and ground, and the inner goes to an analog read pin (A0). However, unlike the potentiometer, this sensor won't work if you hook it up backwards. If you're looking at the flat side, the leftmost pin is power and the rightmost is ground.</li>
             <li><strong>You're done! </strong>Plug your Arduino into the USB port on your computer.</li>
           </ol>
+          <em><a href="https://github.com/Kpownell/ArduinoWorld_Reference/blob/master/Intermediate/Mood%20Light/mood_schematic.png">Reference Schematic</a></em>
         </div>
         <div class="col-xs-7 col-med-7">
             <a href="http://i.imgur.com/vub6mzQ.png"><img src="http://i.imgur.com/vub6mzQ.png" alt="..." style="width:95%;" class="img-thumbnail-project"></a>
@@ -146,6 +148,7 @@
           <li><strong>Print temperature value: </strong>We can also convert our reading into C/F and print that to the Serial monitor. For this, we're going to store our value in a float mapped from our 0-1023 range to 0-5 V. To convert to Celsius, we're going to use the fact that 500mV = 0 C and each 0.01 V = 1 C. Check the code for the resulting formula. To convert to Fahrenheit, use the normal formula: F = C * 9/5 + 32. Print the temperature in either system to the Serial monitor.</li>
           <li><strong>Experiment: </strong>The most obvious change comes from tweaking the RBG values. Can you make your sensor more or less sensitive? What if you wanted to measure the room temperature and set off an alarm if it's too hot or cold? Consider printing the temperature to the LCD instead of just the Serial monitor.</li>
         </ol>
+        <em><a href="https://github.com/Kpownell/ArduinoWorld_Reference/blob/master/Intermediate/Mood%20Light/Mood.ino">Reference Code</a></em>
       </div>
     </div><!--Software row-->
 
@@ -154,7 +157,7 @@
     <div class="row">
       <div class="col-xs-8 col-xs-offset-2 col-med-8 col-med-offset-2">
         <h3>The Finished Product</h3>
-        <video controls loop src="blink.mp4" style="width:100%;"></video>
+        <video controls loop src="Mood.mp4" style="width:100%;"></video>
       </div>
     </div>
 
