@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Beyond Arduino</title>
+
+    <!-- Bootstrap -->
+    <link href="../bootstrap/css/bootstrap.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <!--NAV BAR-->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Arduino World</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li><a href="../index.html">Home</a></li>
+
+             <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Learn<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="../Learn/WhatIsArduino.html">What is Arduino?</a></li>
+                <li class="divider"></li>
+                <li><a href="../Learn/ElectricityBasics.html">Electricity Basics</a></li>
+                <li class="divider"></li>
+                <li><a href="../Learn/Hardware.html">Hardware</a></li>
+                <li class="divider"></li>
+                <li><a href="../Learn/Software.html">Software</a></li>
+              </ul>
+            </li>
+
+             <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="../Projects/Beginner/Beginner.html">Beginner</a></li>
+                <li class="divider"></li>
+                <li><a href="../Projects/Intermediate/Intermediate.html">Intermediate</a></li>
+                <li class="divider"></li>
+                <li><a href="../Projects/Advanced/Advanced.html">Advanced</a></li>
+                <li class="divider"></li>
+                <li><a href="../Projects/Shields/Shields.html">Shields</a></li>
+              </ul>
+            </li>
+
+            <li class="dropdown active">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">More<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="FurtherReading.html">Further Reading</a></li>
+                <li class="divider"></li>
+                <li class="active"><a href="BeyondArduino.html">Beyond Arduino</a></li>
+                <li class="divider"></li>
+                <li><a href="Resources.html">Resouces</a></li>
+                <li class="divider"></li>
+                <li><a href="About.html">About</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-2 col-md-2">
+          </br></br></br><a href="http://i.imgur.com/Ql6N9RR.jpg"><img class="img-circle-header" src="http://i.imgur.com/Ql6N9RR.jpg" alt="Intermediate"></a>
+        </div>
+        <div class="col-xs-10 col-md-10">
+          <div class="page-header">
+            </br></br><h1>Beyond Arduino</br><small>Learn about other microcontrollers you can use to continue with electrical engineering.</small></h1>
+          </div><!--/.page-header-->
+        </div>
+      </div>
+
+      <div class="row"><!--Materials-->
+        <div class="col-xs-4 col-md-4">
+          <a href="http://i.imgur.com/rvzFrvF.jpg"><img src="http://i.imgur.com/rvzFrvF.jpg" alt="..." style="width:95%;" class="img-thumbnail-project"></a>
+          <h6 class="cite"><a href="http://en.wikipedia.org/wiki/File:Thin_Layer_Embedded_Goldilocks_FPGA_Development_Board.jpg">Thin Layer Embedded Goldilocks</a> by Brentsinger (CC-BY-SA)</h6>
+        </div>
+        <div class="col-xs-8 col-md-8">
+          <h3></br>Other Arduino Boards</h3>
+          <ul>
+            <li><strong>What it is: </strong>The Uno isn't the only Arduino product out there. Arduino currently makes 15 boards and is working on two more.</li>
+            <li><strong>What it does: </strong>Some boards, like the <a href="http://arduino.cc/en/Main/ArduinoBoardMicro">Micro</a> or <a href="http://arduino.cc/en/Main/ArduinoBoardNano">Nano</a>, are essentially the same but a different size. Others, like the <a href="http://arduino.cc/en/Main/ArduinoBoardYun">Yun</a>, have increased functionality with built-in USB, Wifi, or Ethernet support.</li>
+            <li><strong>Where to get it: </strong>Check out the <a href="http://arduino.cc/en/Main/Products">Arduino products page</a> to learn more about the boards. You can also check the <a href="https://learn.adafruit.com/adafruit-arduino-selection-guide/selecting-an-arduino">Adafruit</a>, <a href="https://www.sparkfun.com/arduino_guide">Sparkfun</a>, or <a href="http://lifehacker.com/know-the-difference-between-the-most-common-arduino-boa-513094593">Lifehacker</a> Arduino selection guides.</li>
+            <li><strong>Learn to use it: </strong>Most Arduino boards run using the same software, so you already know the basics. Look up your board for more specific information.</li>
+            <li><strong>Project ideas: </strong>Read the <a href="FurtherReading.html">Further Reading</a> page on this site for Arduino project ideas - many are written for different platforms than the Uno.</li>
+          </ul>
+        </div><!--Other Arduino Boards row-->
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row"><!--Breadboard layout-->
+        <div class="col-xs-8 col-md-8">
+          <h3>Raspberry Pi</h3>
+          <ul>
+            <li><strong>What it is: </strong>Probably the most popular microcontroller apart from the Arduino. It's significantly more powerful and basically has all the functionality of a real computer.</li>
+            <li><strong>What it does: </strong>You can use your Raspberry Pi to surf the web, play games, watch videos, or use a word processor - basically anything you could do with a real computer. However, it's more complicated than the Arduino to use - it runs on Linux, so you'll need to be comfortabl with programming first.</li>
+            <li><strong>Where to get it: </strong>First, read a guide like <a href="http://makezine.com/2013/04/15/arduino-uno-vs-beaglebone-vs-raspberry-pi/">this</a> or <a href="http://lifehacker.com/how-to-pick-the-right-electronics-board-for-your-diy-pr-742869540">this</a> to decide whether a Pi is right for you. You can buy one <a href="http://www.raspberrypi.org/products/">here</a>.</li>
+            <li><strong>Learn to use it: </strong>The Raspberry Pi website has a guide on setting up your Pi <a href="http://www.raspberrypi.org/merry-christmas-got-a-new-pi/">here</a>. You can also check <a href="https://learn.adafruit.com/category/learn-raspberry-pi">Adafruit</a> or something similar for more tutorials.</li>
+            <li><strong>Project ideas: </strong><a href="https://learn.adafruit.com/category/raspberry-pi">Adafruit</a>, <a href="http://www.instructables.com/id/Raspberry-Pi-Projects/">Instructables</a>, <a href="http://lifehacker.com/tag/raspberry-pi">Lifehacker</a>, <a href="http://raspberrypihq.com/">Raspberry Pi HQ</a>, and <a href="http://makezine.com/category/electronics/raspberry-pi/?post_type=projects">Make</a> all have great collections of projects ideas, guides, and tutorials.</li>
+          </ul>
+        </div>
+        <div class="col-xs-4 col-md-4">
+            <a href="http://i.imgur.com/J9KB38c.jpg"><img src="http://i.imgur.com/J9KB38c.jpg" alt="..." style="width:95%;" class="img-thumbnail-project"></a>
+            <h6 class="cite"><a href="http://commons.wikimedia.org/wiki/File:Raspberry_Pi_B%2B_top.jpg">Raspberry Pi B+ top</a> by Lucasbosch (CC-BY-SA)</h6>
+        </div>
+      </div><!--Raspberry Pi row-->
+
+      <hr class="featurette-divider">
+
+      <div class="row"><!--Software-->
+        <div class="col-xs-4 col-md-4">
+          <a href="http://i.imgur.com/Kih2r5z.jpg"><img src="http://i.imgur.com/Kih2r5z.jpg" alt="..." style="width:95%;" class="img-thumbnail-project"></a>
+          <h6 class="cite"><a href="http://commons.wikimedia.org/wiki/File:LilyPad_Arduino_Main_Board.JPG">LilyPad Arduino Main Board</a> by Leah Buechley (CC-BY-SA)</h6>
+        </div>
+        <div class="col-xs-8 col-md-8">
+          <h3></br>Arduino LilyPad</h3>
+          <ul>
+            <li><strong>What it is: </strong>A flexible Arduino board designed for wearable applications. You can sew it into clothing or other textiles for electronic cloth.</li>
+            <li><strong>What it does: </strong>LilyPads allow you to create light-up biking jackets, internet-connected t-shirts, or location-finding backpacks. If you can think of a clothing-based application, LilyPad helps you create it.</li>
+            <li><strong>Where to get it: </strong>LilyPads are Arduino products and can be bought from the <a href="http://arduino.cc/en/Main/Products">Arduino website</a>. The Adafruit <a href="http://www.adafruit.com/product/659">Flora</a> is another similar wearable device.</li>
+            <li><strong>Learn to use it: </strong>The <a href="http://lilypadarduino.org/">LilyPad website</a> takes you through the basics of programming the LilyPad, as well as how to sew it into your clothing.</li>
+            <li><strong>Project ideas: </strong>Check <a href="http://lilypadarduino.org/?cat=15">the LilyPad website</a>, <a href="http://sewelectric.org/diy-projects/i">Sew Electric</a>, <a href="https://learn.sparkfun.com/tutorials/tags/lilypad">Sparkfun</a>, or <a href="http://www.instructables.com/howto/lilypad/">Instructables</a> for ideas.</li>
+          </ul>
+        </div>
+      </div><!--LilyPad row-->
+
+      <hr class="featurette-divider">
+
+      <div class="row"><!--Arduino-->
+        <div class="col-xs-8 col-md-8">
+          <h3></br>BeagleBoard</h3>
+          <ul>
+            <li><strong>What it is: </strong>TI's microcontroller of choice. Similar to Arduino and Raspberry Pi, but with different applications.</li>
+            <li><strong>What it does: </strong>You can think of a Beagleboard as a combination of a Pi and an Arduino - it has the power of a Pi but the connection power of an Arduino. It's designed for experienced users rather than learners, so it's not for beginners. It's best for powerful applications without advanced graphics.</li>
+            <li><strong>Where to get it: </strong>You can buy the Beaglebone from their website <a href="http://beagleboard.org/bone">here</a>.</li>
+            <li><strong>Learn to use it: </strong>The <a href="http://beagleboard.org/Support/bone101">BeagleBone website</a> has an extensive tutorial on how to use their board. You can also check <a href="https://learn.adafruit.com/beaglebone">Adafruit</a> or <a href="http://makezine.com/projects/make-32/get-started-with-beaglebone/">Make</a> for other guides.</li>
+            <li><strong>Project ideas: </strong>Projects can be found at <a href="http://beagleboard.org/project">BeagleBoard</a>, <a href="http://makezine.com/?s=beaglebone&post_type=projects">Make</a>, <a herf="http://www.eetimes.com/document.asp?doc_id=1319094">EETimes</a>, <a href="https://learn.adafruit.com/category/beaglebone">Adafruit</a>, or <a href="http://www.intorobotics.com/24-funcreative-beaglebone-black-diy-projects/">IntoRobotics</a>.</li>
+          </ul>
+        </div>
+        <div class="col-xs-4 col-md-4">
+          <a href="http://i.imgur.com/JRhFxNK.jpg"><img src="http://i.imgur.com/JRhFxNK.jpg" alt="..." style="width:95%;" class="img-thumbnail-project"></a>
+          <h6 class="cite"><a href="https://www.flickr.com/photos/stfnix/9174730587/">BeagleBone Black</a> by Stefan Hechenberger (CC-BY-SA-NC)</h6>
+        </div>
+      </div><!--BeagleBoard row-->
+
+      <hr class="featurette-divider">
+
+      <div class="row"><!--Projects-->
+        <div class="col-xs-4 col-md-4">
+          <a href="http://i.imgur.com/Rkkh719.jpg"><img src="http://i.imgur.com/Rkkh719.jpg" alt="..." style="width:95%;" class="img-thumbnail-project"></a>
+          <h6 class="cite"><a href="http://www.nanode.eu/media/images/">Nanode</a> by Nanode Open Source</h6>
+        </div>
+        <div class="col-xs-8 col-md-8">
+          <h3></br>Nanode</h3>
+          <ul>
+            <li><strong>What it is: </strong>A microcontroller similar to the Arduino but with built-in Internet connectivity.</li>
+            <li><strong>What it does: </strong>Because it connects to the Internet, you can use Nanode to interface with web-based services so you can control your devices from the Web. It's a relatively new platform, so people are still coming up with new projects and applications for the Internet of Things.</li>
+            <li><strong>Where to get it: </strong>The <a href="http://www.nanode.eu/products/">Nanode website</a> has kits so you can build your own Nanode.</li>
+            <li><strong>Learn to use it: </strong>The Nanode uses Arduino software, so you can already program it. To construct your Nanode from your kit, use the <a href="http://www.nanode.eu/instructions-buildguides/nanode-5/#">guides</a> on the Nanode website.</li>
+            <li><strong>Project ideas: </strong>Because Beaglebone is new, there aren't that many projects out there yet. The <a href="http://www.nanode.eu/projects/">Nanode site</a> is developing a projects section, and you can find more ideas <a href="https://wiki.london.hackspace.org.uk/view/Project:Nanode">here</a>, <a href="https://wiki.london.hackspace.org.uk/view/Project:Nanode">here</a>, or <a href="http://www.cyclelove.net/2012/12/bicycle-barometer-a-nanode-project-by-richard-pope/">here</a>.</li>
+          </ul>
+        </div>
+      </div><!--Nanode row-->
+
+      <hr class="featurette-divider">
+
+      <div class="row"><!--Arduino-->
+        <div class="col-xs-8 col-md-8">
+          <h3></br>Arduino Robot</h3>
+          <ul>
+            <li><strong>What it is: </strong>This Arduino board on wheels simplifies robot set-up.</li>
+            <li><strong>What it does: </strong>The Arduino Robot has all the functionality of an Arduino, but you don't have to connect it separately to a motor and wheels. It has a motor board, a control board, and multiple sensors built in.</li>
+            <li><strong>Where to get it: </strong>Buy a robot board from the <a href="http://arduino.cc/en/Main/Products">Arduino website</a>.</li>
+            <li><strong>Learn to use it: </strong>The <a href="http://arduino.cc/en/Guide/Robot">Arduino Robot</a> guide has information on how to set up and use your new board. Library documentation can be found <a href="http://arduino.cc/en/Reference/RobotLibrary?from=Tutorial.Robot">here</a>.</li>
+            <li><strong>Project ideas: </strong>The Arduino Robot board has so many pre-installed sensors that it's basically already a project idea. Try googling for robot ideas on older platforms and see if you can adapt them to work with this board. In general, this should simplify a lot of applications.</li>
+          </ul>
+        </div>
+        <div class="col-xs-4 col-md-4">
+          <a href="http://i.imgur.com/hziVxfG.jpg"><img src="http://i.imgur.com/hziVxfG.jpg" alt="..." style="width:95%;" class="img-thumbnail-project"></a>
+          <h6 class="cite"><a href="https://www.flickr.com/photos/arduino_cc/9774884386/">Arduino Robot</a> by Arduino Microprocessor (CC-BY-SA-NC)</h6>
+        </div>
+      </div><!--Arduino Robot row-->
+
+      <hr class="featurette-divider">
+
+      <div class="row"><!--Projects-->
+        <div class="col-xs-4 col-md-4">
+          <a href="http://i.imgur.com/uAmFw7z.png"><img src="http://i.imgur.com/uAmFw7z.png" alt="..." style="width:95%;" class="img-thumbnail-project"></a>
+          <h6 class="cite"><a href="https://www.flickr.com/photos/sparkfun/15587936552/">Intel Galileo Gen 2</a> by SparkFun Electronics (CC-BY)</h6>
+        </div>
+        <div class="col-xs-8 col-md-8">
+          <h3></br>Galileo</h3>
+          <ul>
+            <li><strong>What it is: </strong>Intel's microprocessor is certified to work with Arduino software.</li>
+            <li><strong>What it does: </strong>Galileo is Linux-based but fully compatible with Arduino software. This makes it the first major collaboration between an established tech firm and an upstart firm like Arduino.</li>
+            <li><strong>Where to get it: </strong>The <a href="http://www.intel.com/content/www/us/en/do-it-yourself/galileo-maker-quark-board.html">Galileo page</a> on the Intel site has links to all resailers at the bottom of the page.</li>
+            <li><strong>Learn to use it: </strong>Intel has multiple resources for makers, including a <a href="https://communities.intel.com/community/makers/galileo/getting-started">setup guide</a> and <a href="http://www.intel.com/content/www/us/en/do-it-yourself/introduction-to-galileo-video.html">video tutorials</a>. The software is exactly the same as Arduino's.</li>
+            <li><strong>Project ideas: </strong>You can find project ideas on <a href="https://communities.intel.com/community/makers/galileo/project_gallery">Intel's site</a> as well as <a href="https://www.hackster.io/intel-galileo">Hackster</a>, <a href="http://makezine.com/maker-sessions/getting-started-with-intel-galileo/">Make</a>, and <a href="https://www.sparkfun.com/news/1360">Sparkfun</a>. For a comparison of Galileo and Raspberry Pi, check <a href="http://www.mouser.com/applications/open-source-hardware-galileo-pi/">this guide</a> from Mouser.</li>
+          </ul>
+        </div>
+      </div><!--Galileo row-->
+
+      </br><hr class="featurette-divider"></br>
+      <p>
+        <a class="btn btn-primary btn-lg pull-left" role="button" href="FurtherReading.html"><-- Previous: Further Reading</a>
+        <a class="btn btn-primary btn-lg pull-right" role="button" href="Resources.html">Next: Resources --></a>
+      </p>
+
+    </div><!--/.container-->
+
+    </br></br></br>
+     <div id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-1 col-md-1">
+            <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0; margin-top:5px;" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a>
+          </div>
+          <div class="col-xs-4 col-md-4">
+            <p>This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</p>
+          </div>
+          <div class="col-xs-2 col-md-2"></div>
+          <div class="col-xs-5 col-md-5 text-right">
+            <p class="text-muted"><em>Header image based on <a href="hhttp://commons.wikimedia.org/wiki/File:PIC18F8720.jpg">PIC18F8720</a> by Achim Raschka (Public Domain)</em></p>
+            <p class="text-muted">Built on Bootstrap by Kristen Pownell</p>
+          </div>
+        </div><!--row-->
+      </br></br>
+      </div>
+    </div>
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>

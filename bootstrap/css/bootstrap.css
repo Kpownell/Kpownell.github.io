@@ -6299,4 +6299,7 @@ button.close {
 .featurette-divider {
   margin: 40px 0; /* Space out the Bootstrap <hr> more */
 }
+@-moz-document url-prefix() {
+  fieldset { display: table-cell; }
+}
 /*# sourceMappingURL=bootstrap.css.map */

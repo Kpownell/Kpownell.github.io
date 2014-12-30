@@ -66,11 +66,13 @@
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">More<span class="caret"></span></a>
               <ul class="dropdown-menu" role="menu">
-                <li><a href="../More/BeyondArduino.html">Beyond Arduino</a></li>
+                <li><a href="../../More/FurtherReading.html">Further Reading</a></li>
                 <li class="divider"></li>
-                <li><a href="../More/Links.html">Links</a></li>
+                <li><a href="../../More/BeyondArduino.html">Beyond Arduino</a></li>
                 <li class="divider"></li>
-                <li><a href="../More/Contact.html">Contact</a></li>
+                <li><a href="../../More/Resources.html">Resouces</a></li>
+                <li class="divider"></li>
+                <li><a href="../../More/About.html">About</a></li>
               </ul>
             </li>
           </ul>
@@ -91,10 +93,10 @@
       </div>
 
       <div class="row"><!--Materials-->
-        <div class="col-xs-7 col-med-7">
+        <div class="col-xs-7 col-md-7">
           <a href="http://i.imgur.com/loPcyEQ.png"><img src="http://i.imgur.com/loPcyEQ.png" alt="..." style="width:95%;" class="img-thumbnail-project"></a>
         </div>
-        <div class="col-xs-5 col-med-5">
+        <div class="col-xs-5 col-md-5">
           <h3></br>Learning Objectives</h3>
           <ul>
             <li><strong>Emphasis: </strong>Software</li>
@@ -121,7 +123,7 @@
       <hr class="featurette-divider">
 
       <div class="row"><!--Breadboard layout-->
-        <div class="col-xs-5 col-med-5">
+        <div class="col-xs-5 col-md-5">
           <h3>Breadboard Layout</h3>
           <ol>
             <li><strong>LCD: </strong>Hook up the LCD and the potentiometer the same way as we did in the <a href="Scroll.html">Scroll tutorial</a>. You should be using 10 of the 14 pins, hooked up to power, ground, the potentiometer, and Arduino pins 2-5, 11, and 12.</li>
@@ -132,7 +134,7 @@
           </ol>
           <em><a href="https://github.com/Kpownell/ArduinoWorld_Reference/blob/master/Intermediate/Stopwatch/timer_schematic.png">Reference Schematic</a></em>
         </div>
-        <div class="col-xs-7 col-med-7">
+        <div class="col-xs-7 col-md-7">
             <a href="http://i.imgur.com/gpWZxeK.png"><img src="http://i.imgur.com/gpWZxeK.png" alt="..." style="width:95%;" class="img-thumbnail-project"></a>
         </div>
       </div><!--Breadboard layout row-->
@@ -140,10 +142,10 @@
     <hr class="featurette-divider">
 
     <div class="row"><!--Software-->
-      <div class="col-xs-4 col-med-4">
+      <div class="col-xs-4 col-md-4">
         <a href="http://i.imgur.com/ilUAKFO.png"><img src="http://i.imgur.com/ilUAKFO.png" alt="..." style="width:95%;" class="img-thumbnail-project"></a>
       </div>
-      <div class="col-xs-8 col-med-8">
+      <div class="col-xs-8 col-md-8">
         <h3>Software</h3>
         <ol>
           <li><strong>Getting started: </strong>We want our timer to start counting when we press one button, pause when we press another, and reset when we press the third button. The LED will be on when tme is counting and off when it's not. The speaker will buzz whenever a button is pressed. The Arduino library has a function to keep track of milliseconds, but we're going to need an extra function to convert the raw time reading to something we can use. Let's get started! Initalize variables for your buttons, speaker, LED, and LCD.</li>
@@ -155,7 +157,7 @@
       </div><!--col-->
     </div><!--row-->
     <div class="row"><!--Software-->
-      <div class="col-xs-8 col-med-8">
+      <div class="col-xs-8 col-md-8">
         <ol start="6">
           <li><strong>Loop method: </strong>Onto the next step! Inside our loop method, we're going to need conditional statements that let us define what happens when we start, pause, and reset the timer. Start out by storing the states of your three buttons into three variables.</li>
           <li><strong>Reset: </strong>In this state, we need to reset all our times and turn off the timer and LED. Change start and finished to millis() so they store the same time. Turn off the LED, and change timerOn to 0. Then delay a few hundred milliseconds. This is called debouncing; it ensures that the program doesn't read the button as being pressed multiple times.</li>
@@ -166,7 +168,7 @@
         </ol>
         <em><a href="https://github.com/Kpownell/ArduinoWorld_Reference/blob/master/Intermediate/Stopwatch/Timer.ino">Reference Code</a></em>
       </div>
-      <div class="col-xs-4 col-med-4">
+      <div class="col-xs-4 col-md-4">
         <a href="http://i.imgur.com/TZZ3XBJ.png"><img src="http://i.imgur.com/TZZ3XBJ.png" alt="..." style="width:95%;" class="img-thumbnail-project"></a>
       </div>
     </div><!--Software row-->
@@ -174,7 +176,7 @@
     <hr class="featurette-divider">
 
     <div class="row">
-      <div class="col-xs-8 col-xs-offset-2 col-med-8 col-med-offset-2">
+      <div class="col-xs-8 col-xs-offset-2 col-md-8 col-md-offset-2">
         <h3>The Finished Product</h3>
         <video controls loop src="Timer.mp4" style="width:100%;"></video>
       </div>
@@ -192,8 +194,20 @@
     </br></br></br>
     <div id="footer">
       <div class="container">
-        <p class="text-muted"><em>Header image based on <a href="https://www.flickr.com/photos/purplemattfish/3020016417/">Ready Steady...Go</a> by Matthew (CC-BY-NC-ND)</em></p>
-        <p class="text-muted">Built on Bootstrap by Kristen Pownell</p>
+        <div class="row">
+          <div class="col-xs-1 col-md-1">
+            <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0; margin-top:5px;" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a>
+          </div>
+          <div class="col-xs-4 col-md-4">
+            <p>This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</p>
+          </div>
+          <div class="col-xs-2 col-md-2"></div>
+          <div class="col-xs-5 col-md-5 text-right">
+            <p class="text-muted"><em>Header image based on <a href="https://www.flickr.com/photos/purplemattfish/3020016417/">Ready Steady...Go</a> by Matthew (CC-BY-NC-ND)</em></p>
+            <p class="text-muted">Built on Bootstrap by Kristen Pownell</p>
+          </div>
+        </div><!--row-->
+      </br></br>
       </div>
     </div>
 

@@ -66,11 +66,13 @@
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">More<span class="caret"></span></a>
               <ul class="dropdown-menu" role="menu">
-                <li><a href="../More/BeyondArduino.html">Beyond Arduino</a></li>
+                <li><a href="../../More/FurtherReading.html">Further Reading</a></li>
                 <li class="divider"></li>
-                <li><a href="../More/Links.html">Links</a></li>
+                <li><a href="../../More/BeyondArduino.html">Beyond Arduino</a></li>
                 <li class="divider"></li>
-                <li><a href="../More/Contact.html">Contact</a></li>
+                <li><a href="../../More/Resources.html">Resouces</a></li>
+                <li class="divider"></li>
+                <li><a href="../../More/About.html">About</a></li>
               </ul>
             </li>
           </ul>
@@ -91,10 +93,10 @@
       </div>
 
       <div class="row"><!--Materials-->
-        <div class="col-xs-7 col-med-7">
+        <div class="col-xs-7 col-md-7">
           <a href="http://i.imgur.com/1Mm1FGr.png"><img src="http://i.imgur.com/1Mm1FGr.png" alt="..." style="width:95%;" class="img-thumbnail-project"></a>
         </div>
-        <div class="col-xs-5 col-med-5">
+        <div class="col-xs-5 col-md-5">
           <h3></br>Learning Objectives</h3>
           <ul>
             <li><strong>Emphasis: </strong>Equal</li>
@@ -115,7 +117,7 @@
       <hr class="featurette-divider">
 
       <div class="row"><!--Breadboard layout-->
-        <div class="col-xs-5 col-med-5">
+        <div class="col-xs-5 col-md-5">
           <h3>Breadboard Layout</h3>
           <ol>
             <li><strong>LCD Preparation: </strong>When you first take an LCD out of the box, you can't immediately hook it up to your Arduino; you have to solder on header pins first. You can either just solder in the pins and connect it to a breadboard, or you can make the LCD self-sufficient by connecting wires to the header pins, as in <a href="http://www.instructables.com/id/Connect-A-16x2-LCD-Display-To-An-Arduino/#step0">this tutorial.</a>
@@ -137,7 +139,7 @@
           </ol>
           <em><a href="https://github.com/Kpownell/ArduinoWorld_Reference/blob/master/Intermediate/Scrolling%20Message/scroll_schematic.png">Reference Schematic</a></em>
         </div>
-        <div class="col-xs-7 col-med-7">
+        <div class="col-xs-7 col-md-7">
             <a href="http://i.imgur.com/Ni9r2jw.pngg"><img src="http://i.imgur.com/Ni9r2jw.png" alt="..." style="width:95%;" class="img-thumbnail-project"></a>
         </div>
       </div><!--Breadboard layout row-->
@@ -145,10 +147,10 @@
     <hr class="featurette-divider">
 
     <div class="row"><!--Software-->
-      <div class="col-xs-4 col-med-4">
+      <div class="col-xs-4 col-md-4">
         <a href="http://i.imgur.com/qEmH67H.png"><img src="http://i.imgur.com/qEmH67H.png" alt="..." style="width:95%;" class="img-thumbnail-project"></a>
       </div>
-      <div class="col-xs-8 col-med-8">
+      <div class="col-xs-8 col-md-8">
         <h3>Software</h3>
         <ol>
           <li><strong>Getting started: </strong>Before you start making new sketches, first test your LCD to make sure it works. The Arduino program has built-in sketches for LCDs; go to File > Examples > LiquidCrystal and load HelloWorld onto your Arduino. If nothing shows up on your LCD, try twisting the potentiometer to change the contrast.</li>
@@ -165,7 +167,7 @@
     <hr class="featurette-divider">
 
     <div class="row">
-      <div class="col-xs-8 col-xs-offset-2 col-med-8 col-med-offset-2">
+      <div class="col-xs-8 col-xs-offset-2 col-md-8 col-md-offset-2">
         <h3>The Finished Product</h3>
         <video controls loop src="Scroll.mp4" style="width:100%;"></video>
       </div>
@@ -182,8 +184,20 @@
     </br></br></br>
     <div id="footer">
       <div class="container">
-        <p class="text-muted"><em>Header image based on <a href="http://commons.wikimedia.org/wiki/File:2x8_amber_HD44780_LCD_CIMG0416.JPG">HD44780 LCD CIMG0416</a> by MikroLogika (CC-BY-SA)</em></p>
-        <p class="text-muted">Built on Bootstrap by Kristen Pownell</p>
+        <div class="row">
+          <div class="col-xs-1 col-md-1">
+            <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0; margin-top:5px;" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a>
+          </div>
+          <div class="col-xs-4 col-md-4">
+            <p>This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</p>
+          </div>
+          <div class="col-xs-2 col-md-2"></div>
+          <div class="col-xs-5 col-md-5 text-right">
+            <p class="text-muted"><em>Header image based on <a href="http://commons.wikimedia.org/wiki/File:2x8_amber_HD44780_LCD_CIMG0416.JPG">HD44780 LCD CIMG0416</a> by MikroLogika (CC-BY-SA)</em></p>
+            <p class="text-muted">Built on Bootstrap by Kristen Pownell</p>
+          </div>
+        </div><!--row-->
+      </br></br>
       </div>
     </div>
 
