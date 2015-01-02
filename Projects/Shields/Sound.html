@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sound</title>
+
+    <!-- Bootstrap -->
+    <link href="../../bootstrap/css/bootstrap.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <!--NAV BAR-->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Arduino World</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li><a href="../../index.html">Home</a></li>
+
+             <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Learn<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="../../Learn/WhatIsArduino.html">What is Arduino?</a></li>
+                <li class="divider"></li>
+                <li><a href="../../Learn/ElectricityBasics.html">Electricity Basics</a></li>
+                <li class="divider"></li>
+                <li><a href="../../Learn/Hardware.html">Hardware</a></li>
+                <li class="divider"></li>
+                <li><a href="../../Learn/Software.html">Software</a></li>
+              </ul>
+            </li>
+
+             <li class="dropdown active">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="../Beginner/Beginner.html">Beginner</a></li>
+                <li class="divider"></li>
+                <li><a href="../Intermediate/Intermediate.html">Intermediate</a></li>
+                <li class="divider"></li>
+                <li><a href="../Advanced/Advanced.html">Advanced</a></li>
+                <li class="divider"></li>
+                <li class="active"><a href="Shields.html">Shields</a></li>
+              </ul>
+            </li>
+
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">More<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="../../More/FurtherReading.html">Further Reading</a></li>
+                <li class="divider"></li>
+                <li><a href="../../More/BeyondArduino.html">Beyond Arduino</a></li>
+                <li class="divider"></li>
+                <li><a href="../../More/Resources.html">Resouces</a></li>
+                <li class="divider"></li>
+                <li><a href="../../More/About.html">About</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-2 col-md-2">
+          </br></br></br><a href="http://i.imgur.com/NISDuTC.png"><img class="img-circle-header" src="http://i.imgur.com/NISDuTC.png" alt="..."></a>
+        </div>
+        <div class="col-xs-10 col-md-10">
+          <div class="page-header">
+            </br></br><h1>Sound Shields</br><small>Improve your sound quality or make your own music with these shields.</small></h1>
+          </div><!--/.page-header-->
+        </div>
+      </div>
+
+      <div class="row"><!--Parts-->
+        <div class="col-xs-8 col-md-8">
+          <h3></br>Overview</h3>
+          <ul>
+            <li><strong>What it is: </strong>Piezo buzzers, if you haven't noticed, don't produce the best sound. They also don't let you interface with other types of sound files like MP3 or MIDI. These shields can do all that and more.</li>
+            <li><strong>What it does: </strong>Some of these shields are built to improve sound quality. Others are focused on recording and playing different types of sound files. There's also a shield for voice recognition and one that can talk.</li>
+            <li><strong>How to use it: </strong>All music is composed of waveforms, which means that controlling most of these shields is more involved than a simple tone(NOTE_C3) command. If you're using the MIDI or MP3 shield, make sure you understand the protocol that you'll need to follow in your software. Otherwise, look for software examples online.</li>
+          </ul>
+        </div>
+        <div class="col-xs-4 col-md-4">
+            <a href="http://i.imgur.com/pbDI0IC.jpg"><img src="http://i.imgur.com/pbDI0IC.jpg" alt="..." style="width:95%;" class="img-thumbnail-project"></a>
+            <h6 class="cite"><a href="http://commons.wikimedia.org/wiki/File:Ajax_DJ.jpg">Ajax DJ</a> by Scott Sandars (CC-BY-SA)</h6>
+        </div>
+      </div><!--Parts row-->
+
+    <hr class="featurette-divider">
+
+    <div class="row"><!--Project-->
+      <div class="col-xs-12 col-md-12">
+        <h3>Types of Connectivity Shields</h3>
+      </div>
+    </div>
+    <div class="row"><!--1st robotics row-->
+      <div class="col-xs-3 col-md-3">
+        </br><a href="http://i.imgur.com/4z9ZU9g.jpg"><img src="http://i.imgur.com/4z9ZU9g.jpg" alt="..." style="width:95%;" class="img-thumbnail-project-link"></a>
+        <h6 class="cite"><a href="http://www.adafruit.com/products/1788">Image</a> by Adafruit</h6>
+      </div>
+      <div class="col-xs-3 col-md-3">
+        </br><h4><a href="http://www.adafruit.com/products/1788">Music Maker MP3 Shield: </a></h4>
+        <p>This shield can read audio from an SD card and play back multiple types of sound files, including MP3, AAC, WAV, and more. You can digitally adjust the sound quality and play it out through the included stereo amp. Sparkfun also has a version of an MP3 shield <a href="https://www.sparkfun.com/products/10628">here</a>, but it doesn't read as many types of files.</p></br>
+      </div>
+      <div class="col-xs-3 col-md-3">
+        </br><a href="http://i.imgur.com/MSoFYuF.jpg"><img src="http://i.imgur.com/MSoFYuF.jpg" alt="..." style="width:95%;" class="img-thumbnail-project-link"></a>
+        <h6 class="cite"><a href="https://www.sparkfun.com/products/9595">Image</a> by Sparkfun (CC-BY-NC-SA</h6>
+      </div>
+      <div class="col-xs-3 col-md-3">
+        </br><h4><a href="https://www.sparkfun.com/products/9595">MIDI Shield: </a></h4>
+        <p>Like the previous shield, this shield allows you to read and control audio files, this time specifically MIDI ones. It also comes with two potentiometers and two MIDI connectors so you can control synthesizers, sequencers, and other musical devices directly from your Arduino. With a MIDI shield and an MP3 shield, you can read pretty much all audio files out there!</p>
+      </div>
+    </div><!--1st robotics row-->
+    </br><div class="row" style="border-bottom:1px solid #00979c;"></div></br>
+    <div class="row"><!--2nd robotics row-->
+      <div class="col-xs-3 col-md-3">
+        </br><h4><a href="https://www.sparkfun.com/products/10587">Musical Instrument Shield: </a></h4>
+        <p>The chip on this shield contains a musical instrument database that allows you to play sounds from a piano to a trombone. You can connect to the headphone jack to hear your created symphony. The sound files use a MIDI codec to create great-sounding instruments for your next musical project.</p>
+      </div>
+      <div class="col-xs-3 col-md-3">
+        <a href="http://i.imgur.com/EBZqYOt.jpg"><img src="http://i.imgur.com/EBZqYOt.jpg" alt="..." style="width:95%;margin-top:10%;" class="img-thumbnail-project-link"></a>
+        <h6 class="cite"><a href="https://www.sparkfun.com/products/10587">Image</a> by Sparkfun (CC-BY-NC-SA)</h6>
+      </div>
+      <div class="col-xs-3 col-md-3">
+        </br><h4><a href="http://www.adafruit.com/products/94">Wave Shield: </a></h4>
+        <p>This shield is geared towards producing high-quality sound output. You can play files from a MicroSD card to connected headphones or speakers. The potentiometer allows you to control volume from the Arduino. <a href="http://www.adafruit.com/products/175">This kit</a> comes with the shield, an SD card, and a speaker so you can get started right away.</p>
+      </div>
+      <div class="col-xs-3 col-md-3">
+        </br><a href="http://i.imgur.com/4ZqSvdy.jpg"><img src="http://i.imgur.com/4ZqSvdy.jpg" alt="..." style="width:95%;margin-top:5%;" class="img-thumbnail-project-link"></a>
+        <h6 class="cite"><a href="http://www.adafruit.com/products/94">Image</a> by Adafruit</h6>
+      </div>
+    </div><!--2nd robotics row-->
+    </br><div class="row" style="border-bottom:1px solid #00979c;"></div></br>
+        <div class="row"><!--3rd robotics row-->
+      <div class="col-xs-3 col-md-3">
+        </br><a href="http://i.imgur.com/k0PozEn.jpg"><img src="http://i.imgur.com/k0PozEn.jpg" alt="..." style="width:95%;" class="img-thumbnail-project-link"></a>
+        <h6 class="cite"><a href="https://www.sparkfun.com/products/10661">Image</a> by Arduino</h6>
+      </div>
+      <div class="col-xs-3 col-md-3">
+        </br><h4><a href="https://www.sparkfun.com/products/10661">Voicebox Shield: </a></h4>
+        <p>The Voicebox shield uses the <a href="https://www.sparkfun.com/products/9578">SpeakJet</a> chip to synthesize a robotic voice. You can read out commands from your program to add a voice to your robot, personalize your project, or just freak people out. If you want to know what the voice sounds like, try the "say" command on Mac terminal.</p></br>
+      </div>
+      <div class="col-xs-3 col-md-3">
+        </br><a href="http://i.imgur.com/6iSZToO.jpg"><img src="http://i.imgur.com/6iSZToO.jpg" alt="..." style="width:95%;" class="img-thumbnail-project-link"></a>
+        <h6 class="cite"><a href="https://www.sparkfun.com/products/12656">Image</a> by Sparkfun (CC-BY-NC-SA</h6>
+      </div>
+      <div class="col-xs-3 col-md-3">
+        </br><h4><a href="https://www.sparkfun.com/products/12656">Voice Recognition Shield: </a></h4>
+        <p>If you want to be able to talk back to your robot, you'll need this shield. It uses EasyVR to download and parse speaker input for recognizable vocabulary to act on. You can use this in conjunction with the voicebox shield to have a full conversation with your project if you'd like.</p>
+      </div>
+    </div><!--3rd robotics row-->
+
+    <hr class="featurette-divider">
+
+    <div class="row">
+      <div class="col-xs-4 col-md-4">
+        <a href="http://i.imgur.com/KyG2s0K.jpg"><img src="http://i.imgur.com/KyG2s0K.jpg" alt="..." style="width:95%;"class="img-thumbnail-project"></a>
+        <h6 class="cite"><a href="https://www.flickr.com/photos/avarty/9356067241/">Image</a> by Avarty Photos (CC-BY-SA)</h6>
+      </div>
+      <div class="col-xs-8 col-md-8">
+        <h3>Project Ideas</h3>
+        <ul>
+          <li><strong>Sound Mixer: </strong>Allow the user to mix together different sound samples, change the volume, and clip at different places to create their own song.</li>
+          <li><strong>Song Writer: </strong>Use the Serial Display to let users input their own note sequence and chosen instrument, then play it back on the Arduino. Can you play chords or multiple instruments at once?</li>
+          <li><strong>Talking Robot: </strong>For experienced users - create a robot that can recognize and respond to simple vocabulary, similar to Cleverbot but probably with more limited functionality.\</li>
+          <li><strong>Home Speaker System: </strong>Use the Arduino to parse sound files so you can play all your favorite music off your Arduino instead of your computer.</li>
+        </ul>
+        <h4>Good luck, and have fun!</h4>
+      </div>
+    </div>
+
+      </br><hr class="featurette-divider"></br>
+
+      <p>
+        <a class="btn btn-primary btn-lg pull-left" role="button" href="Wifi.html"><-- Previous: Connectivity Shields</a>
+        <a class="btn btn-primary btn-lg pull-right" role="button" href="Misc.html">Next: Misc Shields --></a>
+      </p>
+
+    </div><!--/.container-->
+
+    </br></br>
+    <div id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-1 col-md-1">
+            <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0; margin-top:5px;" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a>
+          </div>
+          <div class="col-xs-4 col-md-4">
+            <p>This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</p>
+          </div>
+          <div class="col-xs-2 col-md-2"></div>
+          <div class="col-xs-5 col-md-5 text-right">
+            <p class="text-muted"><em>Header image based on <a href="http://pixabay.com/en/music-notes-abstract-159870/">Image</a> by OpenClips (Public Domain)</em></p>
+            <p class="text-muted">Built on Bootstrap by Kristen Pownell</p>
+          </div>
+        </div><!--row-->
+      </br></br>
+      </div>
+    </div>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../../bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>
